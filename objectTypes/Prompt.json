@@ -1,0 +1,10 @@
+{
+	"name": "Prompt",
+	"plugin-id": "Text",
+	"sid": 708792772559370,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

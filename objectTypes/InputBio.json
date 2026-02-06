@@ -1,9 +1,0 @@
-{
-	"name": "InputBio",
-	"plugin-id": "TextBox",
-	"sid": 581129146880684,
-	"isGlobal": false,
-	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
-	"behaviorTypes": []
-}

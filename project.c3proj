@@ -1,196 +1,32 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 46602,
-	"name": "Sample",
+	"name": "Save the Reef",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [
-		{
-			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "List",
-			"name": "List",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "TextBox",
-			"name": "Text input",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Touch",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "DragnDrop",
-			"name": "Drag & Drop",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Flash",
-			"name": "Flash",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Physics",
-			"name": "Physics",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Timer",
-			"name": "Timer",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"bundled": false
-		}
-	],
-	"uniqueId": "xvauc6jekgb",
+	"usedAddons": [],
+	"uniqueId": "n1wv211q844",
 	"objectTypes": {
-		"items": [
-			"Bin",
-			"Touch",
-			"Instructions",
-			"Prompt",
-			"InputName",
-			"InputEmail",
-			"InputIneterests",
-			"InputBio",
-			"GoButton",
-			"Star",
-			"Ground",
-			"Toy",
-			"wall",
-			"InstrPanel",
-			"InstrText",
-			"Browser",
-			"Lion",
-			"Tiger",
-			"Panda",
-			"Bison",
-			"Cage",
-			"GoToCage",
-			"BackToAnimals",
-			"Burger",
-			"Syrup",
-			"Taco",
-			"Sushi",
-			"FoodInstructions",
-			"BurgerLevel",
-			"FoodRestart",
-			"Test_Sample_1"
-		],
+		"items": [],
 		"subfolders": []
 	},
 	"functionsName": "Functions",
 	"autosaveData": null,
-	"containers": [
-		{
-			"members": [
-				"InstrPanel",
-				"InstrText"
-			]
-		}
-	],
+	"containers": [],
 	"families": {
-		"items": [
-			"Animal",
-			"Food"
-		],
+		"items": [],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
-			"Bio",
-			"Rain",
-			"Toy",
-			"Instructions",
-			"Globals",
-			"Animals",
-			"Cage",
-			"Food"
+			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Bio Events",
-			"Rain Events",
-			"Toy Events",
-			"Instructions Events",
-			"Globals Events",
-			"Animals Events",
-			"Cage Events",
-			"Food Events"
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -218,33 +54,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 628982720870418,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-512.png",
-					"type": "image/png",
-					"sid": 741095787406435,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
 					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 341183518175617,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 110171854216445,
+					"sid": 505246131246223,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -252,7 +64,7 @@
 				{
 					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 588311712536930,
+					"sid": 144274041952588,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -260,7 +72,31 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 513247938490801,
+					"sid": 652894924910471,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 703040509134573,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 854982853052398,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 500093434961795,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -268,7 +104,7 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 580650440095236,
+					"sid": 399344880294647,
 					"icon-info": {
 						"purpose": "loading-logo"
 					}
@@ -293,19 +129,21 @@
 		]
 	},
 	"flowcharts": {
-		"items": [],
+		"items": [
+			"Flowchart 1"
+		],
 		"subfolders": []
 	},
 	"properties": {
 		"description": "",
-		"version": "1.4",
+		"version": "1.0.0.0",
 		"autoIncrementVersion": false,
 		"author": "",
-		"authorEmail": "ron@planetflip.net",
-		"authorWebsite": "https:/planetflip.net",
-		"appId": "net.planetflip",
-		"pixelRounding": true,
-		"zAxisScale": "normalized",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "regular",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
@@ -342,15 +180,15 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress",
+		"loaderStyle": "splash",
 		"preloadSounds": true,
-		"uidAllocationMode": "increment",
+		"uidAllocationMode": "random",
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 854,
+	"viewportHeight": 480,
 	"firstLayout": null
 }

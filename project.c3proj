@@ -182,13 +182,13 @@
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "splash",
 		"preloadSounds": true,
-		"uidAllocationMode": "increment",
+		"uidAllocationMode": "random",
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 480,
+	"viewportHeight": 854,
 	"firstLayout": null
 }

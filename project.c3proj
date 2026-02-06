@@ -20,13 +20,21 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"StartPage",
+			"Level1",
+			"Context1",
+			"Context2",
+			"Context3"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"EventStartPage",
+			"EventLevel1",
+			"EventContext1",
+			"EventContext2",
+			"Context3"
 		],
 		"subfolders": []
 	},

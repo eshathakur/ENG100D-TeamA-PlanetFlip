@@ -1,5 +1,222 @@
 {
 	"name": "EventContext1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "StoryStep",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Keeps track of where we are in the story",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 343319411790221
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 885316391991268
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 601598241635890,
+					"parameters": {
+						"variable": "StoryStep",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 688395837465605
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 931588453218979,
+					"parameters": {
+						"variable": "StoryStep",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 258483296385630
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 923430447778529,
+					"parameters": {
+						"text": "\"An invitation to Australia? Reef Restoration?\"",
+						"duration": "1.5"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 577264564918736,
+					"parameters": {
+						"text": "\"Who could've sent this? Better go check it out...\"",
+						"duration": "1.6"
+					}
+				}
+			],
+			"sid": 681372093125175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 618407237163970,
+					"parameters": {
+						"variable": "StoryStep",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 632815497175941
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 823691493679224,
+					"parameters": {
+						"text": "\"Who could've sent this? Better go check it out...\"",
+						"duration": "1.6"
+					}
+				}
+			],
+			"sid": 298056743984545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 826899849490558,
+					"parameters": {
+						"variable": "StoryStep",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 586416715781060
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Letter",
+					"sid": 539749974865416
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "KingTriton",
+					"sid": 726745200272452,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 774306435608750,
+					"parameters": {
+						"text": "\"You've arrived! Welcome to the Great Barrier Reef! I am King Triton.\"",
+						"duration": "2.27"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpeakingName",
+					"sid": 931157217308111,
+					"parameters": {
+						"text": "\"King Triton\""
+					}
+				}
+			],
+			"sid": 472470450358042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 490784067278396,
+					"parameters": {
+						"variable": "StoryStep",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 620534341872903
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 915581067170038,
+					"parameters": {
+						"text": "\"Please help me restore these coral reefs back to their formal glory!\"",
+						"duration": "2.27"
+					}
+				}
+			],
+			"sid": 172117479034816
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 295834006200403,
+					"parameters": {
+						"variable": "StoryStep",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 367716746052874,
+					"parameters": {
+						"layout": "Context2"
+					}
+				}
+			],
+			"sid": 397742308149859
+		}
+	],
 	"sid": 694674196649892
 }

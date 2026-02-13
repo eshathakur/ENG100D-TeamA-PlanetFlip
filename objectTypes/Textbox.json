@@ -1,0 +1,62 @@
+{
+	"name": "Textbox",
+	"plugin-id": "Sprite",
+	"sid": 142542352198049,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 369,
+						"height": 222,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8371579,
+						"collisionPoly": {
+							"points": [
+								0.08672086720867209,
+								0,
+								0.9295392953929539,
+								0.018018018018018018,
+								1,
+								0.13963963963963963,
+								0.989159891598916,
+								0.8738738738738738,
+								0.9132791327913279,
+								1,
+								0.10569105691056911,
+								1,
+								0.07046070460704607,
+								0.9774774774774775,
+								0,
+								0.8513513513513513,
+								0.01084010840108401,
+								0.11711711711711711
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 981396656299394,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

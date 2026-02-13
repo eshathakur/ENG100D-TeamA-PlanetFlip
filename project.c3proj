@@ -5,10 +5,41 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"BackgroundImage",
+			"Sprite",
+			"Textbox",
+			"KingTriton",
+			"SToryText",
+			"Letter",
+			"Touch",
+			"SpeakingName"
+		],
 		"subfolders": []
 	},
 	"functionsName": "Functions",
@@ -21,8 +52,8 @@
 	"layouts": {
 		"items": [
 			"StartPage",
+			"StoryStart",
 			"Level1",
-			"Context1",
 			"Context2",
 			"Context3"
 		],
@@ -56,7 +87,136 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "DotGothic16-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 375794657176236,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Black.ttf",
+					"type": "application/font-sfnt",
+					"sid": 462726419820786,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 984439699182774,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-ExtraBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 947658235263800,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-ExtraLight.ttf",
+					"type": "application/font-sfnt",
+					"sid": 677122900508411,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Light.ttf",
+					"type": "application/font-sfnt",
+					"sid": 309928671673855,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 338036823412614,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 202572744697322,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-SemiBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 109858436258180,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Thin.ttf",
+					"type": "application/font-sfnt",
+					"sid": 927007188338775,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-VariableFont_ELGR,ELSH,wght.ttf",
+					"type": "application/font-sfnt",
+					"sid": 424457821185123,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-VariableFont_wght.ttf",
+					"type": "application/font-sfnt",
+					"sid": 646481370586105,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 262482585202913,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 483597549101586,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 525987669813973,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-SemiBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 507091297510809,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

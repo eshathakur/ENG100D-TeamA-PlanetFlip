@@ -1,5 +1,27 @@
 {
 	"name": "EventStartPage",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "buttonStart",
+					"sid": 176502966037570
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 156293110917028,
+					"parameters": {
+						"layout": "\"Context1\""
+					}
+				}
+			],
+			"sid": 373785159514641
+		}
+	],
 	"sid": 656075745653536
 }

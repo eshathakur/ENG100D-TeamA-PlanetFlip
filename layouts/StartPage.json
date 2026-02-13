@@ -5,7 +5,158 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "StartBackground",
+					"properties": {
+						"svg-file": 750192987484947,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 980769,
+					"sid": 354666618049730,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 354666618049730,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -2,
+						"y": 6,
+						"width": 490,
+						"height": 846,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "textboxReefRescuer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 520110,
+					"sid": 559435225388728,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 559435225388728,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 242,
+						"y": 297,
+						"width": 287,
+						"height": 175,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "buttonStart",
+					"properties": {
+						"type": "button",
+						"text": "Start",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 327054,
+					"sid": 558918598968405,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 558918598968405,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 157,
+						"y": 441,
+						"width": 161,
+						"height": 56,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "buttonLearnMore",
+					"properties": {
+						"type": "button",
+						"text": "Learn More",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 322420,
+					"sid": 985408193246310,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 985408193246310,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 157,
+						"y": 505,
+						"width": 161,
+						"height": 55,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
 			"sid": 132462100997301,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

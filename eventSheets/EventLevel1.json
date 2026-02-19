@@ -1,5 +1,256 @@
 {
 	"name": "EventLevel1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 341134541782908
+				}
+			],
+			"actions": [
+				{
+					"id": "set-world-gravity",
+					"objectClass": "Player_sprite",
+					"sid": 801743678992043,
+					"behaviorType": "Physics",
+					"parameters": {
+						"gravity": "-5"
+					}
+				}
+			],
+			"sid": 884896111873384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 110712669300771
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const scrollSpeed = 100",
+						"const bg = runtime.objects.Background.getFirstInstance();",
+						"if (bg && bg.x > -715) {",
+						"\tbg.x -= scrollSpeed * runtime.dt;",
+						"} else {",
+						"\truntime.timeScale = 0;",
+						"}",
+						""
+					]
+				}
+			],
+			"sid": 563844446089038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 657818363348743,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 250);",
+						"}"
+					]
+				}
+			],
+			"sid": 459841307105639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 300631578009932
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 250);",
+						"}"
+					]
+				}
+			],
+			"sid": 646759310340099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 792084631165325,
+					"parameters": {
+						"interval-seconds": "random(3.0,4.0)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 979495459386939,
+					"parameters": {
+						"object-to-create": "Fish",
+						"layer": "0",
+						"x": "ViewportRight(0) + 50",
+						"y": "random( Coral.Height/2, ViewportBottom(0) - Coral.Height/2 )",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Fish",
+					"sid": 619002117470772,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Fish",
+					"sid": 392466781374955,
+					"parameters": {
+						"frame-number": "random(4)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Fish",
+					"sid": 805392660941801,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				}
+			],
+			"sid": 373944309189266
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fish",
+					"sid": 276173996674818,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Fish",
+					"sid": 998634062536368
+				}
+			],
+			"sid": 449176336362245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 978502063449709,
+					"parameters": {
+						"interval-seconds": "3.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const GAP_SIZE = 200;",
+						"const SPEED = 100;",
+						"const MARGIN = 80;",
+						"",
+						"// const layer = runtime.layout.getLayer(0);",
+						"",
+						"// const right = layer.getViewportRight;",
+						"// const bottom = layer.getViewportBottom;",
+						"",
+						"// if (typeof right !== \"number\" || typeof bottom !== \"number\") {",
+						"//   console.log(\"viewport values missing:\", { right, bottom, layer });",
+						"//   return;",
+						"// }",
+						"",
+						"const vp = runtime.layout.viewport;",
+						"",
+						"const right = vp.right;",
+						"const bottom = vp.bottom;",
+						"",
+						"const x = right + 60;",
+						"",
+						"const minC = MARGIN + GAP_SIZE / 2;",
+						"const maxC = bottom - MARGIN - GAP_SIZE / 2;",
+						"const c = minC + Math.random() * (maxC - minC);",
+						"",
+						"const yTop = c - GAP_SIZE / 2;",
+						"const yBot = c + GAP_SIZE / 2;",
+						"",
+						"const top = runtime.objects.Coral.createInstance(0, x, yTop);",
+						"",
+						"if (top) {",
+						"  top.animationSpeed = 0;",
+						"  top.animationFrame = Math.floor(Math.random() * 4);",
+						"  const b = top.behaviors.Bullet;",
+						"  b.speed = SPEED;",
+						"  b.angleOfMotion = 180;",
+						"  if (\"isMirroredY\" in top) top.isMirroredY = true;",
+						"  else if (\"isFlippedY\" in top) top.isFlippedY = true;",
+						"}",
+						"",
+						"const bot = runtime.objects.Coral.createInstance(0,x,yBot);",
+						"",
+						"if(bot){",
+						"\tbot.animationSpeed = 0;",
+						"\tbot.animationFrame = Math.floor(Math.random() * 4);",
+						"\tconst b = bot.behaviors.Bullet;",
+						"\tb.speed = SPEED;",
+						"\tb.angleOfMotion = 180;",
+						"\tif(\"isMirroredY\" in bot) bot.isMirroredY = false;",
+						"\telse if (\"isFlippedY\" in bot) bot.isFlippedY = false;",
+						"}",
+						""
+					]
+				}
+			],
+			"sid": 893238584961485
+		}
+	],
 	"sid": 165858121014550
 }

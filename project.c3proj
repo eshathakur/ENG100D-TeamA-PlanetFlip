@@ -208,6 +208,102 @@
 											"icon-info": {
 												"purpose": "none"
 											}
+										},
+										{
+											"name": "small_coral-7.png",
+											"type": "image/png",
+											"sid": 159956727920281,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-13.png",
+											"type": "image/png",
+											"sid": 535435087949797,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-12.png",
+											"type": "image/png",
+											"sid": 407341660275141,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-9.png",
+											"type": "image/png",
+											"sid": 288615382739501,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-10.png",
+											"type": "image/png",
+											"sid": 857807529170647,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-5.png",
+											"type": "image/png",
+											"sid": 843310547580935,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-8.png",
+											"type": "image/png",
+											"sid": 739020525645953,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-15.png",
+											"type": "image/png",
+											"sid": 285005103024567,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-14.png",
+											"type": "image/png",
+											"sid": 378865400841324,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-6.png",
+											"type": "image/png",
+											"sid": 534458440692127,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-16.png",
+											"type": "image/png",
+											"sid": 291780453707531,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-11.png",
+											"type": "image/png",
+											"sid": 303546067004253,
+											"icon-info": {
+												"purpose": "none"
+											}
 										}
 									],
 									"subfolders": [],
@@ -243,6 +339,102 @@
 											"name": "large_coral-1.png",
 											"type": "image/png",
 											"sid": 442336592610611,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-15.png",
+											"type": "image/png",
+											"sid": 211746126329286,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-16.png",
+											"type": "image/png",
+											"sid": 230624500106980,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-14.png",
+											"type": "image/png",
+											"sid": 789560026778031,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-5.png",
+											"type": "image/png",
+											"sid": 502400154307474,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-6.png",
+											"type": "image/png",
+											"sid": 560651967387445,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-7.png",
+											"type": "image/png",
+											"sid": 895341171992672,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-8.png",
+											"type": "image/png",
+											"sid": 958570223064169,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-9.png",
+											"type": "image/png",
+											"sid": 287927674308996,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-10.png",
+											"type": "image/png",
+											"sid": 854729237618805,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-12.png",
+											"type": "image/png",
+											"sid": 369404331936118,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-13.png",
+											"type": "image/png",
+											"sid": 684445042632529,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-11.png",
+											"type": "image/png",
+											"sid": 428467945943756,
 											"icon-info": {
 												"purpose": "none"
 											}

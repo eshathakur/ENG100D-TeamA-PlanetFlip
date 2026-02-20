@@ -1,7 +1,7 @@
 {
-	"name": "BackgroundImage",
+	"name": "fadetoblackBG",
 	"plugin-id": "Sprite",
-	"sid": 587039999519742,
+	"sid": 975958697640145,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 626,
-						"height": 263,
+						"width": 482,
+						"height": 855,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/avif",
-						"imageSpriteId": 2798275,
+						"fileType": "image/png",
+						"imageSpriteId": 2358152,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 287141136259809,
+				"sid": 322413633405254,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

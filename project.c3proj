@@ -38,7 +38,8 @@
 			"SToryText",
 			"Letter",
 			"Touch",
-			"SpeakingName"
+			"SpeakingName",
+			"fadetoblackBG"
 		],
 		"subfolders": []
 	},
@@ -356,7 +357,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
 	"firstLayout": null
 }

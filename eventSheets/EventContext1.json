@@ -61,6 +61,15 @@
 						"text": "\"An invitation to Australia? Reef Restoration?\"",
 						"duration": "1.5"
 					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 577264564918736,
+					"parameters": {
+						"text": "\"Who could've sent this? Better go check it out...\"",
+						"duration": "1.6"
+					}
 				}
 			],
 			"sid": 681372093125175
@@ -103,74 +112,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 871549103967820,
+					"sid": 826899849490558,
 					"parameters": {
 						"variable": "StoryStep",
 						"comparison": 0,
 						"value": "3"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Letter",
-					"sid": 364442211407573
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "BackgroundImage",
-					"sid": 861308526568665,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Textbox",
-					"sid": 467579878242225,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "SToryText",
-					"sid": 535862623594707,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "SpeakingName",
-					"sid": 985934870553424,
-					"parameters": {
-						"text": "\"\""
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "fadetoblackBG",
-					"sid": 561130609452954,
-					"parameters": {
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 680782292110911
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 935336726610008,
-					"parameters": {
-						"variable": "StoryStep",
-						"comparison": 0,
-						"value": "4"
 					}
 				},
 				{
@@ -181,20 +127,9 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "BackgroundImage",
-					"sid": 929993682396882,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Textbox",
-					"sid": 664668932917377,
-					"parameters": {
-						"visibility": "visible"
-					}
+					"id": "destroy",
+					"objectClass": "Letter",
+					"sid": 539749974865416
 				},
 				{
 					"id": "set-visible",
@@ -220,14 +155,6 @@
 					"parameters": {
 						"text": "\"King Triton\""
 					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "fadetoblackBG",
-					"sid": 593877295935013,
-					"parameters": {
-						"visibility": "invisible"
-					}
 				}
 			],
 			"sid": 472470450358042
@@ -238,11 +165,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 359842489664678,
+					"sid": 490784067278396,
 					"parameters": {
 						"variable": "StoryStep",
 						"comparison": 0,
-						"value": "5"
+						"value": "4"
 					}
 				},
 				{
@@ -270,11 +197,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 387111555722642,
+					"sid": 295834006200403,
 					"parameters": {
 						"variable": "StoryStep",
 						"comparison": 0,
-						"value": "6"
+						"value": "5"
 					}
 				}
 			],

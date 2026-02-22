@@ -3,35 +3,134 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "StoryStep",
+			"name": "StoryTracker",
 			"type": "number",
 			"initialValue": "0",
-			"comment": "Keeps track of where we are in the story",
+			"comment": "Keeps track of where we are in the story, increments when the player presses the \"next\" button",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 343319411790221
+			"sid": 940502486977106
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-touch-start",
+					"id": "is-touching-object",
 					"objectClass": "Touch",
-					"sid": 885316391991268
+					"sid": 837770826871894,
+					"parameters": {
+						"object": "NextButton"
+					}
 				}
 			],
 			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "NextButton",
+					"sid": 662455129187963,
+					"parameters": {
+						"width": "144",
+						"height": "63"
+					}
+				},
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 601598241635890,
+					"sid": 797107170842842,
 					"parameters": {
-						"variable": "StoryStep",
+						"variable": "StoryTracker",
 						"value": "1"
 					}
 				}
 			],
-			"sid": 688395837465605
+			"sid": 380276435362390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 834897052774448
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 527893827558101,
+					"parameters": {
+						"object": "NextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NextButton",
+					"sid": 123806870132651,
+					"parameters": {
+						"animation": "\"Hover\"",
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 701763233898789
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 805876018198454
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NextButton",
+					"sid": 823466178580830,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "current-frame"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NextButton",
+					"sid": 897355434569241,
+					"parameters": {
+						"width": "160",
+						"height": "70"
+					}
+				}
+			],
+			"sid": 914067191424574
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 296646647093763,
+					"parameters": {
+						"object": "NextButton"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NextButton",
+					"sid": 764927287966591,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 582076202384439
 		},
 		{
 			"eventType": "block",
@@ -39,183 +138,34 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 931588453218979,
+					"sid": 367722562199187,
 					"parameters": {
-						"variable": "StoryStep",
+						"variable": "StoryTracker",
 						"comparison": 0,
 						"value": "1"
 					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 258483296385630
 				}
 			],
 			"actions": [
-				{
-					"id": "typewriter-text",
-					"objectClass": "SToryText",
-					"sid": 923430447778529,
-					"parameters": {
-						"text": "\"An invitation to Australia? Reef Restoration?\"",
-						"duration": "1.5"
-					}
-				},
-				{
-					"id": "typewriter-text",
-					"objectClass": "SToryText",
-					"sid": 577264564918736,
-					"parameters": {
-						"text": "\"Who could've sent this? Better go check it out...\"",
-						"duration": "1.6"
-					}
-				}
-			],
-			"sid": 681372093125175
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 618407237163970,
-					"parameters": {
-						"variable": "StoryStep",
-						"comparison": 0,
-						"value": "2"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 632815497175941
-				}
-			],
-			"actions": [
-				{
-					"id": "typewriter-text",
-					"objectClass": "SToryText",
-					"sid": 823691493679224,
-					"parameters": {
-						"text": "\"Who could've sent this? Better go check it out...\"",
-						"duration": "1.6"
-					}
-				}
-			],
-			"sid": 298056743984545
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 826899849490558,
-					"parameters": {
-						"variable": "StoryStep",
-						"comparison": 0,
-						"value": "3"
-					}
-				},
-				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 586416715781060
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Letter",
-					"sid": 539749974865416
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "KingTriton",
-					"sid": 726745200272452,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "typewriter-text",
-					"objectClass": "SToryText",
-					"sid": 774306435608750,
-					"parameters": {
-						"text": "\"You've arrived! Welcome to the Great Barrier Reef! I am King Triton.\"",
-						"duration": "2.27"
-					}
-				},
 				{
 					"id": "set-text",
-					"objectClass": "SpeakingName",
-					"sid": 931157217308111,
+					"objectClass": "SToryText",
+					"sid": 676471620059863,
 					"parameters": {
-						"text": "\"King Triton\""
-					}
-				}
-			],
-			"sid": 472470450358042
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 490784067278396,
-					"parameters": {
-						"variable": "StoryStep",
-						"comparison": 0,
-						"value": "4"
+						"text": "\"Come join me, King Triton, on this adventure to save our oceans!\""
 					}
 				},
 				{
-					"id": "trigger-once-while-true",
-					"objectClass": "System",
-					"sid": 620534341872903
-				}
-			],
-			"actions": [
-				{
-					"id": "typewriter-text",
-					"objectClass": "SToryText",
-					"sid": 915581067170038,
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 708710186551959,
 					"parameters": {
-						"text": "\"Please help me restore these coral reefs back to their formal glory!\"",
-						"duration": "2.27"
+						"animation": "\"Happy\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 172117479034816
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 295834006200403,
-					"parameters": {
-						"variable": "StoryStep",
-						"comparison": 0,
-						"value": "5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 367716746052874,
-					"parameters": {
-						"layout": "Context2"
-					}
-				}
-			],
-			"sid": 397742308149859
+			"sid": 268670785446582
 		}
 	],
 	"sid": 694674196649892

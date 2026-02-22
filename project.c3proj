@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -38,7 +45,10 @@
 			"SToryText",
 			"Letter",
 			"Touch",
-			"SpeakingName"
+			"NextButton",
+			"Passport",
+			"Ticket",
+			"Mouse"
 		],
 		"subfolders": []
 	},

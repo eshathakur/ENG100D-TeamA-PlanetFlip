@@ -1,7 +1,7 @@
 {
-	"name": "Textbox",
+	"name": "Passport",
 	"plugin-id": "Sprite",
-	"sid": 142542352198049,
+	"sid": 576968861738564,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,35 +12,25 @@
 			{
 				"frames": [
 					{
-						"width": 906,
-						"height": 735,
+						"width": 228,
+						"height": 317,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5758585,
+						"imageSpriteId": 1651502,
 						"collisionPoly": {
 							"points": [
-								0.08672086720867209,
-								0,
-								0.9295392953929539,
-								0.018018018018018018,
-								1,
-								0.13963963963963963,
-								0.989159891598916,
-								0.8738738738738738,
-								0.9132791327913279,
-								1,
-								0.10569105691056911,
-								1,
-								0.07046070460704607,
-								0.9774774774774775,
-								0,
-								0.8513513513513513,
-								0.01084010840108401,
-								0.11711711711711711
+								0.8771929824561403,
+								0.015772870662460567,
+								0.956140350877193,
+								0.8990536277602523,
+								0.12280701754385964,
+								0.9400630914826499,
+								0.05263157894736842,
+								0.03785488958990536
 							]
 						},
 						"useCollisionPoly": true,
@@ -48,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 981396656299394,
+				"sid": 514446715915785,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

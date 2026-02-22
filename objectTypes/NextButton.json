@@ -1,0 +1,156 @@
+{
+	"name": "NextButton",
+	"plugin-id": "Sprite",
+	"sid": 798207634275854,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 371,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6775577,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								0.9187951788108897
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 897996966555377,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 371,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9515000,
+						"collisionPoly": {
+							"points": [
+								0.10242587601078167,
+								0.04678362573099415,
+								0.9514824797843666,
+								0.07602339181286549,
+								0.9703504043126685,
+								0.11695906432748537,
+								0.9838274932614556,
+								0.18128654970760233,
+								0.9838274932614556,
+								0.8011695906432749,
+								0.9703504043126685,
+								0.8654970760233918,
+								0.921832884097035,
+								0.935672514619883,
+								0.07277628032345014,
+								0.9064327485380117,
+								0.05390835579514825,
+								0.8654970760233918,
+								0.04043126684636118,
+								0.8011695906432749,
+								0.04043126684636118,
+								0.18128654970760233,
+								0.05390835579514825,
+								0.11695906432748537
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 999741336843593,
+				"name": "Hover",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 371,
+						"height": 171,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2212809,
+						"collisionPoly": {
+							"points": [
+								0.10512129380053908,
+								0.04678362573099415,
+								0.9514824797843666,
+								0.07602339181286549,
+								0.9703504043126685,
+								0.11695906432748537,
+								0.9838274932614556,
+								0.1871345029239766,
+								0.9811320754716981,
+								0.8187134502923976,
+								0.9703504043126685,
+								0.8654970760233918,
+								0.9191374663072777,
+								0.935672514619883,
+								0.04851752021563342,
+								0.935672514619883,
+								0.013477088948787063,
+								0.8947368421052632,
+								0.0431266846361186,
+								0.16374269005847952,
+								0.05390835579514825,
+								0.11695906432748537
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 666156088319095,
+				"name": "Click",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

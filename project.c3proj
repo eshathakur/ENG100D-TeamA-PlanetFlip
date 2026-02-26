@@ -57,7 +57,8 @@
 			"Mouse",
 			"Touch",
 			"Coral",
-			"Fish"
+			"Fish",
+			"Trash"
 		],
 		"subfolders": []
 	},
@@ -546,6 +547,22 @@
 									"name": "oxygen_tank-3.png",
 									"type": "image/png",
 									"sid": 743841608371217,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "king_triton-happy.png",
+									"type": "image/png",
+									"sid": 862993149312973,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "king_triton.png",
+									"type": "image/png",
+									"sid": 734283477423983,
 									"icon-info": {
 										"purpose": "none"
 									}

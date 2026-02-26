@@ -1,5 +1,411 @@
 {
 	"name": "EventLevel1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 341134541782908
+				}
+			],
+			"actions": [
+				{
+					"id": "set-world-gravity",
+					"objectClass": "Player_sprite",
+					"sid": 801743678992043,
+					"behaviorType": "Physics",
+					"parameters": {
+						"gravity": "-5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player_sprite",
+					"sid": 592523081013579,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Player_sprite",
+					"sid": 484982031137127,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Player_sprite",
+					"sid": 465540743808949,
+					"parameters": {
+						"speed": "2"
+					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const SPEED = 100;",
+						"const MARGIN = 80;",
+						"",
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if (!player) return;",
+						"",
+						"const H = runtime.layout.height / 2;",
+						"const x = player.x + 500;",
+						"",
+						"const TOP_Y = 0 + MARGIN;",
+						"const BOT_Y = H - MARGIN;",
+						"",
+						"const minScaleY = 1.0;",
+						"const maxScaleY = 2.5;",
+						"",
+						"const sTop = minScaleY + Math.random() * (maxScaleY - minScaleY);",
+						"const sBot = minScaleY + Math.random() * (maxScaleY - minScaleY);",
+						"",
+						"const top = runtime.objects.Coral.createInstance(0, x, TOP_Y);",
+						"",
+						"if (top) {",
+						"  top.animationSpeed = 0;",
+						"  top.animationFrame = Math.floor(Math.random() * 4);",
+						"",
+						"  top.height = -top.height * sTop;",
+						"",
+						"  const b = top.behaviors.Bullet;",
+						"  b.speed = SPEED;",
+						"}",
+						"",
+						"const bot = runtime.objects.Coral.createInstance(0, x, BOT_Y);",
+						"if (bot) {",
+						"  bot.animationSpeed = 0;",
+						"  bot.animationFrame = Math.floor(Math.random() * 4);",
+						"  ",
+						"  bot.height = bot.height * sBot;",
+						"",
+						"  const b = bot.behaviors.Bullet;",
+						"  b.speed = SPEED;",
+						"}"
+					]
+				}
+			],
+			"sid": 884896111873384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 110712669300771
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const scrollSpeed = 100",
+						"const bg = runtime.objects.Background.getFirstInstance();",
+						"if (bg && bg.x > -715) {",
+						"\tbg.x -= scrollSpeed * runtime.dt;",
+						"} else {",
+						"\truntime.timeScale = 0;",
+						"}",
+						""
+					]
+				}
+			],
+			"sid": 563844446089038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 657818363348743,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 250);",
+						"}"
+					]
+				}
+			],
+			"sid": 459841307105639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 300631578009932
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 250);",
+						"}"
+					]
+				}
+			],
+			"sid": 646759310340099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 792084631165325,
+					"parameters": {
+						"interval-seconds": "random(3.0,4.0)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 708845978973332,
+					"parameters": {
+						"object-to-create": "Fish",
+						"layer": "0",
+						"x": "ViewportRight(0) + 50",
+						"y": "random( Coral.Height/2+10, ViewportBottom(0) - Coral.Height/2 - 10 )",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Fish",
+					"sid": 619002117470772,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Fish",
+					"sid": 392466781374955,
+					"parameters": {
+						"frame-number": "random(4)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Fish",
+					"sid": 805392660941801,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				}
+			],
+			"sid": 373944309189266
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fish",
+					"sid": 276173996674818,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Fish",
+					"sid": 998634062536368
+				}
+			],
+			"sid": 449176336362245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 161626434553208,
+					"parameters": {
+						"interval-seconds": "2.8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const SPEED = 100;",
+						"const MARGIN = 80;",
+						"",
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if (!player) return;",
+						"",
+						"const H = runtime.layout.height / 2;",
+						"const x = player.x + 500;",
+						"",
+						"const TOP_Y = 0 + MARGIN;",
+						"const BOT_Y = H - MARGIN;",
+						"",
+						"const minScaleY = 1.0;",
+						"const maxScaleY = 2.5;",
+						"",
+						"const sTop = minScaleY + Math.random() * (maxScaleY - minScaleY);",
+						"const sBot = minScaleY + Math.random() * (maxScaleY - minScaleY);",
+						"",
+						"const top = runtime.objects.Coral.createInstance(0, x, TOP_Y);",
+						"",
+						"if (top) {",
+						"  top.animationSpeed = 0;",
+						"  top.animationFrame = Math.floor(Math.random() * 4);",
+						"",
+						"  top.height = -top.height * sTop;",
+						"",
+						"  const b = top.behaviors.Bullet;",
+						"  b.speed = SPEED;",
+						"}",
+						"",
+						"const bot = runtime.objects.Coral.createInstance(0, x, BOT_Y);",
+						"if (bot) {",
+						"  bot.animationSpeed = 0;",
+						"  bot.animationFrame = Math.floor(Math.random() * 4);",
+						"  ",
+						"  bot.height = bot.height * sBot;",
+						"",
+						"  const b = bot.behaviors.Bullet;",
+						"  b.speed = SPEED;",
+						"}"
+					]
+				}
+			],
+			"sid": 893238584961485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Trash",
+					"sid": 511352166113569,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Trash",
+					"sid": 483390625821317
+				}
+			],
+			"sid": 221555567636839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 159690642108931,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 183563564901121,
+					"parameters": {
+						"object-to-create": "Trash",
+						"layer": "0",
+						"x": "ViewportRight(0) + 50",
+						"y": "random( Trash.Height/2+50, ViewportBottom(0) - Trash.Height/2 - 50 )",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Trash",
+					"sid": 988356816603748,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Trash",
+					"sid": 550586949432955,
+					"parameters": {
+						"frame-number": "random(9)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Trash",
+					"sid": 117064428142861,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				}
+			],
+			"sid": 406033068386923
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Coral",
+					"sid": 946424840252356,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Coral",
+					"sid": 522940818173687
+				}
+			],
+			"sid": 406338076243852
+		}
+	],
 	"sid": 165858121014550
 }

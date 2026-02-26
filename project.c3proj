@@ -5,10 +5,61 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Background",
+			"Player_sprite",
+			"Mouse",
+			"Touch",
+			"Coral",
+			"Fish",
+			"Trash"
+		],
 		"subfolders": []
 	},
 	"functionsName": "Functions",
@@ -118,7 +169,580 @@
 					}
 				}
 			],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [],
+					"subfolders": [
+						{
+							"items": [],
+							"subfolders": [
+								{
+									"items": [
+										{
+											"name": "small_coral-4.png",
+											"type": "image/png",
+											"sid": 160981693919681,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-1.png",
+											"type": "image/png",
+											"sid": 862715498654104,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-2.png",
+											"type": "image/png",
+											"sid": 816401888535556,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-3.png",
+											"type": "image/png",
+											"sid": 320423083642030,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-7.png",
+											"type": "image/png",
+											"sid": 159956727920281,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-13.png",
+											"type": "image/png",
+											"sid": 535435087949797,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-12.png",
+											"type": "image/png",
+											"sid": 407341660275141,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-9.png",
+											"type": "image/png",
+											"sid": 288615382739501,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-10.png",
+											"type": "image/png",
+											"sid": 857807529170647,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-5.png",
+											"type": "image/png",
+											"sid": 843310547580935,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-8.png",
+											"type": "image/png",
+											"sid": 739020525645953,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-15.png",
+											"type": "image/png",
+											"sid": 285005103024567,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-14.png",
+											"type": "image/png",
+											"sid": 378865400841324,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-6.png",
+											"type": "image/png",
+											"sid": 534458440692127,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-16.png",
+											"type": "image/png",
+											"sid": 291780453707531,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "small_coral-11.png",
+											"type": "image/png",
+											"sid": 303546067004253,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "small healthy"
+								},
+								{
+									"items": [
+										{
+											"name": "large_coral-4.png",
+											"type": "image/png",
+											"sid": 183749931241792,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-3.png",
+											"type": "image/png",
+											"sid": 343255417307671,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-2.png",
+											"type": "image/png",
+											"sid": 471762848255328,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-1.png",
+											"type": "image/png",
+											"sid": 442336592610611,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-15.png",
+											"type": "image/png",
+											"sid": 211746126329286,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-16.png",
+											"type": "image/png",
+											"sid": 230624500106980,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-14.png",
+											"type": "image/png",
+											"sid": 789560026778031,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-5.png",
+											"type": "image/png",
+											"sid": 502400154307474,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-6.png",
+											"type": "image/png",
+											"sid": 560651967387445,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-7.png",
+											"type": "image/png",
+											"sid": 895341171992672,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-8.png",
+											"type": "image/png",
+											"sid": 958570223064169,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-9.png",
+											"type": "image/png",
+											"sid": 287927674308996,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-10.png",
+											"type": "image/png",
+											"sid": 854729237618805,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-12.png",
+											"type": "image/png",
+											"sid": 369404331936118,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-13.png",
+											"type": "image/png",
+											"sid": 684445042632529,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "large_coral-11.png",
+											"type": "image/png",
+											"sid": 428467945943756,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "large healthy"
+								},
+								{
+									"items": [
+										{
+											"name": "medium_coral-2.png",
+											"type": "image/png",
+											"sid": 130899226618902,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "medium_coral-1.png",
+											"type": "image/png",
+											"sid": 233619238891833,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "medium_coral-3.png",
+											"type": "image/png",
+											"sid": 276351190638776,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "medium_coral-4.png",
+											"type": "image/png",
+											"sid": 576515413842129,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "medium healthy"
+								}
+							],
+							"name": "coral"
+						},
+						{
+							"items": [
+								{
+									"name": "oxygen_tank-2.png",
+									"type": "image/png",
+									"sid": 805839164542884,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "diver_sprite_sheet.png",
+									"type": "image/png",
+									"sid": 382181556531758,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "star-1.png",
+									"type": "image/png",
+									"sid": 267157390883045,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "oxygen_tank-1.png",
+									"type": "image/png",
+									"sid": 792613733480101,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "star-2.png",
+									"type": "image/png",
+									"sid": 737853146277947,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "diver-2.png",
+									"type": "image/png",
+									"sid": 451937155392831,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "diver-1.png",
+									"type": "image/png",
+									"sid": 830230997448368,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "oxygen_tank-3.png",
+									"type": "image/png",
+									"sid": 743841608371217,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "king_triton-happy.png",
+									"type": "image/png",
+									"sid": 862993149312973,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "king_triton.png",
+									"type": "image/png",
+									"sid": 734283477423983,
+									"icon-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "misc"
+						},
+						{
+							"items": [],
+							"subfolders": [
+								{
+									"items": [
+										{
+											"name": "turtle_ver.2.png",
+											"type": "image/png",
+											"sid": 250900905525993,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "turtle_ver.1.png",
+											"type": "image/png",
+											"sid": 513605314705579,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "jellyfish_ver.3.png",
+											"type": "image/png",
+											"sid": 515558700189552,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "jellyfish_ver.1.png",
+											"type": "image/png",
+											"sid": 648953675708338,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "seahorse_ver.2.png",
+											"type": "image/png",
+											"sid": 834053299956775,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "seahorse_ver.1.png",
+											"type": "image/png",
+											"sid": 629062967282829,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "jellyfish_ver.2.png",
+											"type": "image/png",
+											"sid": 633973624202695,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "level 2"
+								},
+								{
+									"items": [
+										{
+											"name": "schoolfish.png",
+											"type": "image/png",
+											"sid": 787052301792043,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "seadragon.png",
+											"type": "image/png",
+											"sid": 329429278044141,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "octopus_ver.2.png",
+											"type": "image/png",
+											"sid": 275757309370619,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "mantaray.png",
+											"type": "image/png",
+											"sid": 311685843708109,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "octopus_ver.1.png",
+											"type": "image/png",
+											"sid": 821490608037101,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "level 3"
+								},
+								{
+									"items": [
+										{
+											"name": "regalbluetang.png",
+											"type": "image/png",
+											"sid": 889703185595737,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "moorishidol.png",
+											"type": "image/png",
+											"sid": 461502952045635,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "clownfish.png",
+											"type": "image/png",
+											"sid": 180248489928081,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "bettafish_ver.1.png",
+											"type": "image/png",
+											"sid": 274973720967689,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "tropicalfish.png",
+											"type": "image/png",
+											"sid": 625494413445461,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "bettafish_ver.2.png",
+											"type": "image/png",
+											"sid": 682984425479633,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "level 1"
+								}
+							],
+							"name": "fish"
+						}
+					],
+					"name": "sprites"
+				}
+			]
 		},
 		"general": {
 			"items": [],

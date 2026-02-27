@@ -8,8 +8,8 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Button",
-			"name": "Button",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -26,15 +26,24 @@
 			"name": "Sprite",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
 		"items": [
-			"StartBackground",
-			"textboxReefRescuer",
-			"buttonStart",
-			"buttonLearnMore"
+			"start",
+			"startBackground",
+			"learnMoreButton",
+			"reefRescuerTitle",
+			"Mouse",
+			"Touch"
 		],
 		"subfolders": []
 	},
@@ -150,9 +159,33 @@
 		"general": {
 			"items": [
 				{
-					"name": "StartPageBackground.svg",
+					"name": "startButton.svg",
 					"type": "image/svg+xml",
-					"sid": 750192987484947,
+					"sid": 704462309661679,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "startBackground.svg",
+					"type": "image/svg+xml",
+					"sid": 870643444405127,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "learnMoreButton.svg",
+					"type": "image/svg+xml",
+					"sid": 314938191870457,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "reefRescuerTitle.svg",
+					"type": "image/svg+xml",
+					"sid": 898331980565318,
 					"file-info": {
 						"purpose": "none"
 					}

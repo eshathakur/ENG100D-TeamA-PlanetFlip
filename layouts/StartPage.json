@@ -7,28 +7,28 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "StartBackground",
+					"type": "startBackground",
 					"properties": {
-						"svg-file": 750192987484947,
+						"svg-file": 870643444405127,
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 980769,
-					"sid": 354666618049730,
+					"uid": 716174,
+					"sid": 389213260588245,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 354666618049730,
+						"sid": 389213260588245,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -2,
-						"y": 6,
-						"width": 490,
-						"height": 846,
+						"x": 433,
+						"y": 8,
+						"width": 405.25,
+						"height": 712,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -42,30 +42,33 @@
 					}
 				},
 				{
-					"type": "textboxReefRescuer",
+					"type": "start",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 520110,
-					"sid": 559435225388728,
+					"uid": 683483,
+					"sid": 573900380266132,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 559435225388728,
+						"sid": 573900380266132,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 242,
-						"y": 297,
-						"width": 287,
-						"height": 175,
+						"x": 632,
+						"y": 376,
+						"width": 172,
+						"height": 63,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -79,34 +82,31 @@
 					}
 				},
 				{
-					"type": "buttonStart",
+					"type": "learnMoreButton",
 					"properties": {
-						"type": "button",
-						"text": "Start",
-						"tooltip": "",
+						"svg-file": 314938191870457,
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
+						"origin": "top-left"
 					},
-					"uid": 327054,
-					"sid": 558918598968405,
+					"uid": 507288,
+					"sid": 260607667757552,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 558918598968405,
+						"sid": 260607667757552,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 157,
-						"y": 441,
-						"width": 161,
-						"height": 56,
+						"x": 546,
+						"y": 433,
+						"width": 178,
+						"height": 54,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -114,38 +114,34 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{
-					"type": "buttonLearnMore",
+					"type": "reefRescuerTitle",
 					"properties": {
-						"type": "button",
-						"text": "Learn More",
-						"tooltip": "",
+						"svg-file": 898331980565318,
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
+						"origin": "top-left"
 					},
-					"uid": 322420,
-					"sid": 985408193246310,
+					"uid": 420056,
+					"sid": 273394622344676,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 985408193246310,
+						"sid": 273394622344676,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 157,
-						"y": 505,
-						"width": 161,
-						"height": 55,
+						"x": 478,
+						"y": 110,
+						"width": 306.99999999999994,
+						"height": 220.51546391752572,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -153,7 +149,9 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],
@@ -194,8 +192,8 @@
 	"sid": 504488061505794,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 1280,
+	"height": 720,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

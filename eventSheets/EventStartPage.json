@@ -5,22 +5,204 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "buttonStart",
-					"sid": 176502966037570
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 687692182771252
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 156293110917028,
+					"id": "set-instvar-value",
+					"objectClass": "start",
+					"sid": 476644015181252,
 					"parameters": {
-						"layout": "\"Context1\""
+						"instance-variable": "baseW",
+						"value": "start.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "start",
+					"sid": 614419604054207,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "start.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "learnMoreButton",
+					"sid": 792090189091709,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "learnMoreButton.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "learnMoreButton",
+					"sid": 371189496081959,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "learnMoreButton.Height"
 					}
 				}
 			],
-			"sid": 373785159514641
+			"sid": 739518844522516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 100773717133431,
+					"parameters": {
+						"object": "start",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "start",
+					"sid": 368712580826429,
+					"parameters": {
+						"width": "start.baseW * 0.9",
+						"height": "start.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 498034355462076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 329066972998961,
+					"parameters": {
+						"object": "learnMoreButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "learnMoreButton",
+					"sid": 363812432478200,
+					"parameters": {
+						"width": "learnMoreButton.baseW * 0.9",
+						"height": "learnMoreButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 265709100640572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 408083213577556,
+					"parameters": {
+						"object": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "start",
+					"sid": 382640382949123,
+					"parameters": {
+						"width": "start.baseW * 0.9",
+						"height": "start.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 300874694278373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 573353947127935,
+					"parameters": {
+						"object": "learnMoreButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "learnMoreButton",
+					"sid": 303472648207154,
+					"parameters": {
+						"width": "learnMoreButton.baseW * 0.9",
+						"height": "learnMoreButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 186410894199513
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 728941359899235,
+					"parameters": {
+						"object": "start",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "start",
+					"sid": 876599126131063,
+					"parameters": {
+						"width": "start.baseW",
+						"height": "start.baseH"
+					}
+				}
+			],
+			"sid": 852643300035047
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 391385182224730,
+					"parameters": {
+						"object": "learnMoreButton",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "learnMoreButton",
+					"sid": 493246454670918,
+					"parameters": {
+						"width": "learnMoreButton.baseW",
+						"height": "learnMoreButton.baseH"
+					}
+				}
+			],
+			"sid": 302652456794515
 		}
 	],
 	"sid": 656075745653536

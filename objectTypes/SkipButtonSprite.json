@@ -1,0 +1,60 @@
+{
+	"name": "SkipButtonSprite",
+	"plugin-id": "Sprite",
+	"sid": 387962446433880,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 97,
+						"height": 60,
+						"originX": 0.509090909090909,
+						"originY": 1.1176470588235294,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1071045,
+						"collisionPoly": {
+							"points": [
+								0.10909090909090909,
+								0.029411764705882353,
+								0.9090909090909091,
+								0.058823529411764705,
+								0.9818181818181818,
+								0.17647058823529413,
+								0.9818181818181818,
+								0.8235294117647058,
+								0.8909090909090909,
+								0.9705882352941176,
+								0.09090909090909091,
+								0.9411764705882353,
+								0.01818181818181818,
+								0.8235294117647058,
+								0.01818181818181818,
+								0.17647058823529413
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 525535459766662,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -60,7 +60,8 @@
 			"Level1",
 			"Context1",
 			"Context2",
-			"Context3"
+			"Context3",
+			"LearnMorePage"
 		],
 		"subfolders": []
 	},
@@ -70,7 +71,8 @@
 			"EventLevel1",
 			"EventContext1",
 			"EventContext2",
-			"Context3"
+			"Context3",
+			"EventLearnMorePage"
 		],
 		"subfolders": []
 	},

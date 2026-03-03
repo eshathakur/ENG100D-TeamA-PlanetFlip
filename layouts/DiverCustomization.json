@@ -1,12 +1,12 @@
 {
-	"name": "LearnMorePage",
+	"name": "DiverCustomization",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 587972877250834,
+			"sid": 486721172310368,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -40,7 +40,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 811712946840445,
+	"sid": 936494182717765,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,
@@ -49,5 +49,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "EventLearnMorePage"
+	"eventSheet": "EventDiverCustomization"
 }

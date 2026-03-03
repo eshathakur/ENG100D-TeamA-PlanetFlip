@@ -108,7 +108,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 408083213577556,
+					"sid": 229701656470104,
 					"parameters": {
 						"object": "start"
 					}
@@ -131,9 +131,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 418000769828300
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "start",
+					"sid": 104019875359366,
+					"parameters": {
+						"width": "start.baseW",
+						"height": "start.baseH"
+					}
+				}
+			],
+			"sid": 568969836224912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 573353947127935,
+					"sid": 519850518246860,
 					"parameters": {
 						"object": "learnMoreButton"
 					}
@@ -151,6 +173,28 @@
 				}
 			],
 			"sid": 186410894199513
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 827159224746703
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "learnMoreButton",
+					"sid": 658829305584214,
+					"parameters": {
+						"width": "learnMoreButton.baseW",
+						"height": "learnMoreButton.baseH"
+					}
+				}
+			],
+			"sid": 721506666980204
 		},
 		{
 			"eventType": "block",

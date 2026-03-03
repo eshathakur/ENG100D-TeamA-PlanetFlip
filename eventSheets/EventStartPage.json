@@ -13,38 +13,20 @@
 			"actions": [
 				{
 					"id": "set-instvar-value",
-					"objectClass": "start",
-					"sid": 476644015181252,
-					"parameters": {
-						"instance-variable": "baseW",
-						"value": "start.Width"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "start",
-					"sid": 614419604054207,
-					"parameters": {
-						"instance-variable": "baseH",
-						"value": "start.Height"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "learnMoreButton",
+					"objectClass": "helpTodayButton",
 					"sid": 792090189091709,
 					"parameters": {
 						"instance-variable": "baseW",
-						"value": "learnMoreButton.Width"
+						"value": "helpTodayButton.Width"
 					}
 				},
 				{
 					"id": "set-instvar-value",
-					"objectClass": "learnMoreButton",
+					"objectClass": "helpTodayButton",
 					"sid": 371189496081959,
 					"parameters": {
 						"instance-variable": "baseH",
-						"value": "learnMoreButton.Height"
+						"value": "helpTodayButton.Height"
 					}
 				}
 			],
@@ -56,9 +38,9 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-					"sid": 100773717133431,
+					"sid": 658735006555484,
 					"parameters": {
-						"object": "start",
+						"object": "startButton",
 						"type": "start"
 					}
 				}
@@ -66,11 +48,11 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "start",
-					"sid": 368712580826429,
+					"objectClass": "startButton",
+					"sid": 193928470918215,
 					"parameters": {
-						"width": "start.baseW * 0.9",
-						"height": "start.baseH * 0.9"
+						"width": "startButton.baseW * 0.9",
+						"height": "startButton.baseH * 0.9"
 					}
 				}
 			],
@@ -84,7 +66,7 @@
 					"objectClass": "Touch",
 					"sid": 329066972998961,
 					"parameters": {
-						"object": "learnMoreButton",
+						"object": "helpTodayButton",
 						"type": "start"
 					}
 				}
@@ -92,11 +74,11 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "learnMoreButton",
+					"objectClass": "helpTodayButton",
 					"sid": 363812432478200,
 					"parameters": {
-						"width": "learnMoreButton.baseW * 0.9",
-						"height": "learnMoreButton.baseH * 0.9"
+						"width": "helpTodayButton.baseW * 0.9",
+						"height": "helpTodayButton.baseH * 0.9"
 					}
 				}
 			],
@@ -108,20 +90,20 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 229701656470104,
+					"sid": 321397113487607,
 					"parameters": {
-						"object": "start"
+						"object": "startButton"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "start",
-					"sid": 382640382949123,
+					"objectClass": "startButton",
+					"sid": 627755775728911,
 					"parameters": {
-						"width": "start.baseW * 0.9",
-						"height": "start.baseH * 0.9"
+						"width": "startButton.baseW * 0.9",
+						"height": "startButton.baseH * 0.9"
 					}
 				}
 			],
@@ -139,11 +121,11 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "start",
-					"sid": 104019875359366,
+					"objectClass": "startButton",
+					"sid": 299285239511601,
 					"parameters": {
-						"width": "start.baseW",
-						"height": "start.baseH"
+						"width": "startButton.baseW ",
+						"height": "startButton.baseH"
 					}
 				}
 			],
@@ -157,18 +139,18 @@
 					"objectClass": "Mouse",
 					"sid": 519850518246860,
 					"parameters": {
-						"object": "learnMoreButton"
+						"object": "helpTodayButton"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "learnMoreButton",
+					"objectClass": "helpTodayButton",
 					"sid": 303472648207154,
 					"parameters": {
-						"width": "learnMoreButton.baseW * 0.9",
-						"height": "learnMoreButton.baseH * 0.9"
+						"width": "helpTodayButton.baseW * 0.9",
+						"height": "helpTodayButton.baseH * 0.9"
 					}
 				}
 			],
@@ -186,11 +168,11 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "learnMoreButton",
+					"objectClass": "helpTodayButton",
 					"sid": 658829305584214,
 					"parameters": {
-						"width": "learnMoreButton.baseW",
-						"height": "learnMoreButton.baseH"
+						"width": "helpTodayButton.baseW",
+						"height": "helpTodayButton.baseH"
 					}
 				}
 			],
@@ -202,9 +184,9 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-					"sid": 728941359899235,
+					"sid": 117262316497940,
 					"parameters": {
-						"object": "start",
+						"object": "startButton",
 						"type": "end"
 					}
 				}
@@ -212,11 +194,11 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "start",
-					"sid": 876599126131063,
+					"objectClass": "startButton",
+					"sid": 216225316389704,
 					"parameters": {
-						"width": "start.baseW",
-						"height": "start.baseH"
+						"width": "startButton.baseW ",
+						"height": "startButton.baseH"
 					}
 				}
 			],
@@ -230,7 +212,7 @@
 					"objectClass": "Touch",
 					"sid": 391385182224730,
 					"parameters": {
-						"object": "learnMoreButton",
+						"object": "helpTodayButton",
 						"type": "end"
 					}
 				}
@@ -238,11 +220,11 @@
 			"actions": [
 				{
 					"id": "set-size",
-					"objectClass": "learnMoreButton",
+					"objectClass": "helpTodayButton",
 					"sid": 493246454670918,
 					"parameters": {
-						"width": "learnMoreButton.baseW",
-						"height": "learnMoreButton.baseH"
+						"width": "helpTodayButton.baseW",
+						"height": "helpTodayButton.baseH"
 					}
 				}
 			],
@@ -254,9 +236,9 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 490292293678016,
+					"sid": 886019992713013,
 					"parameters": {
-						"object": "start"
+						"object": "startButton"
 					}
 				}
 			],
@@ -278,11 +260,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 800813273730378,
+					"sid": 636775656080139,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "start"
+						"object-clicked": "startButton"
 					}
 				}
 			],
@@ -306,7 +288,7 @@
 					"objectClass": "Touch",
 					"sid": 721526213398661,
 					"parameters": {
-						"object": "learnMoreButton"
+						"object": "helpTodayButton"
 					}
 				}
 			],
@@ -332,7 +314,7 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "learnMoreButton"
+						"object-clicked": "helpTodayButton"
 					}
 				}
 			],

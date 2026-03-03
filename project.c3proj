@@ -22,13 +22,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -38,12 +31,12 @@
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
 		"items": [
-			"start",
-			"startBackground",
-			"learnMoreButton",
+			"helpTodayButton",
 			"reefRescuerTitle",
 			"Mouse",
-			"Touch"
+			"Touch",
+			"startBackground",
+			"startButton"
 		],
 		"subfolders": []
 	},
@@ -163,33 +156,33 @@
 		"general": {
 			"items": [
 				{
-					"name": "startButton.svg",
-					"type": "image/svg+xml",
-					"sid": 704462309661679,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
 					"name": "startBackground.svg",
 					"type": "image/svg+xml",
-					"sid": 870643444405127,
+					"sid": 323826441136793,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "learnMoreButton.svg",
+					"name": "startButton.svg",
 					"type": "image/svg+xml",
-					"sid": 314938191870457,
+					"sid": 991044323006959,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "reefRescuerTitle.svg",
+					"name": "helpTodayButton.svg",
 					"type": "image/svg+xml",
-					"sid": 898331980565318,
+					"sid": 881187414098017,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "title.svg",
+					"type": "image/svg+xml",
+					"sid": 200816701271382,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -269,7 +262,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
-	"firstLayout": null
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"firstLayout": "StartPage"
 }

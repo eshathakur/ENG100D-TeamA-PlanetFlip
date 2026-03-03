@@ -9,26 +9,26 @@
 				{
 					"type": "startBackground",
 					"properties": {
-						"svg-file": 870643444405127,
+						"svg-file": 323826441136793,
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 716174,
-					"sid": 389213260588245,
+					"uid": 535036,
+					"sid": 669668815281706,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 389213260588245,
+						"sid": 669668815281706,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 4,
-						"y": 5,
-						"width": 405.25,
-						"height": 712,
+						"x": 3,
+						"y": -3,
+						"width": 1277,
+						"height": 720,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -42,35 +42,30 @@
 					}
 				},
 				{
-					"type": "start",
+					"type": "reefRescuerTitle",
 					"properties": {
+						"svg-file": 200816701271382,
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
-					"uid": 683483,
-					"sid": 573900380266132,
+					"uid": 420056,
+					"sid": 273394622344676,
 					"tags": "",
-					"instanceVariables": {
-						"baseW": 0,
-						"baseH": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 573900380266132,
+						"sid": 273394622344676,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 203,
-						"y": 381,
-						"width": 172,
-						"height": 63,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 408,
+						"y": 127,
+						"width": 467.99999999999994,
+						"height": 280.5154639175257,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -82,9 +77,47 @@
 					}
 				},
 				{
-					"type": "learnMoreButton",
+					"type": "startButton",
 					"properties": {
-						"svg-file": 314938191870457,
+						"svg-file": 991044323006959,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 604619,
+					"sid": 179570447688328,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 179570447688328,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 680,
+						"y": 520,
+						"width": 316,
+						"height": 78.555439976083,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "helpTodayButton",
+					"properties": {
+						"svg-file": 881187414098017,
 						"initially-visible": true,
 						"origin": "top-left"
 					},
@@ -103,45 +136,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 116,
-						"y": 433,
-						"width": 178,
-						"height": 54,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "reefRescuerTitle",
-					"properties": {
-						"svg-file": 898331980565318,
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 420056,
-					"sid": 273394622344676,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 273394622344676,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 47,
-						"y": 140,
-						"width": 306.99999999999994,
-						"height": 220.51546391752572,
+						"x": 307,
+						"y": 520,
+						"width": 313,
+						"height": 105,
 						"originX": 0,
 						"originY": 0,
 						"color": [

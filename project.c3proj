@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -58,7 +65,11 @@
 			"Touch",
 			"Coral",
 			"Fish",
-			"Trash"
+			"Trash",
+			"Progress_bar_container",
+			"ScoreText",
+			"Progress_bar_fill",
+			"bar_fill_left_end"
 		],
 		"subfolders": []
 	},
@@ -566,9 +577,56 @@
 									"icon-info": {
 										"purpose": "none"
 									}
+								},
+								{
+									"name": "golden_book.png",
+									"type": "image/png",
+									"sid": 296936802406747,
+									"icon-info": {
+										"purpose": "none"
+									}
 								}
 							],
-							"subfolders": [],
+							"subfolders": [
+								{
+									"items": [
+										{
+											"name": "progress_bar_box_fill.png",
+											"type": "image/png",
+											"sid": 647824158993727,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_curve.png",
+											"type": "image/png",
+											"sid": 381932577349074,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_box.png",
+											"type": "image/png",
+											"sid": 272276335163211,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_curve_fill.png",
+											"type": "image/png",
+											"sid": 749386875849301,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "progress bar"
+								}
+							],
 							"name": "misc"
 						},
 						{

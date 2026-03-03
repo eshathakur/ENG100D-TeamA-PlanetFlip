@@ -28,6 +28,24 @@
 						"instance-variable": "baseH",
 						"value": "helpTodayButton.Height"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "startButton",
+					"sid": 980641046253515,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "startButton.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "startButton",
+					"sid": 566246989289964,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "startButton.baseH"
+					}
 				}
 			],
 			"sid": 739518844522516
@@ -329,6 +347,12 @@
 				}
 			],
 			"sid": 263255558861429
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 405538551064067
 		}
 	],
 	"sid": 656075745653536

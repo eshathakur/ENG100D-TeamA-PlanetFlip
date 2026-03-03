@@ -2,170 +2,90 @@
 	"name": "EventContext1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "StoryTracker",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Keeps track of where we are in the story, increments when the player presses the \"next\" button",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 940502486977106
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-touching-object",
-					"objectClass": "Touch",
-					"sid": 837770826871894,
-					"parameters": {
-						"object": "NextButton"
-					}
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 725595984544775
 				}
 			],
 			"actions": [
 				{
-					"id": "set-size",
-					"objectClass": "NextButton",
-					"sid": 662455129187963,
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 109414535335434,
 					"parameters": {
-						"width": "144",
-						"height": "63"
+						"text": "\"Welcome young adventurer! The Great Barrier Reef in Australia needs YOU to save it! Come join me, King Triton, on this adventure to save our oceans!\"",
+						"duration": "2.47"
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 797107170842842,
+					"id": "start-timer",
+					"objectClass": "nextButton",
+					"sid": 681296204553831,
+					"behaviorType": "Timer",
 					"parameters": {
-						"variable": "StoryTracker",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 380276435362390
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 834897052774448
-				},
-				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 527893827558101,
-					"parameters": {
-						"object": "NextButton"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "NextButton",
-					"sid": 123806870132651,
-					"parameters": {
-						"animation": "\"Hover\"",
-						"from": "current-frame"
+						"duration": "5",
+						"type": "once",
+						"tag": "\"appear\""
 					}
 				}
 			],
 			"sid": 701763233898789
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "else",
-					"objectClass": "System",
-					"sid": 805876018198454
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "NextButton",
-					"sid": 823466178580830,
-					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "current-frame"
-					}
-				},
-				{
-					"id": "set-size",
-					"objectClass": "NextButton",
-					"sid": 897355434569241,
-					"parameters": {
-						"width": "160",
-						"height": "70"
-					}
-				}
-			],
-			"sid": 914067191424574
+			"eventType": "comment",
+			"text": "To get the duration for Typewriter text do (number of characters in message)/60, do not count the quotations in the number of characters, round to 2 decimal places"
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "cursor-is-over-object",
-					"objectClass": "Mouse",
-					"sid": 296646647093763,
+					"id": "on-timer",
+					"objectClass": "nextButton",
+					"sid": 398150473942805,
+					"behaviorType": "Timer",
 					"parameters": {
-						"object": "NextButton"
-					},
-					"isInverted": true
+						"tag": "\"appear\""
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "NextButton",
-					"sid": 764927287966591,
+					"id": "set-visible",
+					"objectClass": "nextButton",
+					"sid": 390199721382678,
 					"parameters": {
-						"animation": "\"Idle\"",
-						"from": "beginning"
+						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 582076202384439
+			"sid": 555166418729218
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 367722562199187,
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 705903650420454,
 					"parameters": {
-						"variable": "StoryTracker",
-						"comparison": 0,
-						"value": "1"
+						"object": "nextButton"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "SToryText",
-					"sid": 676471620059863,
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 991754008889193,
 					"parameters": {
-						"text": "\"Come join me, King Triton, on this adventure to save our oceans!\""
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "KingTriton",
-					"sid": 708710186551959,
-					"parameters": {
-						"animation": "\"Happy\"",
-						"from": "beginning"
+						"layout": "Context2"
 					}
 				}
 			],
-			"sid": 268670785446582
+			"sid": 138086322039516
 		}
 	],
 	"sid": 694674196649892

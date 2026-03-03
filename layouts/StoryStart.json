@@ -27,10 +27,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 240,
-						"y": 427,
-						"width": 480,
-						"height": 854,
+						"x": 640,
+						"y": 360,
+						"width": 1280,
+						"height": 720,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -79,80 +79,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Ticket",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 409480,
-					"sid": 144985292877919,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 144985292877919,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 146,
-						"y": 463,
-						"width": 45,
-						"height": 120,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Passport",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 716282,
-					"sid": 634836836510232,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 634836836510232,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 80,
-						"y": 474,
-						"width": 92.888889,
-						"height": 132.45678,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "KingTriton",
 					"properties": {
 						"initially-visible": true,
@@ -173,10 +99,47 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 341,
-						"y": 414,
-						"width": 177.777778,
-						"height": 178.00938,
+						"x": 1025,
+						"y": 455,
+						"width": 159,
+						"height": 159,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "passportTicket",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 637784,
+					"sid": 679098118896047,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 679098118896047,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 240,
+						"y": 500,
+						"width": 176,
+						"height": 187,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -210,10 +173,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 240,
-						"y": 660,
-						"width": 402.6666667,
-						"height": 327.0922355,
+						"x": 640,
+						"y": 600,
+						"width": 961,
+						"height": 134,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -229,10 +192,10 @@
 				{
 					"type": "SToryText",
 					"properties": {
-						"text": "Welcome young adventurer! The Great Barrier Reef in Australia needs YOU to save it!",
+						"text": "",
 						"enable-bbcode": true,
 						"font": "Handjet-Regular",
-						"size": 28,
+						"size": 24,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -242,7 +205,7 @@
 							0,
 							1
 						],
-						"horizontal-alignment": "center",
+						"horizontal-alignment": "left",
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
@@ -263,10 +226,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 57,
-						"y": 518,
-						"width": 368.94359497137145,
-						"height": 221.40748581988123,
+						"x": 175,
+						"y": 540,
+						"width": 932.9435949713715,
+						"height": 106.40748581988123,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -280,30 +243,48 @@
 					}
 				},
 				{
-					"type": "NextButton",
+					"type": "nextButton",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Idle",
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 526612,
-					"sid": 507572138836702,
+					"uid": 469839,
+					"sid": 246696219828732,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "opacity",
+								"wave": "sine",
+								"period": 2,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Timer": {
+							"properties": {}
+						}
+					},
 					"instanceFolderItem": {
-						"sid": 507572138836702,
+						"sid": 246696219828732,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 240,
-						"y": 770,
-						"width": 160,
-						"height": 70,
+						"x": 1049.0187582756296,
+						"y": 639.384010360629,
+						"width": 103,
+						"height": 30,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -354,8 +335,8 @@
 	"sid": 935689099977373,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 960,
-	"height": 1708,
+	"width": 1280,
+	"height": 720,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

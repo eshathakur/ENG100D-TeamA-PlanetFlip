@@ -33,6 +33,20 @@
 			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
@@ -43,12 +57,10 @@
 			"Textbox",
 			"KingTriton",
 			"SToryText",
-			"Letter",
 			"Touch",
-			"NextButton",
-			"Passport",
-			"Ticket",
-			"Mouse"
+			"Mouse",
+			"passportTicket",
+			"nextButton"
 		],
 		"subfolders": []
 	},
@@ -346,12 +358,12 @@
 			1,
 			0
 		],
-		"orientations": "portrait",
+		"orientations": "landscape",
 		"webgpu": "auto",
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
@@ -366,7 +378,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
 	"firstLayout": null
 }

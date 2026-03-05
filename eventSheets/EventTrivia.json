@@ -1,5 +1,5 @@
 {
-	"name": "Trivia",
+	"name": "EventTrivia",
 	"events": [
 		{
 			"eventType": "variable",

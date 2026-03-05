@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -17,6 +24,13 @@
 			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -40,13 +54,6 @@
 			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "destroy",
-			"name": "Destroy outside layout",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
@@ -58,7 +65,18 @@
 			"Touch",
 			"Coral",
 			"Fish",
-			"Trash"
+			"Trash",
+			"Progress_bar_container",
+			"ScoreText",
+			"Progress_bar_fill",
+			"Fade",
+			"Pause_BG",
+			"Resume_button",
+			"Restart_button",
+			"Help_button",
+			"Home_button",
+			"Pause_button",
+			"Keyboard"
 		],
 		"subfolders": []
 	},
@@ -566,9 +584,56 @@
 									"icon-info": {
 										"purpose": "none"
 									}
+								},
+								{
+									"name": "golden_book.png",
+									"type": "image/png",
+									"sid": 296936802406747,
+									"icon-info": {
+										"purpose": "none"
+									}
 								}
 							],
-							"subfolders": [],
+							"subfolders": [
+								{
+									"items": [
+										{
+											"name": "progress_bar_box_fill.png",
+											"type": "image/png",
+											"sid": 647824158993727,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_curve.png",
+											"type": "image/png",
+											"sid": 381932577349074,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_box.png",
+											"type": "image/png",
+											"sid": 272276335163211,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_curve_fill.png",
+											"type": "image/png",
+											"sid": 749386875849301,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "progress bar"
+								}
+							],
 							"name": "misc"
 						},
 						{
@@ -820,7 +885,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1600,
+	"viewportHeight": 900,
 	"firstLayout": null
 }

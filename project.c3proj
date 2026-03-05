@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -47,13 +54,6 @@
 			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "destroy",
-			"name": "Destroy outside layout",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
@@ -69,7 +69,14 @@
 			"Progress_bar_container",
 			"ScoreText",
 			"Progress_bar_fill",
-			"bar_fill_left_end"
+			"Fade",
+			"Pause_BG",
+			"Resume_button",
+			"Restart_button",
+			"Help_button",
+			"Home_button",
+			"Pause_button",
+			"Keyboard"
 		],
 		"subfolders": []
 	},
@@ -878,7 +885,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1600,
+	"viewportHeight": 900,
 	"firstLayout": null
 }

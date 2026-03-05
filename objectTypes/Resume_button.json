@@ -1,0 +1,60 @@
+{
+	"name": "Resume_button",
+	"plugin-id": "Sprite",
+	"sid": 945892381318118,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 257,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9067255,
+						"collisionPoly": {
+							"points": [
+								0.11213300318358684,
+								0.044117647058823525,
+								0.9059073222497347,
+								0.07261029411764705,
+								0.9780686239830209,
+								0.18658088235294118,
+								0.9780686239830209,
+								0.8134191176470588,
+								0.8878669968164131,
+								0.9558823529411765,
+								0.09409267775026531,
+								0.9273897058823529,
+								0.02193137601697913,
+								0.8134191176470588,
+								0.02193137601697913,
+								0.18658088235294118
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 300595891113064,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

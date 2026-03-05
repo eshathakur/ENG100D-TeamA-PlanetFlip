@@ -74,6 +74,22 @@
 						"instance-variable": "baseW",
 						"value": "confirmButton.Width"
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "blueColorBox",
+					"sid": 576832300536599,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ColorBoxes",
+					"sid": 401589715500749,
+					"parameters": {
+						"frame-number": "0"
+					}
 				}
 			],
 			"sid": 976319995636775,
@@ -85,6 +101,7 @@
 							"id": "pick-all",
 							"objectClass": "System",
 							"sid": 584912640447442,
+							"disabled": true,
 							"parameters": {
 								"object": "ColorBoxes"
 							}
@@ -109,6 +126,7 @@
 							"id": "pick-by-comparison",
 							"objectClass": "System",
 							"sid": 704514247793800,
+							"disabled": true,
 							"parameters": {
 								"object": "ColorBoxes",
 								"expression": "ColorBoxes.colorName",

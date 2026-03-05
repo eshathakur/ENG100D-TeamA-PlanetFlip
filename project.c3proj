@@ -49,8 +49,7 @@
 			"reefRescuerTitle",
 			"Mouse",
 			"Touch",
-			"startBackground",
-			"DC_Background",
+			"Background",
 			"Diver",
 			"swatchBox",
 			"confirmButton",
@@ -63,7 +62,10 @@
 			"purpleColorBox",
 			"greenColorBox",
 			"startButton",
-			"title"
+			"title",
+			"helpTodayTitle",
+			"backToGameButton",
+			"helpTodayInfoTemp"
 		],
 		"subfolders": []
 	},
@@ -83,8 +85,8 @@
 			"Context1",
 			"Context2",
 			"Context3",
-			"LearnMorePage",
-			"DiverCustomization"
+			"DiverCustomization",
+			"HelpTodayPage"
 		],
 		"subfolders": []
 	},
@@ -95,8 +97,8 @@
 			"EventContext1",
 			"EventContext2",
 			"Context3",
-			"EventLearnMorePage",
-			"EventDiverCustomization"
+			"EventDiverCustomization",
+			"EventHelpTodayPage"
 		],
 		"subfolders": []
 	},
@@ -239,6 +241,22 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "backToGameButton.svg",
+					"type": "image/svg+xml",
+					"sid": 217223131960261,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "helpTodayInfoTemp.svg",
+					"type": "image/svg+xml",
+					"sid": 755355936729040,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -300,7 +318,7 @@
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",

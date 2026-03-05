@@ -7,28 +7,28 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "DC_Background",
+					"type": "Background",
 					"properties": {
 						"svg-file": 323826441136793,
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 788400,
-					"sid": 672662565142982,
+					"uid": 973172,
+					"sid": 766031635735092,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 672662565142982,
+						"sid": 766031635735092,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1,
+						"x": 3,
 						"y": 2,
-						"width": 1281,
-						"height": 719.5094040843524,
+						"width": 1277,
+						"height": 720,
 						"originX": 0,
 						"originY": 0,
 						"color": [

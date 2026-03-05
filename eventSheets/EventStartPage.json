@@ -28,6 +28,24 @@
 						"instance-variable": "baseH",
 						"value": "helpTodayButton.Height"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "startButton",
+					"sid": 624283269922044,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "startButton.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "startButton",
+					"sid": 634148785910755,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "startButton.Height"
+					}
 				}
 			],
 			"sid": 739518844522516
@@ -45,7 +63,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 523700783598565,
+					"parameters": {
+						"width": "startButton.baseW * 0.9",
+						"height": "startButton.baseH * 0.9"
+					}
+				}
+			],
 			"sid": 498034355462076
 		},
 		{
@@ -86,7 +114,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 327610092127674,
+					"parameters": {
+						"width": "startButton.baseW * 0.9",
+						"height": "startButton.baseH* 0.9"
+					}
+				}
+			],
 			"sid": 300874694278373
 		},
 		{
@@ -98,7 +136,17 @@
 					"sid": 418000769828300
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 746270039805928,
+					"parameters": {
+						"width": "startButton.baseW",
+						"height": "startButton.baseH"
+					}
+				}
+			],
 			"sid": 568969836224912
 		},
 		{
@@ -161,7 +209,17 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 522748046517095,
+					"parameters": {
+						"width": "startButton.baseW",
+						"height": "startButton.baseH"
+					}
+				}
+			],
 			"sid": 852643300035047
 		},
 		{
@@ -256,9 +314,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 172374894395445,
+					"sid": 585729432629157,
 					"parameters": {
-						"layout": "LearnMorePage"
+						"layout": "HelpTodayPage"
 					}
 				}
 			],
@@ -282,9 +340,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 908343274209770,
+					"sid": 128732238021309,
 					"parameters": {
-						"layout": "LearnMorePage"
+						"layout": "HelpTodayPage"
 					}
 				}
 			],

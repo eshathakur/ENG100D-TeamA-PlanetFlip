@@ -1,0 +1,10 @@
+{
+	"name": "Question",
+	"plugin-id": "Text",
+	"sid": 112435136537970,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

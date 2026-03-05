@@ -8,6 +8,27 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -22,6 +43,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -31,6 +59,13 @@
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -58,7 +93,19 @@
 			"Touch",
 			"Coral",
 			"Fish",
-			"Trash"
+			"Trash",
+			"EndScreenBG",
+			"TriviaBox",
+			"BlueTang",
+			"Trivia",
+			"TriviaCounter",
+			"Question",
+			"AJAX",
+			"JSON",
+			"AnswerBox",
+			"AnswerText",
+			"Keyboard",
+			"points"
 		],
 		"subfolders": []
 	},
@@ -75,7 +122,8 @@
 			"Level1",
 			"Context1",
 			"Context2",
-			"Context3"
+			"Context3",
+			"Trivia"
 		],
 		"subfolders": []
 	},
@@ -85,7 +133,8 @@
 			"EventLevel1",
 			"EventContext1",
 			"EventContext2",
-			"Context3"
+			"Context3",
+			"Trivia"
 		],
 		"subfolders": []
 	},
@@ -107,7 +156,136 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Handjet-Black.ttf",
+					"type": "application/font-sfnt",
+					"sid": 727867719281592,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 395969251956378,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-ExtraBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 325248978484325,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-ExtraLight.ttf",
+					"type": "application/font-sfnt",
+					"sid": 174489453556729,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Light.ttf",
+					"type": "application/font-sfnt",
+					"sid": 811079582811897,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 606921369772272,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 611753874080134,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-SemiBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 253065975704078,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Thin.ttf",
+					"type": "application/font-sfnt",
+					"sid": 643309232067870,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-VariableFont_ELGR,ELSH,wght.ttf",
+					"type": "application/font-sfnt",
+					"sid": 957191220094393,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 523458929066120,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 336985723955781,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-SemiBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 259103889035500,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 223308336741469,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-VariableFont_wght.ttf",
+					"type": "application/font-sfnt",
+					"sid": 743268316076442,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DotGothic16-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 999803303117275,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
@@ -745,7 +923,16 @@
 			]
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "quiz_data.json",
+					"type": "application/json",
+					"sid": 257700072275565,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},
@@ -805,7 +992,7 @@
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
@@ -820,7 +1007,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
 	"firstLayout": null
 }

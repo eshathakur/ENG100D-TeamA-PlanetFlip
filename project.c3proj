@@ -157,7 +157,9 @@
 			"Textbox",
 			"passportTicket",
 			"SToryText",
-			"nextButton"
+			"nextButton",
+			"OceanBackground",
+			"NextButtonSprite"
 		],
 		"subfolders": []
 	},
@@ -173,7 +175,7 @@
 			"StartPage",
 			"Level1",
 			"StoryStart",
-			"Context2",
+			"Tutorial",
 			"Context3",
 			"Trivia",
 			"LevelEnd",
@@ -187,7 +189,7 @@
 			"EventStartPage",
 			"EventLevel1",
 			"EventStoryStart",
-			"EventContext2",
+			"EventTutorial",
 			"Context3",
 			"EventTrivia",
 			"EventLevelEnd",

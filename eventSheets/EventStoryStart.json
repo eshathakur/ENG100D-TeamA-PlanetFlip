@@ -79,9 +79,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 250846944310054,
+					"sid": 758156859267799,
 					"parameters": {
-						"layout": "Context2"
+						"layout": "DiverCustomization"
 					}
 				}
 			],

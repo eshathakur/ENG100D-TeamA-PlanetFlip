@@ -22,6 +22,16 @@
 			"sid": 993590301104339
 		},
 		{
+			"eventType": "variable",
+			"name": "quizScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Keeps track of the points the player earned/lost during the quiz, will be added to the player's final score",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 402507968236186
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -49,6 +59,15 @@
 					"parameters": {
 						"variable": "CurrentQuestion",
 						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 558938824300382,
+					"parameters": {
+						"variable": "quizScore",
+						"value": "0"
 					}
 				},
 				{
@@ -260,6 +279,32 @@
 					],
 					"sid": 407870127008861,
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 942116865781284,
+							"parameters": {
+								"variable": "CurrentQuestion",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 954440162549360,
+							"parameters": {
+								"layout": "LevelEnd"
+							}
+						}
+					],
+					"sid": 350620157092953
 				}
 			]
 		},
@@ -301,6 +346,15 @@
 							"parameters": {
 								"animation": "\"Correct\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 498698798084343,
+							"parameters": {
+								"variable": "quizScore",
+								"value": "10"
 							}
 						},
 						{
@@ -382,6 +436,15 @@
 							"parameters": {
 								"animation": "\"Wrong\"",
 								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 383336223779612,
+							"parameters": {
+								"variable": "quizScore",
+								"value": "10"
 							}
 						},
 						{

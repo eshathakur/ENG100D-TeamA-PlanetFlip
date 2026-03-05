@@ -1,0 +1,52 @@
+{
+	"name": "LevelEndScoreBG",
+	"plugin-id": "Sprite",
+	"sid": 387831600913785,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 702,
+						"height": 563,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1782684,
+						"collisionPoly": {
+							"points": [
+								0.021367521367521368,
+								0,
+								1,
+								0.02664298401420959,
+								0.9786324786324786,
+								1,
+								0,
+								0.9733570159857904
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 440528171833517,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

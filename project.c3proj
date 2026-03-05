@@ -105,7 +105,8 @@
 			"AnswerBox",
 			"AnswerText",
 			"Keyboard",
-			"points"
+			"points",
+			"LevelEndScoreBG"
 		],
 		"subfolders": []
 	},
@@ -123,7 +124,8 @@
 			"Context1",
 			"Context2",
 			"Context3",
-			"Trivia"
+			"Trivia",
+			"LevelEnd"
 		],
 		"subfolders": []
 	},
@@ -134,7 +136,8 @@
 			"EventContext1",
 			"EventContext2",
 			"Context3",
-			"Trivia"
+			"Trivia",
+			"LevelEnd"
 		],
 		"subfolders": []
 	},

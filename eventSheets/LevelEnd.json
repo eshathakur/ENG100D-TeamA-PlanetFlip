@@ -32,15 +32,6 @@
 			],
 			"actions": [
 				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 867831996509624,
-					"parameters": {
-						"variable": "TotalScore",
-						"value": "LevelScore + quizScore"
-					}
-				},
-				{
 					"id": "set-text",
 					"objectClass": "FinalScore",
 					"sid": 529113727752000,

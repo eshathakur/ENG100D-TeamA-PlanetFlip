@@ -152,7 +152,6 @@
 	"layouts": {
 		"items": [
 			"StartPage",
-			"Level1",
 			"Context1",
 			"Context2",
 			"Context3",
@@ -166,7 +165,6 @@
 	"eventSheets": {
 		"items": [
 			"EventStartPage",
-			"EventLevel1",
 			"EventContext1",
 			"EventContext2",
 			"Context3",

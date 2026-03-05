@@ -2,37 +2,47 @@
 	"name": "Level1",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Background",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Background",
+					"type": "LevelBackground",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
 					},
-					"uid": 846857,
-					"sid": 396006400229236,
+					"uid": 420626,
+					"sid": 463553558157923,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 396006400229236,
+						"sid": 463553558157923,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1200,
-						"y": 428,
-						"width": 2400,
-						"height": 854,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 0,
+						"y": 0,
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -42,7 +52,42 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 931495545395914,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "Player_sprite",
 					"properties": {
@@ -133,8 +178,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 677,
-						"y": 980,
+						"x": 580,
+						"y": 435,
 						"width": 57.599999999999994,
 						"height": 38.4,
 						"originX": 0.5,
@@ -187,10 +232,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 465,
-						"y": 1051,
+						"x": 458,
+						"y": 676,
 						"width": 120,
-						"height": 208,
+						"height": 104,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -239,12 +284,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 733.4545454545455,
-						"y": 401,
-						"width": 29.999999999999996,
-						"height": 60,
-						"originX": 0.5454545454545454,
-						"originY": 0.44,
+						"x": 410,
+						"y": 244,
+						"width": 43.63636363636363,
+						"height": 76.8,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -273,7 +318,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -311,8 +356,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 50,
-						"y": 800,
+						"x": 640,
+						"y": 75,
 						"width": 390.40000000000003,
 						"height": 67.2,
 						"originX": 0,
@@ -343,8 +388,8 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
@@ -401,11 +446,11 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 111,
-						"y": 800,
-						"width": 368.8,
-						"height": 62.400000000000006,
-						"originX": 0.10845986984815618,
+						"x": 640,
+						"y": 75,
+						"width": 400,
+						"height": 80,
+						"originX": 0.02,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -438,11 +483,11 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 45,
-						"y": 800,
-						"width": 385.6,
-						"height": 62.400000000000006,
-						"originX": -0.01867219917012448,
+						"x": 830,
+						"y": 75,
+						"width": 400,
+						"height": 80,
+						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,

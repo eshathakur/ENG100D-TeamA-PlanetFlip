@@ -1,0 +1,64 @@
+{
+	"name": "Clownfish",
+	"plugin-id": "Sprite",
+	"sid": 376599993592365,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 48,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5449207,
+						"collisionPoly": {
+							"points": [
+								0.2916666666666667,
+								0.1875,
+								0.375,
+								0.1875,
+								0.6666666666666666,
+								0.21875,
+								0.8958333333333334,
+								0.3125,
+								0.8958333333333334,
+								0.71875,
+								0.875,
+								0.78125,
+								0.3125,
+								0.8125,
+								0.08333333333333333,
+								0.65625,
+								0.08333333333333333,
+								0.5,
+								0.10416666666666667,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 122440487209057,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

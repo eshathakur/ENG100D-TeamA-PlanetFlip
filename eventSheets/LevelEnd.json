@@ -1,5 +1,143 @@
 {
 	"name": "LevelEnd",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "TotalScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Level score + quiz score added together",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 177805504928156
+		},
+		{
+			"eventType": "variable",
+			"name": "SummaryData",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "Tracks the current level's trivia questions and answers",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 809988625335699
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 468906456449945
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 625610074602557,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "LevelScore + quizScore"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FinalScore",
+					"sid": 529113727752000,
+					"parameters": {
+						"text": "TotalScore"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SummaryText",
+					"sid": 673548735011375,
+					"parameters": {
+						"text": "SummaryData"
+					}
+				}
+			],
+			"sid": 137721687007350
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 139800278648888,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 5,
+						"value": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 634502582898599,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 2,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 560386625734525,
+					"parameters": {
+						"text": "\"Pass\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 521253573293124,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 965806813735382,
+					"parameters": {
+						"text": "\"You successfully cleaned  the trash, algae, and oil without touching the coral. Because of your actions, the clownfish were able to return home. \""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 381158361685483,
+					"parameters": {
+						"text": "\"Fail\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 643509542203694,
+					"parameters": {
+						"text": "\"Try again! You didn’t clean enough the trash, algae, and oil without touching the coral. Play again to help the clownfish return home.\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 744495002948690,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 249824879225789,
+			"isOrBlock": true
+		}
+	],
 	"sid": 552359505655826
 }

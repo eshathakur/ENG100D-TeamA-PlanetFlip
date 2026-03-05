@@ -41,10 +41,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "startButton",
-					"sid": 566246989289964,
+					"sid": 666084778414399,
 					"parameters": {
 						"instance-variable": "baseH",
-						"value": "startButton.baseH"
+						"value": "startButton.Height"
 					}
 				}
 			],

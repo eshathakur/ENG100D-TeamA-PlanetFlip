@@ -32,6 +32,16 @@
 			"sid": 402507968236186
 		},
 		{
+			"eventType": "variable",
+			"name": "Correct",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Index of the correct option for the question",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 459273055855008
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -77,6 +87,15 @@
 					"parameters": {
 						"seconds": "0.1",
 						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 800900741456862,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "1"
 					}
 				}
 			],
@@ -144,6 +163,15 @@
 					"sid": 482388624640101,
 					"parameters": {
 						"text": "CurrentQuestion & \" of 3\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 253191175687723,
+					"parameters": {
+						"variable": "Correct",
+						"value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".correct\")"
 					}
 				},
 				{
@@ -319,6 +347,16 @@
 						"object": "AnswerBox",
 						"type": "start"
 					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "AnswerText",
+					"sid": 148740539614303,
+					"parameters": {
+						"instance-variable": "AnswerID",
+						"comparison": 0,
+						"value": "AnswerBox.AnswerID"
+					}
 				}
 			],
 			"actions": [],
@@ -330,11 +368,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 915349063816370,
+							"sid": 536541318772986,
 							"parameters": {
 								"first-value": "AnswerBox.AnswerID",
 								"comparison": 0,
-								"second-value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion - 1) & \".correct_index\")"
+								"second-value": "Correct"
 							}
 						}
 					],
@@ -384,6 +422,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 834235585988780,
+							"parameters": {
+								"variable": "SummaryData",
+								"value": "SummaryData & \"• \" & JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".question\") & newline & \"    • [color=#228B22]\" & AnswerText.Text & \"[/color]\" & newline & newline"
+							}
+						},
+						{
 							"id": "start-fade",
 							"objectClass": "points",
 							"sid": 298716523634474,
@@ -420,11 +467,11 @@
 						{
 							"id": "compare-two-values",
 							"objectClass": "System",
-							"sid": 158264096165740,
+							"sid": 584178679558448,
 							"parameters": {
 								"first-value": "AnswerBox.AnswerID",
 								"comparison": 1,
-								"second-value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion - 1) & \".correct_index\")"
+								"second-value": "Correct"
 							}
 						}
 					],
@@ -471,6 +518,15 @@
 							"sid": 911673493452473,
 							"parameters": {
 								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 393458496484089,
+							"parameters": {
+								"variable": "SummaryData",
+								"value": "SummaryData & \"• \" & JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".question\") & newline & \"    • [color=#FF0000]\" & AnswerText.Text & \"[/color]\" & newline & newline"
 							}
 						},
 						{

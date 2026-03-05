@@ -1,0 +1,10 @@
+{
+	"name": "SToryText",
+	"plugin-id": "Text",
+	"sid": 903873550204290,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

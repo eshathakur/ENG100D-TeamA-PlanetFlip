@@ -1,5 +1,92 @@
 {
 	"name": "EventContext1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 725595984544775
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "SToryText",
+					"sid": 109414535335434,
+					"parameters": {
+						"text": "\"Welcome young adventurer! The Great Barrier Reef in Australia needs YOU to save it! Come join me, King Triton, on this adventure to save our oceans!\"",
+						"duration": "2.47"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "nextButton",
+					"sid": 681296204553831,
+					"behaviorType": "Timer",
+					"parameters": {
+						"duration": "5",
+						"type": "once",
+						"tag": "\"appear\""
+					}
+				}
+			],
+			"sid": 701763233898789
+		},
+		{
+			"eventType": "comment",
+			"text": "To get the duration for Typewriter text do (number of characters in message)/60, do not count the quotations in the number of characters, round to 2 decimal places"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "nextButton",
+					"sid": 398150473942805,
+					"behaviorType": "Timer",
+					"parameters": {
+						"tag": "\"appear\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "nextButton",
+					"sid": 390199721382678,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 555166418729218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 705903650420454,
+					"parameters": {
+						"object": "nextButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 991754008889193,
+					"parameters": {
+						"layout": "Context2"
+					}
+				}
+			],
+			"sid": 138086322039516
+		}
+	],
 	"sid": 694674196649892
 }

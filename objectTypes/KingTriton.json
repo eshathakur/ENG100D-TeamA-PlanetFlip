@@ -54,8 +54,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 705024674098620,
-				"name": "Animation 1",
+				"sid": 320388095189039,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -73,7 +73,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3504939,
+						"imageSpriteId": 9538498,
 						"collisionPoly": {
 							"points": [
 								0.46875,

@@ -1,22 +1,22 @@
 {
-	"name": "BrownBackground",
+	"name": "OceanBackground",
 	"plugin-id": "TiledBg",
-	"sid": 248786335125756,
+	"sid": 851446047266632,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 1066,
-		"height": 600,
+		"width": 1280,
+		"height": 720,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 9469426,
+		"imageSpriteId": 4527685,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

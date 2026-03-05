@@ -9,17 +9,17 @@
 					"objectClass": "Touch",
 					"sid": 976095559063359,
 					"parameters": {
-						"object": "SkipButtonSprite"
+						"object": "NextButtonSprite"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-default-color",
-					"objectClass": "SkipButtonSprite",
-					"sid": 488303915367150,
+					"objectClass": "NextButtonSprite",
+					"sid": 173601976026612,
 					"parameters": {
-						"color": "rgbEx(75, 75, 75)"
+						"color": "rgbEx(90, 90, 90)"
 					}
 				},
 				{
@@ -33,8 +33,8 @@
 				},
 				{
 					"id": "set-default-color",
-					"objectClass": "SkipButtonSprite",
-					"sid": 361289075275378,
+					"objectClass": "NextButtonSprite",
+					"sid": 403344783348819,
 					"parameters": {
 						"color": "rgbEx(100, 100, 100)"
 					}
@@ -64,78 +64,62 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 492264408379911,
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 771946284269186,
 					"parameters": {
 						"object": "NextButtonSprite"
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 359859894187637,
-					"parameters": {
-						"first-value": "cnt",
-						"comparison": 0,
-						"second-value": "0"
 					}
 				}
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "NextButtonSprite",
+					"sid": 307058872149710,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "NextButtonSprite",
+					"sid": 239367712456670,
+					"parameters": {
+						"x": "643",
+						"y": "561"
+					}
+				},
+				{
 					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
-					"sid": 707047432724827,
+					"sid": 112885605219096,
 					"parameters": {
-						"color": "rgbEx(75, 75, 75)"
+						"color": "rgbEx(90, 90, 90)"
 					}
-				},
+				}
+			],
+			"sid": 109253014791360
+		},
+		{
+			"eventType": "block",
+			"conditions": [
 				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 938171328972231,
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 866428737372202,
 					"parameters": {
-						"seconds": "0.07",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-default-color",
-					"objectClass": "NextButtonSprite",
-					"sid": 503776528221295,
-					"parameters": {
-						"color": "rgbEx(100, 100, 100)"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "DescText",
-					"sid": 670883691581594,
-					"parameters": {
-						"text": "\"Too much algae can smother coral and block sunlight.\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "CountText",
-					"sid": 150279286594176,
-					"parameters": {
-						"text": "\"2 of 3\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TaskText",
-					"sid": 708331435869882,
-					"parameters": {
-						"text": "\"Removing Harmful Algae\""
-					}
-				},
+						"object": "NextButtonSprite"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "TrashSprite",
-					"sid": 743226295855079,
+					"objectClass": "NextButtonSprite",
+					"sid": 534094373646471,
 					"parameters": {
 						"animation": "\"Animation 2\"",
 						"from": "beginning"
@@ -143,195 +127,23 @@
 				},
 				{
 					"id": "set-position",
-					"objectClass": "TrashSprite",
-					"sid": 187443460635560,
-					"parameters": {
-						"x": "244",
-						"y": "460"
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 568270431040664
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 358545055440658,
-					"parameters": {
-						"variable": "cnt",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 197612369712140
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 536908317661468,
-					"parameters": {
-						"object": "NextButtonSprite"
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 170898703689843,
-					"parameters": {
-						"first-value": "cnt",
-						"comparison": 0,
-						"second-value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
-					"sid": 374471200859620,
+					"sid": 844548778621081,
 					"parameters": {
-						"color": "rgbEx(75, 75, 75)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 544550610250303,
-					"parameters": {
-						"seconds": "0.07",
-						"use-timescale": true
+						"x": "641",
+						"y": "556"
 					}
 				},
 				{
 					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
-					"sid": 301164813851418,
+					"sid": 274368783656871,
 					"parameters": {
 						"color": "rgbEx(100, 100, 100)"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "DescText",
-					"sid": 163367886761343,
-					"parameters": {
-						"text": "\"Oil coats coral and prevents them from breathing and growing.\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "CountText",
-					"sid": 585468006386357,
-					"parameters": {
-						"text": "\"3 of 3\""
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TaskText",
-					"sid": 801834322729362,
-					"parameters": {
-						"text": "\"Cleaning Oil Spills\""
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "TrashSprite",
-					"sid": 401753956889563,
-					"parameters": {
-						"animation": "\"Animation 3\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "TrashSprite",
-					"sid": 621306489032494,
-					"parameters": {
-						"x": "244",
-						"y": "460"
-					}
-				},
-				{
-					"id": "wait-for-previous-actions",
-					"objectClass": "System",
-					"sid": 190915131691142
-				},
-				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 416463420927081,
-					"parameters": {
-						"variable": "cnt",
-						"value": "1"
-					}
 				}
 			],
-			"sid": 856703746908395
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 911260893960983,
-					"parameters": {
-						"object": "NextButtonSprite"
-					}
-				},
-				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 135431293052427,
-					"parameters": {
-						"first-value": "cnt",
-						"comparison": 0,
-						"second-value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-default-color",
-					"objectClass": "NextButtonSprite",
-					"sid": 570599010064336,
-					"parameters": {
-						"color": "rgbEx(75, 75, 75)"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 179953593090755,
-					"parameters": {
-						"seconds": "0.07",
-						"use-timescale": true
-					}
-				},
-				{
-					"id": "set-default-color",
-					"objectClass": "NextButtonSprite",
-					"sid": 866399094368176,
-					"parameters": {
-						"color": "rgbEx(100, 100, 100)"
-					}
-				},
-				{
-					"id": "go-to-layout-by-name",
-					"objectClass": "System",
-					"sid": 536324002683916,
-					"parameters": {
-						"layout": "\"Context3\""
-					}
-				}
-			],
-			"sid": 840267650325292
+			"sid": 642124549810640
 		}
 	],
 	"sid": 743565415056279

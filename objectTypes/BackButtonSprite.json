@@ -1,7 +1,7 @@
 {
-	"name": "SkipButtonSprite",
+	"name": "BackButtonSprite",
 	"plugin-id": "Sprite",
-	"sid": 387962446433880,
+	"sid": 774161124126127,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1071045,
+						"imageSpriteId": 936060,
 						"collisionPoly": {
 							"points": [
 								0.10909090909090909,
@@ -46,7 +46,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 525535459766662,
+				"sid": 686286168596618,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

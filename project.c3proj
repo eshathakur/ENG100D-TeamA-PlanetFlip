@@ -49,15 +49,18 @@
 			"BrownBackground",
 			"TutTitle",
 			"CountText",
-			"TaskText",
+			"PlayText",
 			"DescText",
+			"BackButtonSprite",
+			"BackText",
+			"Mouse",
 			"NextButtonSprite",
 			"NextText",
-			"Mouse",
-			"SkipButtonSprite",
-			"SkipTest",
 			"TrashSprite",
-			"Touch"
+			"Touch",
+			"DescText2",
+			"DescText3",
+			"OceanBackground"
 		],
 		"subfolders": []
 	},
@@ -375,7 +378,7 @@
 		"exportFileStructure": "folders",
 		"scriptsType": "module"
 	},
-	"viewportWidth": 480,
-	"viewportHeight": 854,
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
 	"firstLayout": null
 }

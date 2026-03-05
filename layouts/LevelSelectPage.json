@@ -1,5 +1,5 @@
 {
-	"name": "StartPage",
+	"name": "LevelSelectPage",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -13,20 +13,20 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 535036,
-					"sid": 669668815281706,
+					"uid": 879760,
+					"sid": 364321460080709,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 669668815281706,
+						"sid": 364321460080709,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
 						"x": 3,
-						"y": -3,
+						"y": 4,
 						"width": 1277,
 						"height": 720,
 						"originX": 0,
@@ -42,104 +42,28 @@
 					}
 				},
 				{
-					"type": "helpTodayButton",
+					"type": "levelSelectTitle",
 					"properties": {
-						"svg-file": 881187414098017,
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 507288,
-					"sid": 260607667757552,
-					"tags": "",
-					"instanceVariables": {
-						"baseW": 0,
-						"baseH": 0
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 260607667757552,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 459,
-						"y": 554,
-						"width": 313,
-						"height": 105,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "startButton",
-					"properties": {
-						"svg-file": 991044323006959,
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 447181,
-					"sid": 712482526413461,
-					"tags": "",
-					"instanceVariables": {
-						"baseW": 0,
-						"baseH": 0
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 712482526413461,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 819,
-						"y": 556,
-						"width": 322,
-						"height": 75,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "title",
-					"properties": {
-						"svg-file": 200816701271382,
+						"svg-file": 105908461471715,
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 649519,
-					"sid": 504723346790579,
+					"uid": 273850,
+					"sid": 342823984979357,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 504723346790579,
+						"sid": 342823984979357,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 402,
-						"y": 154,
-						"width": 465,
-						"height": 283,
+						"x": 508,
+						"y": 81,
+						"width": 340,
+						"height": 129,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -151,9 +75,121 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "level1Icon",
+					"properties": {
+						"svg-file": 500243919351766,
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 634220,
+					"sid": 122765917884814,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 122765917884814,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 396,
+						"y": 394,
+						"width": 185,
+						"height": 187,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "level2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 547187,
+					"sid": 666180298119317,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 666180298119317,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 684,
+						"y": 395,
+						"width": 181,
+						"height": 187,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "level3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 745172,
+					"sid": 114317309397004,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 114317309397004,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 965,
+						"y": 396,
+						"width": 179,
+						"height": 187,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
-			"sid": 132462100997301,
+			"sid": 996856678688457,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -187,7 +223,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 504488061505794,
+	"sid": 528914648810340,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,
@@ -196,5 +232,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "EventStartPage"
+	"eventSheet": "EventLevelSelectPage"
 }

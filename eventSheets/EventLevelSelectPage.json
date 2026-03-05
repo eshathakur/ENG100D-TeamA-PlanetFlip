@@ -1,0 +1,186 @@
+{
+	"name": "EventLevelSelectPage",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 565398020674654
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "level1Icon",
+					"sid": 645363836394435,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "level1Icon.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "level1Icon",
+					"sid": 515171092207608,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "level1Icon.Width"
+					}
+				}
+			],
+			"sid": 999801051488119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 170668719003153,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "level1Icon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 603629281762499,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 345359325712871
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 192938271516706,
+					"parameters": {
+						"object": "level1Icon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 377561976114641,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 894811795934844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 764454123433804,
+					"parameters": {
+						"object": "level1Icon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "level1Icon",
+					"sid": 594045431419628,
+					"parameters": {
+						"width": "level1Icon.baseW * 0.9",
+						"height": "level1Icon.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 853765581172509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 230461672919976
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "level1Icon",
+					"sid": 296053994117077,
+					"parameters": {
+						"width": "level1Icon.baseW",
+						"height": "level1Icon.baseH"
+					}
+				}
+			],
+			"sid": 306406434400172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 986526287606292,
+					"parameters": {
+						"object": "level1Icon",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "level1Icon",
+					"sid": 644947215960029,
+					"parameters": {
+						"width": "level1Icon.baseW * 0.9",
+						"height": "level1Icon.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 443449834262677
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 778375958628500,
+					"parameters": {
+						"object": "level1Icon",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "level1Icon",
+					"sid": 739219247517188,
+					"parameters": {
+						"width": "level1Icon.baseW",
+						"height": "level1Icon.baseH"
+					}
+				}
+			],
+			"sid": 395025550929090
+		}
+	],
+	"sid": 152295920918562
+}

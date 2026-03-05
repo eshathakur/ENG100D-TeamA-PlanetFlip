@@ -1,5 +1,5 @@
 {
-	"name": "StartPage",
+	"name": "HelpTodayPage",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -13,20 +13,20 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 535036,
-					"sid": 669668815281706,
+					"uid": 934836,
+					"sid": 909106622896191,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 669668815281706,
+						"sid": 909106622896191,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 3,
-						"y": -3,
+						"x": 2,
+						"y": 1,
 						"width": 1277,
 						"height": 720,
 						"originX": 0,
@@ -42,104 +42,103 @@
 					}
 				},
 				{
-					"type": "helpTodayButton",
+					"type": "helpTodayTitle",
 					"properties": {
-						"svg-file": 881187414098017,
 						"initially-visible": true,
-						"origin": "center"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 507288,
-					"sid": 260607667757552,
-					"tags": "",
-					"instanceVariables": {
-						"baseW": 0,
-						"baseH": 0
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 260607667757552,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 459,
-						"y": 554,
-						"width": 313,
-						"height": 105,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "startButton",
-					"properties": {
-						"svg-file": 991044323006959,
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 447181,
-					"sid": 712482526413461,
-					"tags": "",
-					"instanceVariables": {
-						"baseW": 0,
-						"baseH": 0
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 712482526413461,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 819,
-						"y": 556,
-						"width": 322,
-						"height": 75,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "title",
-					"properties": {
-						"svg-file": 200816701271382,
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 649519,
-					"sid": 504723346790579,
+					"uid": 880908,
+					"sid": 230813656835014,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 504723346790579,
+						"sid": 230813656835014,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 402,
-						"y": 154,
-						"width": 465,
-						"height": 283,
+						"x": 665,
+						"y": 115,
+						"width": 251,
+						"height": 136,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "backToGameButton",
+					"properties": {
+						"svg-file": 217223131960261,
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 219066,
+					"sid": 939967947209360,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 939967947209360,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 667,
+						"y": 650,
+						"width": 298,
+						"height": 65.07556820511422,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "helpTodayInfoTemp",
+					"properties": {
+						"svg-file": 755355936729040,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 227615,
+					"sid": 988096105584475,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 988096105584475,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 322,
+						"y": 201,
+						"width": 692,
+						"height": 418,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -153,7 +152,7 @@
 					}
 				}
 			],
-			"sid": 132462100997301,
+			"sid": 846454980902892,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -187,7 +186,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 504488061505794,
+	"sid": 889079181257940,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,
@@ -196,5 +195,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "EventStartPage"
+	"eventSheet": "EventHelpTodayPage"
 }

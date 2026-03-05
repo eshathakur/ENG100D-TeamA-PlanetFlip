@@ -1,0 +1,170 @@
+{
+	"name": "EventHelpTodayPage",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 653169836381812
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "backToGameButton",
+					"sid": 611220351065630,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "backToGameButton.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "backToGameButton",
+					"sid": 640272463294192,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "backToGameButton.Width"
+					}
+				}
+			],
+			"sid": 820080505356828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 744444247207130,
+					"parameters": {
+						"object": "backToGameButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "backToGameButton",
+					"sid": 812542411771510,
+					"parameters": {
+						"width": "backToGameButton.baseW * 0.9",
+						"height": "backToGameButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 878948716203100
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 292250212989578
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "backToGameButton",
+					"sid": 590658976186467,
+					"parameters": {
+						"width": "backToGameButton.baseW",
+						"height": "backToGameButton.baseH"
+					}
+				}
+			],
+			"sid": 750148559800043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 717430787169721,
+					"parameters": {
+						"object": "backToGameButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "backToGameButton",
+					"sid": 748412930363019,
+					"parameters": {
+						"width": "backToGameButton.baseW * 0.9",
+						"height": "backToGameButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 984084242805546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 900752632091083,
+					"parameters": {
+						"object": "backToGameButton",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "backToGameButton",
+					"sid": 721795070889143,
+					"parameters": {
+						"width": "backToGameButton.baseW ",
+						"height": "backToGameButton.baseH"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 555716196285530,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 535626732389895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 557740006509432,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "backToGameButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 484765750359325,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 458453573614293
+		}
+	],
+	"sid": 864180730402235
+}

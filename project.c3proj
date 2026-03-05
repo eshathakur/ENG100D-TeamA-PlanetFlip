@@ -23,7 +23,7 @@
 	"objectTypes": {
 		"items": [
 			"Background", "Player_sprite", "Mouse", "Touch", "Coral", "Fish", "Trash", "EndScreenBG", "TriviaBox", "BlueTang", "Trivia", "TriviaCounter", "Question", "AJAX", "JSON", "AnswerBox", "AnswerText", "Keyboard", "points", "LevelEndScoreBG",
-			"helpTodayButton", "reefRescuerTitle", "startBackground", "startButton", "DC_Background", "Diver"
+			"helpTodayButton", "reefRescuerTitle", "startBackground", "startButton", "DC_Background", "Diver", "Progress_bar_container", "ScoreText", "Progress_bar_fill", "bar_fill_left_end"
 		],
 		"subfolders": []
 	},
@@ -147,18 +147,135 @@
 						},
 						{
 							"items": [
-								{ "name": "oxygen_tank-2.png", "type": "image/png", "sid": 805839164542884, "icon-info": { "purpose": "none" } },
-								{ "name": "diver_sprite_sheet.png", "type": "image/png", "sid": 382181556531758, "icon-info": { "purpose": "none" } },
-								{ "name": "star-1.png", "type": "image/png", "sid": 267157390883045, "icon-info": { "purpose": "none" } },
-								{ "name": "oxygen_tank-1.png", "type": "image/png", "sid": 792613733480101, "icon-info": { "purpose": "none" } },
-								{ "name": "star-2.png", "type": "image/png", "sid": 737853146277947, "icon-info": { "purpose": "none" } },
-								{ "name": "diver-2.png", "type": "image/png", "sid": 451937155392831, "icon-info": { "purpose": "none" } },
-								{ "name": "diver-1.png", "type": "image/png", "sid": 830230997448368, "icon-info": { "purpose": "none" } },
-								{ "name": "oxygen_tank-3.png", "type": "image/png", "sid": 743841608371217, "icon-info": { "purpose": "none" } },
-								{ "name": "king_triton-happy.png", "type": "image/png", "sid": 862993149312973, "icon-info": { "purpose": "none" } },
-								{ "name": "king_triton.png", "type": "image/png", "sid": 734283477423983, "icon-info": { "purpose": "none" } }
+								{
+									"name": "oxygen_tank-2.png",
+									"type": "image/png",
+									"sid": 805839164542884,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "diver_sprite_sheet.png",
+									"type": "image/png",
+									"sid": 382181556531758,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "star-1.png",
+									"type": "image/png",
+									"sid": 267157390883045,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "oxygen_tank-1.png",
+									"type": "image/png",
+									"sid": 792613733480101,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "star-2.png",
+									"type": "image/png",
+									"sid": 737853146277947,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "diver-2.png",
+									"type": "image/png",
+									"sid": 451937155392831,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "diver-1.png",
+									"type": "image/png",
+									"sid": 830230997448368,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "oxygen_tank-3.png",
+									"type": "image/png",
+									"sid": 743841608371217,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "king_triton-happy.png",
+									"type": "image/png",
+									"sid": 862993149312973,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "king_triton.png",
+									"type": "image/png",
+									"sid": 734283477423983,
+									"icon-info": {
+										"purpose": "none"
+									}
+								},
+								{
+									"name": "golden_book.png",
+									"type": "image/png",
+									"sid": 296936802406747,
+									"icon-info": {
+										"purpose": "none"
+									}
+								}
 							],
-							"subfolders": [],
+							"subfolders": [
+								{
+									"items": [
+										{
+											"name": "progress_bar_box_fill.png",
+											"type": "image/png",
+											"sid": 647824158993727,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_curve.png",
+											"type": "image/png",
+											"sid": 381932577349074,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_box.png",
+											"type": "image/png",
+											"sid": 272276335163211,
+											"icon-info": {
+												"purpose": "none"
+											}
+										},
+										{
+											"name": "progress_bar_curve_fill.png",
+											"type": "image/png",
+											"sid": 749386875849301,
+											"icon-info": {
+												"purpose": "none"
+											}
+										}
+									],
+									"subfolders": [],
+									"name": "progress bar"
+								}
+							],
 							"name": "misc"
 						},
 						{

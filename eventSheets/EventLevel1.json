@@ -49,46 +49,19 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
-						"const SPEED = 100;",
-						"const MARGIN = 80;",
+						"// time setting",
+						"globalThis.stageDuration = 19.16; // level takes 19.16 seconds",
+						"globalThis.stageStartTime = runtime.gameTime;",
 						"",
-						"const player = runtime.objects.Player_sprite.getFirstInstance();",
-						"if (!player) return;",
-						"",
-						"const H = runtime.layout.height / 2;",
-						"const x = player.x + 500;",
-						"",
-						"const TOP_Y = 0 + MARGIN;",
-						"const BOT_Y = H - MARGIN;",
-						"",
-						"const minScaleY = 1.0;",
-						"const maxScaleY = 2.5;",
-						"",
-						"const sTop = minScaleY + Math.random() * (maxScaleY - minScaleY);",
-						"const sBot = minScaleY + Math.random() * (maxScaleY - minScaleY);",
-						"",
-						"const top = runtime.objects.Coral.createInstance(0, x, TOP_Y);",
-						"",
-						"if (top) {",
-						"  top.animationSpeed = 0;",
-						"  top.animationFrame = Math.floor(Math.random() * 4);",
-						"",
-						"  top.height = -top.height * sTop;",
-						"",
-						"  const b = top.behaviors.Bullet;",
-						"  b.speed = SPEED;",
+						"// progress bar",
+						"const fill = runtime.objects.Progress_bar_fill.getFirstInstance();",
+						"if (fill) {",
+						"    globalThis.maxBarWidth = fill.width;",
+						"    fill.width = 0; // start with zero fill",
 						"}",
 						"",
-						"const bot = runtime.objects.Coral.createInstance(0, x, BOT_Y);",
-						"if (bot) {",
-						"  bot.animationSpeed = 0;",
-						"  bot.animationFrame = Math.floor(Math.random() * 4);",
-						"  ",
-						"  bot.height = bot.height * sBot;",
-						"",
-						"  const b = bot.behaviors.Bullet;",
-						"  b.speed = SPEED;",
-						"}"
+						"// score",
+						"runtime.globalVars.Score = 0;"
 					]
 				}
 			],
@@ -110,12 +83,36 @@
 					"script": [
 						"const scrollSpeed = 100",
 						"const bg = runtime.objects.Background.getFirstInstance();",
+						"// the background keeps moving to the left until it reaches the end",
 						"if (bg && bg.x > -715) {",
 						"\tbg.x -= scrollSpeed * runtime.dt;",
 						"} else {",
 						"\truntime.timeScale = 0;",
 						"}",
-						""
+						"",
+						"",
+						"// filling the progress bar",
+						"const fill = runtime.objects.Progress_bar_fill.getFirstInstance();",
+						"if (!fill) return;",
+						"",
+						"// elapsed time",
+						"const elapsed = runtime.gameTime - globalThis.stageStartTime;",
+						"",
+						"// progress (0~1)",
+						"let progress = elapsed / globalThis.stageDuration;",
+						"progress = Math.max(0, Math.min(progress, 1));",
+						"",
+						"// Adjusting the width",
+						"fill.width = progress * globalThis.maxBarWidth;",
+						"",
+						"// when the stage is done",
+						"if (progress >= 1) {",
+						"    console.log(\"Stage Complete!\");",
+						"}",
+						"",
+						"// updating the score text",
+						"const t = runtime.objects.ScoreText.getFirstInstance();",
+						"if (t) t.text = \"Score: \" + runtime.globalVars.Score;"
 					]
 				}
 			],
@@ -143,7 +140,8 @@
 						"if(player){",
 						"\tconst phys = player.behaviors.Physics;",
 						"\tphys.setVelocity(phys.getVelocityX(), 250);",
-						"}"
+						"}",
+						"// when the screen is clicked, it moves the diver down"
 					]
 				}
 			],
@@ -167,7 +165,8 @@
 						"if(player){",
 						"\tconst phys = player.behaviors.Physics;",
 						"\tphys.setVelocity(phys.getVelocityX(), 250);",
-						"}"
+						"}",
+						"// when the screen is tapped, it moves the diver down"
 					]
 				}
 			],
@@ -244,6 +243,14 @@
 					"id": "destroy",
 					"objectClass": "Fish",
 					"sid": 998634062536368
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// subtract the score",
+						"runtime.globalVars.Score -= 5;"
+					]
 				}
 			],
 			"sid": 449176336362245
@@ -265,36 +272,37 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
-						"const SPEED = 100;",
-						"const MARGIN = 80;",
+						"const SPEED = 100;\t//speed of moving obstacles",
+						"const MARGIN = 80;\t//margin for the positions",
 						"",
 						"const player = runtime.objects.Player_sprite.getFirstInstance();",
 						"if (!player) return;",
 						"",
-						"const H = runtime.layout.height / 2;",
-						"const x = player.x + 500;",
+						"const H = runtime.layout.height / 2;\t//height of the screen",
+						"const x = player.x + 500;\t\t\t \t//starting x coordinates for corals",
 						"",
-						"const TOP_Y = 0 + MARGIN;",
-						"const BOT_Y = H - MARGIN;",
+						"const TOP_Y = 0 + MARGIN;\t//y coordinate for the top coral",
+						"const BOT_Y = H - MARGIN;\t//y coordinate for the bottom coral",
 						"",
-						"const minScaleY = 1.0;",
-						"const maxScaleY = 2.5;",
+						"const minScaleY = 1.0;\t\t//lower bound for scale",
+						"const maxScaleY = 2.5;\t\t//upper bound for scale",
 						"",
-						"const sTop = minScaleY + Math.random() * (maxScaleY - minScaleY);",
-						"const sBot = minScaleY + Math.random() * (maxScaleY - minScaleY);",
+						"const sTop = minScaleY + Math.random() * (maxScaleY - minScaleY);\t\t\t//scale for the top coral",
+						"const sBot = minScaleY + Math.random() * (maxScaleY - minScaleY);\t\t\t//scale for the bottom coral",
 						"",
+						"//creating the top coral",
 						"const top = runtime.objects.Coral.createInstance(0, x, TOP_Y);",
-						"",
 						"if (top) {",
 						"  top.animationSpeed = 0;",
-						"  top.animationFrame = Math.floor(Math.random() * 4);",
+						"  top.animationFrame = Math.floor(Math.random() * 4);\t//setting to random frame of the coral sprite",
 						"",
-						"  top.height = -top.height * sTop;",
+						"  top.height = -top.height * sTop;\t//randomising the scale and flip vertically",
 						"",
-						"  const b = top.behaviors.Bullet;",
-						"  b.speed = SPEED;",
+						"  const b = top.behaviors.Bullet;\t//making it a bullet makes it move by itself",
+						"  b.speed = SPEED;\t\t\t\t\t//setting the speed",
 						"}",
 						"",
+						"//creating the bottom coral",
 						"const bot = runtime.objects.Coral.createInstance(0, x, BOT_Y);",
 						"if (bot) {",
 						"  bot.animationSpeed = 0;",
@@ -327,6 +335,14 @@
 					"id": "destroy",
 					"objectClass": "Trash",
 					"sid": 483390625821317
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// add the score",
+						"runtime.globalVars.Score += 20;"
+					]
 				}
 			],
 			"sid": 221555567636839
@@ -402,6 +418,14 @@
 					"id": "destroy",
 					"objectClass": "Coral",
 					"sid": 522940818173687
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// subtract the score",
+						"runtime.globalVars.Score -= 10;"
+					]
 				}
 			],
 			"sid": 406338076243852

@@ -65,7 +65,11 @@
 			"title",
 			"helpTodayTitle",
 			"backToGameButton",
-			"helpTodayInfoTemp"
+			"helpTodayInfoTemp",
+			"levelSelectTitle",
+			"level1Icon",
+			"level2",
+			"level3"
 		],
 		"subfolders": []
 	},
@@ -86,7 +90,8 @@
 			"Context2",
 			"Context3",
 			"DiverCustomization",
-			"HelpTodayPage"
+			"HelpTodayPage",
+			"LevelSelectPage"
 		],
 		"subfolders": []
 	},
@@ -98,7 +103,8 @@
 			"EventContext2",
 			"Context3",
 			"EventDiverCustomization",
-			"EventHelpTodayPage"
+			"EventHelpTodayPage",
+			"EventLevelSelectPage"
 		],
 		"subfolders": []
 	},
@@ -254,6 +260,38 @@
 					"name": "helpTodayInfoTemp.svg",
 					"type": "image/svg+xml",
 					"sid": 755355936729040,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "levelSelectTitle.svg",
+					"type": "image/svg+xml",
+					"sid": 105908461471715,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level1Icon.svg",
+					"type": "image/svg+xml",
+					"sid": 500243919351766,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level2Locked.svg",
+					"type": "image/svg+xml",
+					"sid": 799710447468719,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level3Locked.svg",
+					"type": "image/svg+xml",
+					"sid": 501822292375692,
 					"file-info": {
 						"purpose": "none"
 					}

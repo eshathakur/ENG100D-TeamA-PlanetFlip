@@ -18,14 +18,12 @@
 		{ "type": "behavior", "id": "Fade", "name": "Fade", "author": "Scirra", "bundled": false },
 		{ "type": "behavior", "id": "Physics", "name": "Physics", "author": "Scirra", "bundled": false },
 		{ "type": "behavior", "id": "destroy", "name": "Destroy outside layout", "author": "Scirra", "bundled": false }
-		{ "type": "behavior", "id": "Sin", "name": "Sine", "author": "Scirra", "bundled": false }
-		{ "type": "behavior", "id": "Timer", "name": "Timer", "author": "Scirra", "bundled": false }
 	],
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
 		"items": [
 			"Background", "Player_sprite", "Mouse", "Touch", "Coral", "Fish", "Trash", "EndScreenBG", "TriviaBox", "BlueTang", "Trivia", "TriviaCounter", "Question", "AJAX", "JSON", "AnswerBox", "AnswerText", "Keyboard", "points", "LevelEndScoreBG",
-			"helpTodayButton", "reefRescuerTitle", "startBackground", "startButton", "DC_Background", "Diver", "Progress_bar_container", "ScoreText", "Progress_bar_fill", "bar_fill_left_end", "BackgroundImage", "Sprite", "Textbox", "KingTriton", "SToryText", "passportTicket", "nextButton"
+			"helpTodayButton", "reefRescuerTitle", "startBackground", "startButton", "DC_Background", "Diver", "Progress_bar_container", "ScoreText", "Progress_bar_fill", "bar_fill_left_end"
 		],
 		"subfolders": []
 	},
@@ -35,7 +33,7 @@
 	"families": { "items": [], "subfolders": [] },
 	"layouts": {
 		"items": [
-			"StartPage", "Level1", "StoryStart", "Context2", "Context3", "Trivia", "LevelEnd",
+			"StartPage", "Level1", "Context1", "Context2", "Context3", "Trivia", "LevelEnd",
 			"LearnMorePage", "DiverCustomization"
 		],
 		"subfolders": []

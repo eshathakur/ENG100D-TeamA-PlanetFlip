@@ -139,6 +139,20 @@
 			"SummaryText",
 			"TriviaSummaryTitle",
 			"KingTriton"
+			"TutBackground",
+			"BrownBackground",
+			"TutTitle",
+			"CountText",
+			"PlayText",
+			"DescText",
+			"BackButtonSprite",
+			"BackText",
+			"NextButtonSprite",
+			"NextText",
+			"TrashSprite",
+			"DescText2",
+			"DescText3",
+			"OceanBackground"
 		],
 		"subfolders": []
 	},

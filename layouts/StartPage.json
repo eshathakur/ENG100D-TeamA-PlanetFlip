@@ -42,79 +42,6 @@
 					}
 				},
 				{
-					"type": "reefRescuerTitle",
-					"properties": {
-						"svg-file": 200816701271382,
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 420056,
-					"sid": 273394622344676,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 273394622344676,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 408,
-						"y": 127,
-						"width": 467.99999999999994,
-						"height": 280.5154639175257,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "startButton",
-					"properties": {
-						"svg-file": 991044323006959,
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 604619,
-					"sid": 179570447688328,
-					"tags": "",
-					"instanceVariables": {
-						"baseW": 0,
-						"baseH": 0
-					},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 179570447688328,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 844,
-						"y": 559,
-						"width": 316,
-						"height": 78.555439976083,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "helpTodayButton",
 					"properties": {
 						"svg-file": 881187414098017,
@@ -137,11 +64,84 @@
 					"locked": false,
 					"world": {
 						"x": 459,
-						"y": 557,
+						"y": 554,
 						"width": 313,
 						"height": 105,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "startButton",
+					"properties": {
+						"svg-file": 991044323006959,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 447181,
+					"sid": 712482526413461,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 712482526413461,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 673,
+						"y": 517,
+						"width": 322,
+						"height": 75,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "title",
+					"properties": {
+						"svg-file": 200816701271382,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 649519,
+					"sid": 504723346790579,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 504723346790579,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 402,
+						"y": 154,
+						"width": 465,
+						"height": 283,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

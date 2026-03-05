@@ -50,7 +50,6 @@
 			"Mouse",
 			"Touch",
 			"startBackground",
-			"startButton",
 			"DC_Background",
 			"Diver",
 			"swatchBox",
@@ -62,7 +61,9 @@
 			"grayColorBox",
 			"blueColorBox",
 			"purpleColorBox",
-			"greenColorBox"
+			"greenColorBox",
+			"startButton",
+			"title"
 		],
 		"subfolders": []
 	},
@@ -227,6 +228,14 @@
 					"name": "swatchBox.svg",
 					"type": "image/svg+xml",
 					"sid": 365882002887144,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "title.png",
+					"type": "image/png",
+					"sid": 509169515630653,
 					"file-info": {
 						"purpose": "none"
 					}

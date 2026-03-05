@@ -58,14 +58,6 @@
 					}
 				},
 				{
-					"id": "set-animation-frame",
-					"objectClass": "ColorBoxes",
-					"sid": 631328900356689,
-					"parameters": {
-						"frame-number": "0"
-					}
-				},
-				{
 					"id": "set-instvar-value",
 					"objectClass": "confirmButton",
 					"sid": 989043179512406,
@@ -288,6 +280,14 @@
 						"animation": "DiverColor",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Diver",
+					"sid": 237743444178490,
+					"parameters": {
+						"speed": "1.5"
+					}
 				}
 			],
 			"sid": 453793871273375,
@@ -384,6 +384,14 @@
 					"parameters": {
 						"animation": "DiverColor",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Diver",
+					"sid": 805333536477185,
+					"parameters": {
+						"speed": "1.5"
 					}
 				}
 			],

@@ -1,5 +1,637 @@
 {
 	"name": "EventLevel1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 341134541782908
+				}
+			],
+			"actions": [
+				{
+					"id": "set-world-gravity",
+					"objectClass": "Player_sprite",
+					"sid": 801743678992043,
+					"behaviorType": "Physics",
+					"parameters": {
+						"gravity": "-5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player_sprite",
+					"sid": 592523081013579,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Player_sprite",
+					"sid": 484982031137127,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Player_sprite",
+					"sid": 881868998522987,
+					"parameters": {
+						"speed": "3"
+					}
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// time setting",
+						"globalThis.stageDuration = 62.5; // seconds that the level takes ",
+						"globalThis.stageStartTime = runtime.gameTime;",
+						"",
+						"",
+						"// progress bar",
+						"const fill = runtime.objects.Progress_bar_fill.getFirstInstance();",
+						"if (fill) {",
+						"    globalThis.maxBarWidth = fill.width;",
+						"    fill.width = 0; // start with zero fill",
+						"}",
+						"",
+						"// score",
+						"runtime.globalVars.Score = 0;",
+						"",
+						"// global vars for fade after the level",
+						"globalThis.finished = false;",
+						"globalThis.fade = 100;   // opacity",
+						"globalThis.fadeSpeed = 120;  // opacity / second",
+						""
+					]
+				}
+			],
+			"sid": 884896111873384
+		},
+		{
+			"functionName": "showPause",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"runtime.timeScale = 0;",
+						"",
+						"const bg = runtime.objects.Pause_BG.getFirstInstance();",
+						"const help   = runtime.objects.Help_button.getFirstInstance();",
+						"const resume  = runtime.objects.Resume_button.getFirstInstance();",
+						"const restart = runtime.objects.Restart_button.getFirstInstance();",
+						"const home    = runtime.objects.Home_button.getFirstInstance();",
+						"",
+						"if (bg) bg.isVisible = true;",
+						"if (help)   help.isVisible = true;",
+						"if (resume)  resume.isVisible = true;",
+						"if (restart) restart.isVisible = true;",
+						"if (home)    home.isVisible = true;"
+					]
+				}
+			],
+			"sid": 553132830995075
+		},
+		{
+			"functionName": "hidePause",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"runtime.timeScale = 1;",
+						"",
+						"const bg = runtime.objects.Pause_BG.getFirstInstance();",
+						"const help = runtime.objects.Help_button.getFirstInstance();",
+						"const resume  = runtime.objects.Resume_button.getFirstInstance();",
+						"const restart = runtime.objects.Restart_button.getFirstInstance();",
+						"const home    = runtime.objects.Home_button.getFirstInstance();",
+						"",
+						"if (bg) bg.isVisible = false;",
+						"if (help)   help.isVisible = false;",
+						"if (resume)  resume.isVisible = false;",
+						"if (restart) restart.isVisible = false;",
+						"if (home)    home.isVisible = false;"
+					]
+				}
+			],
+			"sid": 852488566430641
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 110712669300771
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const scrollSpeed = 40",
+						"const bg = runtime.objects.Background.getFirstInstance();",
+						"// the background keeps moving to the left until it reaches the end",
+						"if (bg && bg.x > -450) {",
+						"\tbg.x -= scrollSpeed * runtime.dt;",
+						"} else {",
+						"\t",
+						"}",
+						"",
+						"",
+						"// filling the progress bar",
+						"const fill = runtime.objects.Progress_bar_fill.getFirstInstance();",
+						"if (!fill) return;",
+						"",
+						"// elapsed time",
+						"const elapsed = runtime.gameTime - globalThis.stageStartTime;",
+						"",
+						"// progress (0~1)",
+						"let progress = elapsed / globalThis.stageDuration;",
+						"progress = Math.max(0, Math.min(progress, 1));",
+						"",
+						"// Adjusting the width",
+						"fill.width = progress * globalThis.maxBarWidth;",
+						"",
+						"// when the stage is done",
+						"if (progress >= 1) {",
+						"    //console.log(\"Stage Complete!\");",
+						"\tif(!globalThis.finished){",
+						"\t\tglobalThis.finished = true;",
+						"\t}",
+						"}",
+						"",
+						"// updating the score text",
+						"const t = runtime.objects.ScoreText.getFirstInstance();",
+						"if (t) t.text = \"Score: \" + runtime.globalVars.Score;",
+						"",
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player && player.y < 0){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 600);",
+						"}",
+						"if(player && player.y > 800){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), -600);",
+						"}",
+						"",
+						"// fade after the level",
+						"const dt = runtime.dt;",
+						"const fadeObj = runtime.objects.Fade.getFirstInstance();",
+						"if (!fadeObj) return;",
+						"",
+						"if (!globalThis.finished && globalThis.fade > 0) {",
+						"    globalThis.fade -= globalThis.fadeSpeed * dt;",
+						"}",
+						"",
+						"if (globalThis.finished && globalThis.fade < 100) {",
+						"    globalThis.fade += globalThis.fadeSpeed * dt;",
+						"}",
+						"",
+						"// clamp",
+						"globalThis.fade = Math.max(0, Math.min(100, globalThis.fade));",
+						"",
+						"// apply opacity",
+						"fadeObj.opacity = globalThis.fade / 100;",
+						"",
+						"",
+						"// stop all sprites when finished",
+						"if (globalThis.finished) {",
+						"\tfor (let fish of runtime.objects.Fish.getAllInstances()) {",
+						"\t\tfish.behaviors.Bullet.speed = 0;",
+						"\t}",
+						"\tfor (let coral of runtime.objects.Coral.getAllInstances()) {",
+						"\t\tcoral.behaviors.Bullet.speed = 0;",
+						"\t}",
+						"\tfor (let trash of runtime.objects.Trash.getAllInstances()) {",
+						"\t\ttrash.behaviors.Bullet.speed = 0;",
+						"\t}",
+						"\tlet player = runtime.objects.Player_sprite.getFirstInstance();",
+						"\tif(!player) return;",
+						"",
+						"\tplayer.behaviors.Physics.setVelocity(0, 0);",
+						"\tplayer.behaviors.Physics.angularVelocity = 0;",
+						"\tplayer.behaviors.Physics.enabled = false;",
+						"}"
+					]
+				}
+			],
+			"sid": 563844446089038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 657818363348743,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 250);",
+						"}",
+						"// when the screen is clicked, it moves the diver down"
+					]
+				}
+			],
+			"sid": 459841307105639
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 300631578009932
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if(player){",
+						"\tconst phys = player.behaviors.Physics;",
+						"\tphys.setVelocity(phys.getVelocityX(), 200);",
+						"}",
+						"// when the screen is tapped, it moves the diver down"
+					]
+				}
+			],
+			"sid": 646759310340099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 792084631165325,
+					"parameters": {
+						"interval-seconds": "random(3.0,4.0)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 377087693752254,
+					"parameters": {
+						"object-to-create": "Fish",
+						"layer": "0",
+						"x": "ViewportRight(0) + 50",
+						"y": "random( 0, 500 )",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Fish",
+					"sid": 985436658521263,
+					"parameters": {
+						"animation": "\"fish\" & floor(random(1,7))",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Fish",
+					"sid": 619002117470772,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Fish",
+					"sid": 769119518102529,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Fish",
+					"sid": 462222601998818,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "random(150,250)"
+					}
+				}
+			],
+			"sid": 373944309189266
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fish",
+					"sid": 276173996674818,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// increase the animation fram and subtract the score",
+						"for (const fish of runtime.objects.Fish.getPickedInstances()) {",
+						"    if (!fish.instVars.Touched) {",
+						"        runtime.globalVars.Score -= 5;",
+						"        fish.animationFrame += 1;",
+						"        fish.instVars.Touched = true;",
+						"    }",
+						"}"
+					]
+				}
+			],
+			"sid": 449176336362245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 105063324635504,
+					"parameters": {
+						"interval-seconds": "random(1.5, 4.0)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"const SPEED = 100;\t\t// speed of corals",
+						"const MARGIN_MIN = 100;\t// lower bound for y coordinate margin",
+						"const MARGIN_MAX = 180;\t// upper bound for y coordinate margin",
+						"",
+						"const player = runtime.objects.Player_sprite.getFirstInstance();",
+						"if (!player) return;",
+						"",
+						"const H = runtime.layout.height;\t// height of the screen",
+						"const x = player.x + 1800;\t\t\t \t// starting x coordinates for corals",
+						"",
+						"const BOT_Y = H - (MARGIN_MIN + Math.random() * (MARGIN_MAX - MARGIN_MIN));\t// randomizing y coordinate for corals",
+						"",
+						"const minScale = 0.9;\t\t// lower bound for scale",
+						"const maxScale = 1.2;\t\t// upper bound for scale",
+						"",
+						"const scale = minScale + Math.random() * (maxScale - minScale);\t\t\t\t//randomizing coral scales",
+						"",
+						"const NUM_ANIM = 36;\t\t// number of coral animations",
+						"",
+						"// creating the coral",
+						"let coral = runtime.objects.Coral.createInstance(0, x, BOT_Y);",
+						"if (coral) {",
+						"",
+						"  const animIndex = Math.floor(Math.random() * NUM_ANIM) + 1;",
+						"  coral.setAnimation(\"coral\" + animIndex);",
+						"  ",
+						"  coral.animationSpeed = 0;",
+						"  coral.animationFrame = Math.floor(Math.random() * 2);",
+						"  ",
+						"  coral.height = coral.height * scale;",
+						"  coral.width = coral.width * scale;",
+						"",
+						"  const b = coral.behaviors.Bullet;",
+						"  b.speed = SPEED;",
+						"}"
+					]
+				}
+			],
+			"sid": 893238584961485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Trash",
+					"sid": 511352166113569,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Trash",
+					"sid": 483390625821317
+				},
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// add the score",
+						"runtime.globalVars.Score += 10;"
+					]
+				}
+			],
+			"sid": 221555567636839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 333982771839271,
+					"parameters": {
+						"interval-seconds": "2.8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 821259205253467,
+					"parameters": {
+						"object-to-create": "Trash",
+						"layer": "0",
+						"x": "ViewportRight(0) + 50",
+						"y": "random( 100, 700 )",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Trash",
+					"sid": 988356816603748,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Trash",
+					"sid": 228788488667262,
+					"parameters": {
+						"frame-number": "random(Trash.AnimationFrameCount)"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Trash",
+					"sid": 117064428142861,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Trash",
+					"sid": 511212105360628,
+					"parameters": {
+						"angle": "random(-45,45)"
+					}
+				}
+			],
+			"sid": 406033068386923
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Coral",
+					"sid": 946424840252356,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// increase the animation fram and subtract the score",
+						"for (const coral of runtime.objects.Coral.getPickedInstances()) {",
+						"    if (!coral.instVars.Touched) {",
+						"        runtime.globalVars.Score -= 5;",
+						"        coral.animationFrame += 1;",
+						"        coral.instVars.Touched = true;",
+						"    }",
+						"}"
+					]
+				}
+			],
+			"sid": 406338076243852
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 930157761470710,
+					"parameters": {
+						"key": 80
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "showPause",
+					"sid": 973961577237620
+				}
+			],
+			"sid": 737280133463388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 566237922152889,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Resume_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "hidePause",
+					"sid": 377623665572264
+				}
+			],
+			"sid": 247296030914343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 251002493636867,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Pause_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "showPause",
+					"sid": 816182268392219
+				}
+			],
+			"sid": 250958793185762
+		}
+	],
 	"sid": 165858121014550
 }

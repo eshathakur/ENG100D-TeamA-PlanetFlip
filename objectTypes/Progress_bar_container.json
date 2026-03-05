@@ -1,0 +1,60 @@
+{
+	"name": "Progress_bar_container",
+	"plugin-id": "Sprite",
+	"sid": 642350222071427,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 446,
+						"height": 84,
+						"originX": 0,
+						"originY": 0.4642857142857143,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8557638,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.1882086167800454,
+								1,
+								0.8117913832199546,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.8117913832199546,
+								0,
+								0.1882086167800454
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 423974571068437,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

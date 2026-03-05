@@ -1,5 +1,359 @@
 {
 	"name": "EventStartPage",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 687692182771252
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "helpTodayButton",
+					"sid": 792090189091709,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "helpTodayButton.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "helpTodayButton",
+					"sid": 371189496081959,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "helpTodayButton.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "startButton",
+					"sid": 980641046253515,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "startButton.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "startButton",
+					"sid": 566246989289964,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "startButton.baseH"
+					}
+				}
+			],
+			"sid": 739518844522516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 658735006555484,
+					"parameters": {
+						"object": "startButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 193928470918215,
+					"parameters": {
+						"width": "startButton.baseW * 0.9",
+						"height": "startButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 498034355462076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 329066972998961,
+					"parameters": {
+						"object": "helpTodayButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "helpTodayButton",
+					"sid": 363812432478200,
+					"parameters": {
+						"width": "helpTodayButton.baseW * 0.9",
+						"height": "helpTodayButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 265709100640572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 321397113487607,
+					"parameters": {
+						"object": "startButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 627755775728911,
+					"parameters": {
+						"width": "startButton.baseW * 0.9",
+						"height": "startButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 300874694278373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 418000769828300
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 299285239511601,
+					"parameters": {
+						"width": "startButton.baseW ",
+						"height": "startButton.baseH"
+					}
+				}
+			],
+			"sid": 568969836224912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 519850518246860,
+					"parameters": {
+						"object": "helpTodayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "helpTodayButton",
+					"sid": 303472648207154,
+					"parameters": {
+						"width": "helpTodayButton.baseW * 0.9",
+						"height": "helpTodayButton.baseH * 0.9"
+					}
+				}
+			],
+			"sid": 186410894199513
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 827159224746703
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "helpTodayButton",
+					"sid": 658829305584214,
+					"parameters": {
+						"width": "helpTodayButton.baseW",
+						"height": "helpTodayButton.baseH"
+					}
+				}
+			],
+			"sid": 721506666980204
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 117262316497940,
+					"parameters": {
+						"object": "startButton",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "startButton",
+					"sid": 216225316389704,
+					"parameters": {
+						"width": "startButton.baseW ",
+						"height": "startButton.baseH"
+					}
+				}
+			],
+			"sid": 852643300035047
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 391385182224730,
+					"parameters": {
+						"object": "helpTodayButton",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "helpTodayButton",
+					"sid": 493246454670918,
+					"parameters": {
+						"width": "helpTodayButton.baseW",
+						"height": "helpTodayButton.baseH"
+					}
+				}
+			],
+			"sid": 302652456794515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 886019992713013,
+					"parameters": {
+						"object": "startButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 943115137337914,
+					"parameters": {
+						"layout": "Context1"
+					}
+				}
+			],
+			"sid": 410085355594729
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 636775656080139,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "startButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 702017667786482,
+					"parameters": {
+						"layout": "Context1"
+					}
+				}
+			],
+			"sid": 604360166773170
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 721526213398661,
+					"parameters": {
+						"object": "helpTodayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 172374894395445,
+					"parameters": {
+						"layout": "LearnMorePage"
+					}
+				}
+			],
+			"sid": 118904160334122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 656701444579430,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "helpTodayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 908343274209770,
+					"parameters": {
+						"layout": "LearnMorePage"
+					}
+				}
+			],
+			"sid": 263255558861429
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 405538551064067
+		}
+	],
 	"sid": 656075745653536
 }

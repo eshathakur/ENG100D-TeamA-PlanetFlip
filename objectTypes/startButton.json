@@ -1,0 +1,25 @@
+{
+	"name": "startButton",
+	"plugin-id": "SVGPicture",
+	"sid": 198244342460603,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "baseW",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 975237072186782
+		},
+		{
+			"name": "baseH",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 787609267464898
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

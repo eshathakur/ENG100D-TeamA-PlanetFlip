@@ -5,7 +5,154 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "startBackground",
+					"properties": {
+						"svg-file": 323826441136793,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 535036,
+					"sid": 669668815281706,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 669668815281706,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3,
+						"y": -3,
+						"width": 1277,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "reefRescuerTitle",
+					"properties": {
+						"svg-file": 200816701271382,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 420056,
+					"sid": 273394622344676,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 273394622344676,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 408,
+						"y": 127,
+						"width": 467.99999999999994,
+						"height": 280.5154639175257,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "startButton",
+					"properties": {
+						"svg-file": 991044323006959,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 604619,
+					"sid": 179570447688328,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 179570447688328,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 680,
+						"y": 520,
+						"width": 316,
+						"height": 78.555439976083,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "helpTodayButton",
+					"properties": {
+						"svg-file": 881187414098017,
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 507288,
+					"sid": 260607667757552,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 260607667757552,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 307,
+						"y": 520,
+						"width": 313,
+						"height": 105,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 132462100997301,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -52,8 +199,8 @@
 		}
 	],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 1280,
+	"height": 720,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

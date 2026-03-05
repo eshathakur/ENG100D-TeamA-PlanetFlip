@@ -1,12 +1,12 @@
 {
-	"name": "Context1",
+	"name": "LearnMorePage",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 343518147515868,
+			"sid": 587972877250834,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -40,7 +40,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 935689099977373,
+	"sid": 811712946840445,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,
@@ -49,5 +49,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "EventContext1"
+	"eventSheet": "EventLearnMorePage"
 }

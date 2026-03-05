@@ -33,6 +33,13 @@
 			"name": "Touch",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
@@ -45,7 +52,17 @@
 			"startBackground",
 			"startButton",
 			"DC_Background",
-			"Diver"
+			"Diver",
+			"swatchBox",
+			"confirmButton",
+			"blackColorBox",
+			"pinkColorBox",
+			"redColorBox",
+			"orangeColorBox",
+			"grayColorBox",
+			"blueColorBox",
+			"purpleColorBox",
+			"greenColorBox"
 		],
 		"subfolders": []
 	},
@@ -53,7 +70,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"ColorBoxes"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -192,6 +211,22 @@
 					"name": "title.svg",
 					"type": "image/svg+xml",
 					"sid": 200816701271382,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirmButton.svg",
+					"type": "image/svg+xml",
+					"sid": 878817176673070,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "swatchBox.svg",
+					"type": "image/svg+xml",
+					"sid": 365882002887144,
 					"file-info": {
 						"purpose": "none"
 					}

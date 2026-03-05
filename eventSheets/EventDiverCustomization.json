@@ -1,5 +1,447 @@
 {
 	"name": "EventDiverCustomization",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SelectedColorBoxUID",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 142785332488075
+		},
+		{
+			"eventType": "variable",
+			"name": "DiverColor",
+			"type": "string",
+			"initialValue": "black",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 753212653177019
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 183589933399667
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 295901446711479,
+					"parameters": {
+						"variable": "DiverColor",
+						"value": "\"black\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Diver",
+					"sid": 462700598974553,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Diver",
+					"sid": 291921693654073,
+					"parameters": {
+						"speed": "1.5"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ColorBoxes",
+					"sid": 631328900356689,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "confirmButton",
+					"sid": 989043179512406,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "confirmButton.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "confirmButton",
+					"sid": 897925982300495,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "confirmButton.Width"
+					}
+				}
+			],
+			"sid": 976319995636775,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 584912640447442,
+							"parameters": {
+								"object": "ColorBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 656769347871850,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 812083080455749
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 704514247793800,
+							"parameters": {
+								"object": "ColorBoxes",
+								"expression": "ColorBoxes.colorName",
+								"comparison": 0,
+								"value": "\"black\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 749419698424131,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 890583413048573,
+							"parameters": {
+								"variable": "SelectedColorBoxUID",
+								"value": "ColorBoxes.UID"
+							}
+						}
+					],
+					"sid": 508785541111988
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 637510260489163,
+					"parameters": {
+						"object": "confirmButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "confirmButton",
+					"sid": 714325200194600,
+					"parameters": {
+						"width": "confirmButton.baseW*0.9",
+						"height": "confirmButton.baseH*0.9"
+					}
+				}
+			],
+			"sid": 676321637257357
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 332589315510160
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "confirmButton",
+					"sid": 821595418649999,
+					"parameters": {
+						"width": "confirmButton.baseW",
+						"height": "confirmButton.baseH"
+					}
+				}
+			],
+			"sid": 859161055021026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 820490377076556,
+					"parameters": {
+						"object": "confirmButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "confirmButton",
+					"sid": 476077854827053,
+					"parameters": {
+						"width": "confirmButton.baseW*0.9",
+						"height": "confirmButton.baseH*0.9"
+					}
+				}
+			],
+			"sid": 594761116946561
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 508809285366345,
+					"parameters": {
+						"object": "confirmButton",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "confirmButton",
+					"sid": 146459502696997,
+					"parameters": {
+						"width": "confirmButton.baseW",
+						"height": "confirmButton.baseH"
+					}
+				}
+			],
+			"sid": 509452860297688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 273022688723699,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ColorBoxes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 101444888893179,
+					"parameters": {
+						"variable": "SelectedColorBoxUID",
+						"value": "ColorBoxes.UID"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 401760241137880,
+					"parameters": {
+						"variable": "DiverColor",
+						"value": "ColorBoxes.colorName"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Diver",
+					"sid": 708958602557206,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 453793871273375,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 465323573635218,
+							"parameters": {
+								"object": "ColorBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 566612642185994,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 303825395315367
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 310708384907845,
+							"parameters": {
+								"object": "ColorBoxes",
+								"expression": "ColorBoxes.UID",
+								"comparison": 0,
+								"value": "SelectedColorBoxUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 835248493941778,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 270421165450966
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 699783157537612,
+					"parameters": {
+						"object": "ColorBoxes",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 581670762533627,
+					"parameters": {
+						"variable": "SelectedColorBoxUID",
+						"value": "ColorBoxes.UID"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 805339548759846,
+					"parameters": {
+						"variable": "DiverColor",
+						"value": "ColorBoxes.colorName"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Diver",
+					"sid": 478159571843030,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 670708173359966,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 390127245515772,
+							"parameters": {
+								"object": "ColorBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 890276911165783,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 821355240057298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 939657106574814,
+							"parameters": {
+								"object": "ColorBoxes",
+								"expression": "ColorBoxes.UID",
+								"comparison": 0,
+								"value": "SelectedColorBoxUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 467951298849969,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 750767230124525
+				}
+			]
+		}
+	],
 	"sid": 549945101914184
 }

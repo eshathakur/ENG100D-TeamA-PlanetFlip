@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 973145418296907
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,7 +26,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2860629,
+						"imageSpriteId": 2899954,
 						"collisionPoly": {
 							"points": [
 								0.17708333333333334,
@@ -52,7 +58,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6304526,
+						"imageSpriteId": 4690767,
 						"collisionPoly": {
 							"points": [
 								0.7291666666666666,

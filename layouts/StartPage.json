@@ -81,7 +81,7 @@
 					"properties": {
 						"svg-file": 991044323006959,
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "center"
 					},
 					"uid": 604619,
 					"sid": 179570447688328,
@@ -98,12 +98,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 680,
-						"y": 520,
+						"x": 844,
+						"y": 559,
 						"width": 316,
 						"height": 78.555439976083,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -119,7 +119,7 @@
 					"properties": {
 						"svg-file": 881187414098017,
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "center"
 					},
 					"uid": 507288,
 					"sid": 260607667757552,
@@ -136,12 +136,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 307,
-						"y": 520,
+						"x": 459,
+						"y": 557,
 						"width": 313,
 						"height": 105,
-						"originX": 0,
-						"originY": 0,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

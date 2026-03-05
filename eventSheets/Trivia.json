@@ -168,10 +168,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 253191175687723,
+					"sid": 204071154946578,
 					"parameters": {
 						"variable": "Correct",
-						"value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".correct\")"
+						"value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".correct_index\")"
 					}
 				},
 				{

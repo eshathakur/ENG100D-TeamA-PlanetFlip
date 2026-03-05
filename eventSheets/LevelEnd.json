@@ -34,9 +34,9 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 625610074602557,
+					"sid": 867831996509624,
 					"parameters": {
-						"variable": "CurrentLevel",
+						"variable": "TotalScore",
 						"value": "LevelScore + quizScore"
 					}
 				},

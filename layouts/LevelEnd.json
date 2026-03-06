@@ -384,7 +384,7 @@
 					"locked": false,
 					"world": {
 						"x": 312,
-						"y": 400,
+						"y": 360,
 						"width": 652,
 						"height": 227,
 						"originX": 0,
@@ -437,7 +437,7 @@
 					"locked": false,
 					"world": {
 						"x": 312,
-						"y": 370,
+						"y": 320,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -491,6 +491,121 @@
 				}
 			],
 			"sid": 137370724981613,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Buttons",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "HelpToday",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 813064,
+					"sid": 813746172410185,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 813746172410185,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 560,
+						"y": 600,
+						"width": 153,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NextLevel",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 188536,
+					"sid": 926623004835760,
+					"tags": "",
+					"instanceVariables": {
+						"baseW": 0,
+						"baseH": 0
+					},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 926623004835760,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 740,
+						"y": 600,
+						"width": 153,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 614260929630813,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

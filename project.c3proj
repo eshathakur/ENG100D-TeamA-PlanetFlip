@@ -186,7 +186,9 @@
 			"LevelSelectBackground",
 			"Level1Select",
 			"Level2Select",
-			"Level3Select"
+			"Level3Select",
+			"HelpToday",
+			"NextLevel"
 		],
 		"subfolders": []
 	},

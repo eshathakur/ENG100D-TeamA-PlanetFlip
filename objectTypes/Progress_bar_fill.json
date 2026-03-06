@@ -1,60 +1,23 @@
 {
 	"name": "Progress_bar_fill",
-	"plugin-id": "Sprite",
-	"sid": 213737227060566,
+	"plugin-id": "TiledBg",
+	"sid": 555962889320694,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
-	"animations": {
-		"items": [
-			{
-				"frames": [
-					{
-						"width": 500,
-						"height": 100,
-						"originX": 0.02,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 9488133,
-						"collisionPoly": {
-							"points": [
-								0.0021691973969631237,
-								0.01282051282051282,
-								0.9522776572668112,
-								0.01282051282051282,
-								0.9913232104121475,
-								0.24358974358974358,
-								0.9913232104121475,
-								0.7564102564102564,
-								0.9522776572668112,
-								0.9871794871794872,
-								0.0021691973969631237,
-								0.9871794871794872,
-								0,
-								0.7564102564102564,
-								0,
-								0.24358974358974358
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					}
-				],
-				"sid": 959464636518051,
-				"name": "Animation 1",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			}
-		],
-		"subfolders": []
+	"image": {
+		"width": 397,
+		"height": 66,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6277307,
+		"useCollisionPoly": true,
+		"tag": ""
 	}
 }

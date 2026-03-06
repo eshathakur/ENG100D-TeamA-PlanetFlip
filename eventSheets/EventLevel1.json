@@ -142,23 +142,6 @@
 						"variable": "StageStartTime",
 						"value": "time"
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 400220069014343,
-					"parameters": {
-						"variable": "maxBarWidth",
-						"value": "Progress_bar_fill.width"
-					}
-				},
-				{
-					"id": "set-width",
-					"objectClass": "Progress_bar_fill",
-					"sid": 501082056163809,
-					"parameters": {
-						"width": "0"
-					}
 				}
 			],
 			"sid": 884896111873384
@@ -216,7 +199,7 @@
 				{
 					"id": "set-width",
 					"objectClass": "Progress_bar_fill",
-					"sid": 287810440795664,
+					"sid": 978303881727306,
 					"parameters": {
 						"width": "clamp((time - stageStartTime) / stageDuration, 0, 1) * maxBarWidth"
 					}
@@ -316,9 +299,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 577248080118729,
+					"sid": 797729198173436,
 					"parameters": {
-						"interval-seconds": "random(2.0,4.0)"
+						"interval-seconds": "random(1.0,3.0)"
 					}
 				}
 			],
@@ -326,11 +309,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 125623337205831,
+					"sid": 533078230275242,
 					"parameters": {
 						"object-to-create": "Fish",
 						"layer": "0",
-						"x": "ViewportRight(0)",
+						"x": "ViewportRight(0) + 10",
 						"y": "random( Coral.Height/2+10, ViewportBottom(0) - Coral.Height/2 - 10 )",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -355,10 +338,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Fish",
-					"sid": 805392660941801,
+					"sid": 125323906003103,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "100"
+						"speed": "random(125,150)"
 					}
 				}
 			],
@@ -410,9 +393,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 940210039617241,
+					"sid": 347921865482043,
 					"parameters": {
-						"interval-seconds": "random(0.5,2.8)"
+						"interval-seconds": "random(1.5,3.0)"
 					}
 				}
 			],
@@ -469,12 +452,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 673592695316650,
+					"sid": 200102236831694,
 					"parameters": {
 						"object-to-create": "Coral",
 						"layer": "0",
-						"x": "ViewportRight(0) + 50",
-						"y": "random(500, 550)",
+						"x": "ViewportRight(0)",
+						"y": "random(620, 720)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -563,11 +546,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 830426963799881,
+					"sid": 275658981852717,
 					"parameters": {
 						"object-to-create": "Trash",
 						"layer": "0",
-						"x": "ViewportRight(0)",
+						"x": "ViewportRight(0) + 10",
 						"y": "random(100, 600)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -709,6 +692,52 @@
 				}
 			],
 			"sid": 992206730713062
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Player_sprite",
+					"sid": 125145728688725
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-impulse-towards-position",
+					"objectClass": "Player_sprite",
+					"sid": 118262939518436,
+					"behaviorType": "Physics",
+					"parameters": {
+						"impulse": "100",
+						"x": "156",
+						"y": "360",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 680664629683769
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 179271520852920
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Player_sprite",
+					"sid": 779951279810034,
+					"parameters": {
+						"x": "156"
+					}
+				}
+			],
+			"sid": 274043571920699
 		}
 	],
 	"sid": 165858121014550

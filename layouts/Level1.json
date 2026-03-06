@@ -178,8 +178,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 580,
-						"y": 435,
+						"x": 501,
+						"y": 908,
 						"width": 57.599999999999994,
 						"height": 38.4,
 						"originX": 0.5,
@@ -232,12 +232,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 458,
-						"y": 676,
+						"x": 263,
+						"y": 960,
 						"width": 120,
 						"height": 104,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"color": [
 							1,
 							1,
@@ -284,8 +284,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 410,
-						"y": 244,
+						"x": 133,
+						"y": 937,
 						"width": 43.63636363636363,
 						"height": 76.8,
 						"originX": 0.5,
@@ -335,80 +335,6 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "Progress_bar_fill",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 422452,
-					"sid": 719583678466055,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 719583678466055,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 647,
-						"y": 78,
-						"width": 400,
-						"height": 80,
-						"originX": 0.02,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Progress_bar_container",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 851981,
-					"sid": 738876369632832,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 738876369632832,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 643.48286697107,
-						"y": 77.93127059562288,
-						"width": 390.40000000000003,
-						"height": 67.2,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "ScoreText",
 					"properties": {
@@ -483,11 +409,105 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 759,
-						"y": 834,
+						"x": 743,
+						"y": 978,
 						"width": 400,
 						"height": 80,
 						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Progress_bar_fill",
+					"properties": {
+						"initially-visible": true,
+						"origin": "left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 546734,
+					"sid": 724002294688434,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 724002294688434,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 643,
+						"y": 78,
+						"width": 397,
+						"height": 67,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Progress_bar_container",
+					"properties": {
+						"initially-visible": true,
+						"origin": "left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 450317,
+					"sid": 652803793811260,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 652803793811260,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 643,
+						"y": 78,
+						"width": 397,
+						"height": 67,
+						"originX": 0,
 						"originY": 0.5,
 						"color": [
 							1,

@@ -148,9 +148,7 @@
 			"startButton",
 			"DC_Background",
 			"Diver",
-			"Progress_bar_container",
 			"ScoreText",
-			"Progress_bar_fill",
 			"bar_fill_left_end",
 			"LevelBackground",
 			"PassOrFail",
@@ -207,7 +205,9 @@
 			"Sprite2",
 			"MoreInfoHeader",
 			"QuizInfo",
-			"Sprite3"
+			"Sprite3",
+			"Progress_bar_fill",
+			"Progress_bar_container"
 		],
 		"subfolders": []
 	},

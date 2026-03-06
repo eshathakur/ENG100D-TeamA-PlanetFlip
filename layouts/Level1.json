@@ -11,7 +11,7 @@
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
-						"wrap-horizontal": "repeat",
+						"wrap-horizontal": "mirror-repeat",
 						"wrap-vertical": "repeat",
 						"image-offset-x": 0,
 						"image-offset-y": 0,
@@ -336,6 +336,43 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Progress_bar_fill",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 422452,
+					"sid": 719583678466055,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 719583678466055,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 647,
+						"y": 78,
+						"width": 400,
+						"height": 80,
+						"originX": 0.02,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Progress_bar_container",
 					"properties": {
 						"initially-visible": true,
@@ -356,8 +393,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 640,
-						"y": 75,
+						"x": 643.48286697107,
+						"y": 77.93127059562288,
 						"width": 390.40000000000003,
 						"height": 67.2,
 						"originX": 0,
@@ -377,7 +414,7 @@
 					"properties": {
 						"text": "Score: ",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Handjet-SemiBold",
 						"size": 40,
 						"line-height": 0,
 						"bold": false,
@@ -426,43 +463,6 @@
 					}
 				},
 				{
-					"type": "Progress_bar_fill",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 422452,
-					"sid": 719583678466055,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 719583678466055,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 640,
-						"y": 75,
-						"width": 400,
-						"height": 80,
-						"originX": 0.02,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "bar_fill_left_end",
 					"properties": {
 						"initially-visible": true,
@@ -483,8 +483,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 830,
-						"y": 75,
+						"x": 759,
+						"y": 834,
 						"width": 400,
 						"height": 80,
 						"originX": 0.5,

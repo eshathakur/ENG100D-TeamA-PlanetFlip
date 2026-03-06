@@ -71,16 +71,6 @@
 						"comparison": 5,
 						"value": "100"
 					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 634502582898599,
-					"parameters": {
-						"variable": "TotalScore",
-						"comparison": 2,
-						"value": "100"
-					}
 				}
 			],
 			"actions": [
@@ -108,11 +98,30 @@
 					"parameters": {
 						"text": "\"You successfully cleaned  the trash, algae, and oil without touching the coral. Because of your actions, the clownfish were able to return home. \""
 					}
-				},
+				}
+			],
+			"sid": 249824879225789,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 205993928721916,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 2,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
 				{
 					"id": "set-text",
 					"objectClass": "PassOrFail",
-					"sid": 381158361685483,
+					"sid": 383213372192531,
 					"parameters": {
 						"text": "\"Fail\""
 					}
@@ -120,7 +129,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "FishyHome",
-					"sid": 643509542203694,
+					"sid": 206282190961758,
 					"parameters": {
 						"text": "\"Try again! You didn’t clean enough the trash, algae, and oil without touching the coral. Play again to help the clownfish return home.\""
 					}
@@ -128,14 +137,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "KingTriton",
-					"sid": 744495002948690,
+					"sid": 886209013059808,
 					"parameters": {
 						"animation": "\"Animation 3\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 249824879225789,
+			"sid": 987377824953136,
 			"isOrBlock": true
 		}
 	],

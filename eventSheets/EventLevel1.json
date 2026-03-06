@@ -88,6 +88,15 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "Player_sprite",
+					"sid": 992631565064084,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-animation-speed",
 					"objectClass": "Player_sprite",
 					"sid": 760551367604965,
@@ -307,9 +316,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 792084631165325,
+					"sid": 577248080118729,
 					"parameters": {
-						"interval-seconds": "random(3.0,4.0)"
+						"interval-seconds": "random(2.0,4.0)"
 					}
 				}
 			],
@@ -401,9 +410,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 161626434553208,
+					"sid": 940210039617241,
 					"parameters": {
-						"interval-seconds": "2.8"
+						"interval-seconds": "random(0.5,2.8)"
 					}
 				}
 			],
@@ -460,12 +469,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 594508088957166,
+					"sid": 673592695316650,
 					"parameters": {
 						"object-to-create": "Coral",
 						"layer": "0",
 						"x": "ViewportRight(0) + 50",
-						"y": "random(500, 750)",
+						"y": "random(500, 550)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}

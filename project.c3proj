@@ -92,6 +92,20 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "destroy",
 			"name": "Destroy outside layout",
 			"author": "Scirra",
@@ -138,7 +152,14 @@
 			"Clownfish",
 			"SummaryText",
 			"TriviaSummaryTitle",
-			"KingTriton"
+			"KingTriton",
+			"BackgroundImage",
+			"Textbox",
+			"passportTicket",
+			"SToryText",
+			"nextButton",
+			"OceanBackground",
+			"NextButtonSprite"
 		],
 		"subfolders": []
 	},
@@ -152,8 +173,9 @@
 	"layouts": {
 		"items": [
 			"StartPage",
-			"Context1",
-			"Context2",
+			"Level1",
+			"StoryStart",
+			"Tutorial",
 			"Context3",
 			"Trivia",
 			"LevelEnd",
@@ -165,11 +187,12 @@
 	"eventSheets": {
 		"items": [
 			"EventStartPage",
-			"EventContext1",
-			"EventContext2",
+			"EventLevel1",
+			"EventStoryStart",
+			"EventTutorial",
 			"Context3",
-			"Trivia",
-			"LevelEnd",
+			"EventTrivia",
+			"EventLevelEnd",
 			"EventLearnMorePage",
 			"EventDiverCustomization"
 		],

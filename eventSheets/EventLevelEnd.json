@@ -1,5 +1,5 @@
 {
-	"name": "LevelEnd",
+	"name": "EventLevelEnd",
 	"events": [
 		{
 			"eventType": "variable",

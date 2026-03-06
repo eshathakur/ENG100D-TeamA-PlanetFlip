@@ -266,7 +266,7 @@
 					"objectClass": "System",
 					"sid": 943115137337914,
 					"parameters": {
-						"layout": "Context1"
+						"layout": "StoryStart"
 					}
 				}
 			],
@@ -292,7 +292,7 @@
 					"objectClass": "System",
 					"sid": 702017667786482,
 					"parameters": {
-						"layout": "Context1"
+						"layout": "StoryStart"
 					}
 				}
 			],

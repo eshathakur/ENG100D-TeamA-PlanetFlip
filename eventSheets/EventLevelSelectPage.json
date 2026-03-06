@@ -1,0 +1,186 @@
+{
+	"name": "EventLevelSelectPage",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 149412713904959
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Level1Select",
+					"sid": 312598840519244,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "Level1Select.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Level1Select",
+					"sid": 967747362731526,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "Level1Select.Width"
+					}
+				}
+			],
+			"sid": 982315088565223
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 711409448289461,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Level1Select"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 799358794636443,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 355565660102706
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 175365325758742,
+					"parameters": {
+						"object": "Level1Select"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 932510501226722,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 324187089301394
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 111224253726906,
+					"parameters": {
+						"object": "Level1Select"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level1Select",
+					"sid": 475689194497130,
+					"parameters": {
+						"width": "Level1Select.baseW*0.9",
+						"height": "Level1Select.baseH*0.9"
+					}
+				}
+			],
+			"sid": 466628782665270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 654080406882103
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level1Select",
+					"sid": 480305350809984,
+					"parameters": {
+						"width": "Level1Select.baseW",
+						"height": "Level1Select.baseH"
+					}
+				}
+			],
+			"sid": 457400615413317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 222693940427468,
+					"parameters": {
+						"object": "Level1Select",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level1Select",
+					"sid": 467096151267100,
+					"parameters": {
+						"width": "Level1Select.baseW*0.9",
+						"height": "Level1Select.baseH*0.9"
+					}
+				}
+			],
+			"sid": 765749133352611
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 166397476011753,
+					"parameters": {
+						"object": "Level1Select",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level1Select",
+					"sid": 391994737766999,
+					"parameters": {
+						"width": "Level1Select.baseW",
+						"height": "Level1Select.baseH"
+					}
+				}
+			],
+			"sid": 446498981945075
+		}
+	],
+	"sid": 637507728024714
+}

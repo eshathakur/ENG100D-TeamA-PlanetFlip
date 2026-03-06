@@ -42,9 +42,9 @@
 				{
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
-					"sid": 823689667473477,
+					"sid": 919201400345464,
 					"parameters": {
-						"layout": "\"Context3\""
+						"layout": "\"LevelSelectPage\""
 					}
 				}
 			],

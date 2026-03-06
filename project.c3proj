@@ -182,7 +182,11 @@
 			"redColorBox",
 			"reefRescuerTitle2",
 			"title",
-			"DoneButton"
+			"DoneButton",
+			"LevelSelectBackground",
+			"Level1Select",
+			"Level2Select",
+			"Level3Select"
 		],
 		"subfolders": []
 	},
@@ -201,7 +205,7 @@
 			"Level1",
 			"StoryStart",
 			"Tutorial",
-			"Context3",
+			"LevelSelectPage",
 			"Trivia",
 			"LevelEnd",
 			"LearnMorePage",
@@ -215,11 +219,11 @@
 			"EventLevel1",
 			"EventStoryStart",
 			"EventTutorial",
-			"Context3",
 			"EventTrivia",
 			"EventLevelEnd",
 			"EventLearnMorePage",
-			"EventDiverCustomization"
+			"EventDiverCustomization",
+			"EventLevelSelectPage"
 		],
 		"subfolders": []
 	},

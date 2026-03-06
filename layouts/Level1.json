@@ -11,7 +11,7 @@
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
-						"wrap-horizontal": "repeat",
+						"wrap-horizontal": "mirror-repeat",
 						"wrap-vertical": "repeat",
 						"image-offset-x": 0,
 						"image-offset-y": 0,

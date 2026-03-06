@@ -15,6 +15,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Json",
 			"name": "JSON",
 			"author": "Scirra",
@@ -188,7 +195,19 @@
 			"Level2Select",
 			"Level3Select",
 			"HelpToday",
-			"NextLevel"
+			"NextLevel",
+			"HelpTodayBG",
+			"HelpTitle",
+			"HelpLinkBG",
+			"BackToGame",
+			"HelpHeader",
+			"HelpBold1",
+			"HelpInfo",
+			"Browser",
+			"Sprite2",
+			"MoreInfoHeader",
+			"QuizInfo",
+			"Sprite3"
 		],
 		"subfolders": []
 	},

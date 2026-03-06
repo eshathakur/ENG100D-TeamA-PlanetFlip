@@ -159,7 +159,30 @@
 			"SToryText",
 			"nextButton",
 			"OceanBackground",
-			"NextButtonSprite"
+			"NextButtonSprite",
+			"Sprite",
+			"swatchBox",
+			"Background2",
+			"backToGameButton",
+			"blackColorBox",
+			"blueColorBox",
+			"confirmButton",
+			"grayColorBox",
+			"greenColorBox",
+			"greenColorBox2",
+			"helpTodayInfoTemp",
+			"helpTodayTitle",
+			"level1Icon",
+			"level2",
+			"level3",
+			"levelSelectTitle",
+			"orangeColorBox",
+			"pinkColorBox",
+			"purpleColorBox",
+			"redColorBox",
+			"reefRescuerTitle2",
+			"title",
+			"DoneButton"
 		],
 		"subfolders": []
 	},
@@ -167,7 +190,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"ColorBoxes"
+		],
 		"subfolders": []
 	},
 	"layouts": {
@@ -1083,6 +1108,78 @@
 					"name": "title.svg",
 					"type": "image/svg+xml",
 					"sid": 200816701271382,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "backToGameButton.svg",
+					"type": "image/svg+xml",
+					"sid": 857660203363125,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirmButton.svg",
+					"type": "image/svg+xml",
+					"sid": 276901799857684,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "helpTodayInfoTemp.svg",
+					"type": "image/svg+xml",
+					"sid": 755494436304059,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level1Icon.svg",
+					"type": "image/svg+xml",
+					"sid": 890739385038711,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level2Locked.svg",
+					"type": "image/svg+xml",
+					"sid": 609853804299894,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level3Locked.svg",
+					"type": "image/svg+xml",
+					"sid": 386538811203683,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "levelSelectTitle.svg",
+					"type": "image/svg+xml",
+					"sid": 732652975924706,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "swatchBox.svg",
+					"type": "image/svg+xml",
+					"sid": 211003480982910,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "title.png",
+					"type": "image/png",
+					"sid": 198805021054199,
 					"file-info": {
 						"purpose": "none"
 					}

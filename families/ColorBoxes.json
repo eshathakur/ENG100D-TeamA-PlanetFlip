@@ -1,0 +1,27 @@
+{
+	"name": "ColorBoxes",
+	"plugin-id": "Sprite",
+	"sid": 671810385154051,
+	"instanceVariables": [
+		{
+			"name": "colorName",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 353274312980772
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"blackColorBox",
+		"blueColorBox",
+		"grayColorBox",
+		"greenColorBox",
+		"greenColorBox2",
+		"orangeColorBox",
+		"pinkColorBox",
+		"purpleColorBox",
+		"redColorBox"
+	]
+}

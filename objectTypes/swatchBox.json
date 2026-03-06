@@ -1,0 +1,52 @@
+{
+	"name": "swatchBox",
+	"plugin-id": "Sprite",
+	"sid": 171770695305957,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 402,
+						"height": 437,
+						"originX": -0.0472636815920398,
+						"originY": -0.034324942791762014,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6212486,
+						"collisionPoly": {
+							"points": [
+								0.03980099502487562,
+								0,
+								0.9975124378109452,
+								0.034324942791762014,
+								0.9601990049751243,
+								0.9977116704805492,
+								0,
+								0.9633867276887872
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 311754537732090,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,5 +1,495 @@
 {
 	"name": "EventDiverCustomization",
-	"events": [],
-	"sid": 549945101914184
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "SelectedColorBoxUID",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 707231923743161
+		},
+		{
+			"eventType": "variable",
+			"name": "DiverColor",
+			"type": "string",
+			"initialValue": "black",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 639355189731859
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 596578185184156
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 883465985579353,
+					"parameters": {
+						"variable": "DiverColor",
+						"value": "\"black\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Diver",
+					"sid": 767062870854461,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Diver",
+					"sid": 196829907102641,
+					"parameters": {
+						"speed": "1.5"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "DoneButton",
+					"sid": 106914652303964,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "DoneButton.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "DoneButton",
+					"sid": 948522260285915,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "DoneButton.Width"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "blueColorBox",
+					"sid": 175984807975200,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "ColorBoxes",
+					"sid": 161614064417284,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 227903321201139,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 981134753385962,
+							"parameters": {
+								"object": "ColorBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 861087481881205,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 338239507888099
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 900729274441884,
+							"parameters": {
+								"object": "ColorBoxes",
+								"expression": "ColorBoxes.colorName",
+								"comparison": 0,
+								"value": "\"black\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 572574291510317,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 446954208216582,
+							"parameters": {
+								"variable": "SelectedColorBoxUID",
+								"value": "ColorBoxes.UID"
+							}
+						}
+					],
+					"sid": 629627662490656
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 957902985160295,
+					"parameters": {
+						"object": "DoneButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "DoneButton",
+					"sid": 517371459262485,
+					"parameters": {
+						"width": "DoneButton.baseW*0.9",
+						"height": "DoneButton.baseH*0.9"
+					}
+				}
+			],
+			"sid": 103829341137575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 994547430781184
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "DoneButton",
+					"sid": 518072666648867,
+					"parameters": {
+						"width": "DoneButton.baseW",
+						"height": "DoneButton.baseH"
+					}
+				}
+			],
+			"sid": 621691525644766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 518637456817235,
+					"parameters": {
+						"object": "DoneButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "DoneButton",
+					"sid": 340523182528908,
+					"parameters": {
+						"width": "DoneButton.baseW*0.9",
+						"height": "DoneButton.baseH*0.9"
+					}
+				}
+			],
+			"sid": 627087976286297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 486102816669415,
+					"parameters": {
+						"object": "DoneButton",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "DoneButton",
+					"sid": 755192756719407,
+					"parameters": {
+						"width": "DoneButton.baseW",
+						"height": "DoneButton.baseH"
+					}
+				}
+			],
+			"sid": 953709568253478
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 195778655133399,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ColorBoxes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 796322980274675,
+					"parameters": {
+						"variable": "SelectedColorBoxUID",
+						"value": "ColorBoxes.UID"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 210460465453656,
+					"parameters": {
+						"variable": "DiverColor",
+						"value": "ColorBoxes.colorName"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Diver",
+					"sid": 590464049255993,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Diver",
+					"sid": 296431753851018,
+					"parameters": {
+						"speed": "1.5"
+					}
+				}
+			],
+			"sid": 659699678359938,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 758069565261138,
+							"parameters": {
+								"object": "ColorBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 169552550453684,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 122914844777828
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 595897456089643,
+							"parameters": {
+								"object": "ColorBoxes",
+								"expression": "ColorBoxes.UID",
+								"comparison": 0,
+								"value": "SelectedColorBoxUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 416028484391705,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 207329240521437
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 286673173610187,
+					"parameters": {
+						"object": "ColorBoxes",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 413375211134510,
+					"parameters": {
+						"variable": "SelectedColorBoxUID",
+						"value": "ColorBoxes.UID"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 414553426049996,
+					"parameters": {
+						"variable": "DiverColor",
+						"value": "ColorBoxes.colorName"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Diver",
+					"sid": 444501636536131,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Diver",
+					"sid": 180032457561137,
+					"parameters": {
+						"speed": "1.5"
+					}
+				}
+			],
+			"sid": 674258960454595,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-all",
+							"objectClass": "System",
+							"sid": 995110605092433,
+							"parameters": {
+								"object": "ColorBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 778244119294689,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 202195755664316
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 745074984328348,
+							"parameters": {
+								"object": "ColorBoxes",
+								"expression": "ColorBoxes.UID",
+								"comparison": 0,
+								"value": "SelectedColorBoxUID"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ColorBoxes",
+							"sid": 524659437836004,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 995328114811183
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 911778645630320,
+					"parameters": {
+						"object": "DoneButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 888049064822385,
+					"parameters": {
+						"layout": "Tutorial"
+					}
+				}
+			],
+			"sid": 922039584602480
+		}
+	],
+	"sid": 744023821604007
 }

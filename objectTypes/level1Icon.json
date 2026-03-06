@@ -1,0 +1,25 @@
+{
+	"name": "level1Icon",
+	"plugin-id": "SVGPicture",
+	"sid": 412940044085712,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "baseW",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 775340721644978
+		},
+		{
+			"name": "baseH",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 869851709510006
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

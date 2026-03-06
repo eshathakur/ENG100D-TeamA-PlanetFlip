@@ -1,0 +1,25 @@
+{
+	"name": "confirmButton",
+	"plugin-id": "SVGPicture",
+	"sid": 164260478316542,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "baseW",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 290154641663261
+		},
+		{
+			"name": "baseH",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 498286212296184
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

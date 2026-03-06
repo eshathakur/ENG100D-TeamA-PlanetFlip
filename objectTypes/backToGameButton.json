@@ -1,0 +1,25 @@
+{
+	"name": "backToGameButton",
+	"plugin-id": "SVGPicture",
+	"sid": 974829529606335,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "baseW",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 264600307995263
+		},
+		{
+			"name": "baseH",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 451598499091201
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

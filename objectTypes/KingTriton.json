@@ -1,0 +1,170 @@
+{
+	"name": "KingTriton",
+	"plugin-id": "Sprite",
+	"sid": 819747892107174,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 320877,
+						"collisionPoly": {
+							"points": [
+								0.46875,
+								0.03125,
+								0.65625,
+								0.09375,
+								0.71875,
+								0.125,
+								0.8125,
+								0.21875,
+								0.84375,
+								0.28125,
+								0.9375,
+								0.90625,
+								0.9375,
+								1,
+								0.0625,
+								1,
+								0.0625,
+								0.90625,
+								0.15625,
+								0.1875,
+								0.1875,
+								0.15625,
+								0.28125,
+								0.09375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 705024674098620,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3504939,
+						"collisionPoly": {
+							"points": [
+								0.46875,
+								0.03125,
+								0.875,
+								0.125,
+								0.90625,
+								0.15625,
+								0.96875,
+								0.59375,
+								0.9375,
+								1,
+								0.0625,
+								1,
+								0.03125,
+								0.40625,
+								0.15625,
+								0.1875,
+								0.1875,
+								0.15625,
+								0.28125,
+								0.09375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 358510307486759,
+				"name": "Animation 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6341108,
+						"collisionPoly": {
+							"points": [
+								0.4671875,
+								0.0015625,
+								0.6609375,
+								0.065625,
+								0.725,
+								0.0984375,
+								0.821875,
+								0.1953125,
+								0.853125,
+								0.259375,
+								0.95,
+								0.903125,
+								0.95,
+								1,
+								0.0484375,
+								1,
+								0.0484375,
+								0.903125,
+								0.1453125,
+								0.1625,
+								0.1765625,
+								0.1296875,
+								0.2734375,
+								0.065625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 591461621450219,
+				"name": "Animation 3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

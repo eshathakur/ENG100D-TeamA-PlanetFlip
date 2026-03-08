@@ -8,6 +8,34 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Json",
+			"name": "JSON",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"id": "Keyboard",
@@ -40,6 +68,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
@@ -56,15 +91,47 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Physics",
 			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
+<<<<<<< HEAD
+=======
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
+>>>>>>> feature-ui
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
 		"items": [
+<<<<<<< HEAD
 			"helpTodayButton",
 			"reefRescuerTitle",
 			"Mouse",
@@ -90,6 +157,8 @@
 			"level1Icon",
 			"level2",
 			"level3"
+=======
+>>>>>>> feature-ui
 			"Background",
 			"Player_sprite",
 			"Mouse",
@@ -97,9 +166,89 @@
 			"Coral",
 			"Fish",
 			"Trash",
+<<<<<<< HEAD
 			"Progress_bar_container",
+=======
+			"EndScreenBG",
+			"TriviaBox",
+			"BlueTang",
+			"Trivia",
+			"TriviaCounter",
+			"Question",
+			"AJAX",
+			"JSON",
+			"AnswerBox",
+			"AnswerText",
+			"Keyboard",
+			"points",
+			"LevelEndScoreBG",
+			"helpTodayButton",
+			"reefRescuerTitle",
+			"startBackground",
+			"startButton",
+			"DC_Background",
+			"Diver",
+>>>>>>> feature-ui
 			"ScoreText",
+			"bar_fill_left_end",
+			"LevelBackground",
+			"PassOrFail",
+			"FinalScore",
+			"FishyHome",
+			"Clownfish",
+			"SummaryText",
+			"TriviaSummaryTitle",
+			"KingTriton",
+			"BackgroundImage",
+			"Textbox",
+			"passportTicket",
+			"SToryText",
+			"nextButton",
+			"OceanBackground",
+			"NextButtonSprite",
+			"Sprite",
+			"swatchBox",
+			"Background2",
+			"backToGameButton",
+			"blackColorBox",
+			"blueColorBox",
+			"confirmButton",
+			"grayColorBox",
+			"greenColorBox",
+			"greenColorBox2",
+			"helpTodayInfoTemp",
+			"helpTodayTitle",
+			"level1Icon",
+			"level2",
+			"level3",
+			"levelSelectTitle",
+			"orangeColorBox",
+			"pinkColorBox",
+			"purpleColorBox",
+			"redColorBox",
+			"reefRescuerTitle2",
+			"title",
+			"DoneButton",
+			"LevelSelectBackground",
+			"Level1Select",
+			"Level2Select",
+			"Level3Select",
+			"HelpToday",
+			"NextLevel",
+			"HelpTodayBG",
+			"HelpTitle",
+			"HelpLinkBG",
+			"BackToGame",
+			"HelpHeader",
+			"HelpBold1",
+			"HelpInfo",
+			"Browser",
+			"Sprite2",
+			"MoreInfoHeader",
+			"QuizInfo",
+			"Sprite3",
 			"Progress_bar_fill",
+<<<<<<< HEAD
 			"Fade",
 			"Pause_BG",
 			"Resume_button",
@@ -108,6 +257,9 @@
 			"Home_button",
 			"Pause_button",
 			"Keyboard"
+=======
+			"Progress_bar_container"
+>>>>>>> feature-ui
 		],
 		"subfolders": []
 	},
@@ -124,12 +276,22 @@
 		"items": [
 			"StartPage",
 			"Level1",
+<<<<<<< HEAD
 			"Context1",
 			"Context2",
 			"Context3",
 			"DiverCustomization",
 			"HelpTodayPage",
 			"LevelSelectPage"
+=======
+			"StoryStart",
+			"Tutorial",
+			"LevelSelectPage",
+			"Trivia",
+			"LevelEnd",
+			"LearnMorePage",
+			"DiverCustomization"
+>>>>>>> feature-ui
 		],
 		"subfolders": []
 	},
@@ -137,11 +299,20 @@
 		"items": [
 			"EventStartPage",
 			"EventLevel1",
+<<<<<<< HEAD
 			"EventContext1",
 			"EventContext2",
 			"Context3",
 			"EventDiverCustomization",
 			"EventHelpTodayPage",
+=======
+			"EventStoryStart",
+			"EventTutorial",
+			"EventTrivia",
+			"EventLevelEnd",
+			"EventLearnMorePage",
+			"EventDiverCustomization",
+>>>>>>> feature-ui
 			"EventLevelSelectPage"
 		],
 		"subfolders": []
@@ -164,7 +335,144 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Handjet-Black.ttf",
+					"type": "application/font-sfnt",
+					"sid": 727867719281592,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 395969251956378,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-ExtraBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 325248978484325,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-ExtraLight.ttf",
+					"type": "application/font-sfnt",
+					"sid": 174489453556729,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Light.ttf",
+					"type": "application/font-sfnt",
+					"sid": 811079582811897,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 606921369772272,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 611753874080134,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-SemiBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 253065975704078,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-Thin.ttf",
+					"type": "application/font-sfnt",
+					"sid": 643309232067870,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Handjet-VariableFont_ELGR,ELSH,wght.ttf",
+					"type": "application/font-sfnt",
+					"sid": 957191220094393,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 523458929066120,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 336985723955781,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-SemiBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 259103889035500,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 223308336741469,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PixelifySans-VariableFont_wght.ttf",
+					"type": "application/font-sfnt",
+					"sid": 743268316076442,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "DotGothic16-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 999803303117275,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PressStart2P-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 585421233092582,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
@@ -631,6 +939,14 @@
 									"icon-info": {
 										"purpose": "none"
 									}
+								},
+								{
+									"name": "lock.png",
+									"type": "image/png",
+									"sid": 979808026092715,
+									"icon-info": {
+										"purpose": "none"
+									}
 								}
 							],
 							"subfolders": [
@@ -851,6 +1167,14 @@
 		"general": {
 			"items": [
 				{
+					"name": "quiz_data.json",
+					"type": "application/json",
+					"sid": 257700072275565,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
 					"name": "startBackground.svg",
 					"type": "image/svg+xml",
 					"sid": 323826441136793,
@@ -883,6 +1207,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"name": "confirmButton.svg",
 					"type": "image/svg+xml",
 					"sid": 878817176673070,
@@ -910,6 +1235,19 @@
 					"name": "backToGameButton.svg",
 					"type": "image/svg+xml",
 					"sid": 217223131960261,
+=======
+					"name": "backToGameButton.svg",
+					"type": "image/svg+xml",
+					"sid": 857660203363125,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "confirmButton.svg",
+					"type": "image/svg+xml",
+					"sid": 276901799857684,
+>>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -917,6 +1255,7 @@
 				{
 					"name": "helpTodayInfoTemp.svg",
 					"type": "image/svg+xml",
+<<<<<<< HEAD
 					"sid": 755355936729040,
 					"file-info": {
 						"purpose": "none"
@@ -926,6 +1265,9 @@
 					"name": "levelSelectTitle.svg",
 					"type": "image/svg+xml",
 					"sid": 105908461471715,
+=======
+					"sid": 755494436304059,
+>>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -933,7 +1275,11 @@
 				{
 					"name": "level1Icon.svg",
 					"type": "image/svg+xml",
+<<<<<<< HEAD
 					"sid": 500243919351766,
+=======
+					"sid": 890739385038711,
+>>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -941,7 +1287,11 @@
 				{
 					"name": "level2Locked.svg",
 					"type": "image/svg+xml",
+<<<<<<< HEAD
 					"sid": 799710447468719,
+=======
+					"sid": 609853804299894,
+>>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -949,7 +1299,35 @@
 				{
 					"name": "level3Locked.svg",
 					"type": "image/svg+xml",
+<<<<<<< HEAD
 					"sid": 501822292375692,
+=======
+					"sid": 386538811203683,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "levelSelectTitle.svg",
+					"type": "image/svg+xml",
+					"sid": 732652975924706,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "swatchBox.svg",
+					"type": "image/svg+xml",
+					"sid": 211003480982910,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "title.png",
+					"type": "image/png",
+					"sid": 198805021054199,
+>>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}

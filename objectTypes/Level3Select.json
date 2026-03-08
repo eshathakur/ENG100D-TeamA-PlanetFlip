@@ -1,0 +1,104 @@
+{
+	"name": "Level3Select",
+	"plugin-id": "Sprite",
+	"sid": 428978356226082,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "baseW",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 396965855834137
+		},
+		{
+			"name": "baseH",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 409774089658557
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 185,
+						"height": 180,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9042295,
+						"collisionPoly": {
+							"points": [
+								0.08108108108108109,
+								0,
+								1,
+								0.08333333333333333,
+								0.9243243243243243,
+								0.9944444444444445,
+								0,
+								0.9111111111111111
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 194091867275828,
+				"name": "Locked",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 185,
+						"height": 193,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1174169,
+						"collisionPoly": {
+							"points": [
+								0.08108108108108109,
+								0,
+								1,
+								0.07772020725388601,
+								0.9243243243243243,
+								0.9948186528497409,
+								0,
+								0.917098445595855
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 808857105142960,
+				"name": "Unlocked",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

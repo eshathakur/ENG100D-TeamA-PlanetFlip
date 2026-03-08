@@ -1,7 +1,11 @@
 {
 	"name": "title",
 	"plugin-id": "SVGPicture",
+<<<<<<< HEAD
 	"sid": 674048664546118,
+=======
+	"sid": 499745170098871,
+>>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

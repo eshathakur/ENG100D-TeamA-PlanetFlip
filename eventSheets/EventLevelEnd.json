@@ -1,0 +1,402 @@
+{
+	"name": "EventLevelEnd",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "TotalScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Level score + quiz score added together",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 177805504928156
+		},
+		{
+			"eventType": "variable",
+			"name": "SummaryData",
+			"type": "string",
+			"initialValue": "",
+			"comment": "Tracks the current level's trivia questions and answers",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 809988625335699
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 468906456449945
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 867831996509624,
+					"parameters": {
+						"variable": "TotalScore",
+						"value": "LevelScore + quizScore"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FinalScore",
+					"sid": 529113727752000,
+					"parameters": {
+						"text": "TotalScore"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SummaryText",
+					"sid": 673548735011375,
+					"parameters": {
+						"text": "SummaryData"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "HelpToday",
+					"sid": 138560780923011,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "HelpToday.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "HelpToday",
+					"sid": 547014635874690,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "HelpToday.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "NextLevel",
+					"sid": 482777228842077,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "NextLevel.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "NextLevel",
+					"sid": 538961165067286,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "NextLevel.Width"
+					}
+				}
+			],
+			"sid": 137721687007350
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 139800278648888,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 5,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 560386625734525,
+					"parameters": {
+						"text": "\"Pass\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 521253573293124,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 965806813735382,
+					"parameters": {
+						"text": "\"You successfully cleaned  the trash, algae, and oil without touching the coral. Because of your actions, the clownfish were able to return home. \""
+					}
+				}
+			],
+			"sid": 249824879225789,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 205993928721916,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 2,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 383213372192531,
+					"parameters": {
+						"text": "\"Fail\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 206282190961758,
+					"parameters": {
+						"text": "\"Try again! You didn’t clean enough the trash, algae, and oil without touching the coral. Play again to help the clownfish return home.\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 886209013059808,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 987377824953136,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 951088303143693,
+					"parameters": {
+						"object": "HelpToday"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "HelpToday",
+					"sid": 856900429521155,
+					"parameters": {
+						"width": "HelpToday.baseW*0.9",
+						"height": "HelpToday.baseH*0.9"
+					}
+				}
+			],
+			"sid": 160145643800632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 511542128224510
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "HelpToday",
+					"sid": 459065637629147,
+					"parameters": {
+						"width": "HelpToday.baseW",
+						"height": "HelpToday.baseH"
+					}
+				}
+			],
+			"sid": 972697902756997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 633886464378138,
+					"parameters": {
+						"object": "HelpToday",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "HelpToday",
+					"sid": 529188771537942,
+					"parameters": {
+						"width": "HelpToday.baseW*0.9",
+						"height": "HelpToday.baseH*0.9"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 423632696179566,
+					"parameters": {
+						"layout": "LearnMorePage"
+					}
+				}
+			],
+			"sid": 948118026638203
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 210880576491803,
+					"parameters": {
+						"object": "HelpToday",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "HelpToday",
+					"sid": 840157705055985,
+					"parameters": {
+						"width": "HelpToday.baseW",
+						"height": "HelpToday.baseH"
+					}
+				}
+			],
+			"sid": 462508578080013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 624179624103070,
+					"parameters": {
+						"object": "NextLevel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "NextLevel",
+					"sid": 454449805823902,
+					"parameters": {
+						"width": "NextLevel.baseW*0.9",
+						"height": "NextLevel.baseH*0.9"
+					}
+				}
+			],
+			"sid": 616557381015317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 134178318751271
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "NextLevel",
+					"sid": 452165723779458,
+					"parameters": {
+						"width": "NextLevel.baseW",
+						"height": "NextLevel.baseH"
+					}
+				}
+			],
+			"sid": 867722228160722
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 171160740857494,
+					"parameters": {
+						"object": "NextLevel",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "NextLevel",
+					"sid": 493660644923364,
+					"parameters": {
+						"width": "NextLevel.baseW*0.9",
+						"height": "NextLevel.baseH*0.9"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 796056706313963,
+					"parameters": {
+						"layout": "LevelSelectPage"
+					}
+				}
+			],
+			"sid": 164984299402336
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 336397069853575,
+					"parameters": {
+						"object": "NextLevel",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "NextLevel",
+					"sid": 630293106848914,
+					"parameters": {
+						"width": "NextLevel.baseW",
+						"height": "NextLevel.baseH"
+					}
+				}
+			],
+			"sid": 413153816803616
+		}
+	],
+	"sid": 552359505655826
+}

@@ -9,7 +9,11 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
+<<<<<<< HEAD
 			"sid": 142785332488075
+=======
+			"sid": 707231923743161
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "variable",
@@ -19,7 +23,11 @@
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
+<<<<<<< HEAD
 			"sid": 753212653177019
+=======
+			"sid": 639355189731859
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -27,14 +35,22 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 183589933399667
+=======
+					"sid": 596578185184156
+>>>>>>> feature-ui
 				}
 			],
 			"actions": [
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 295901446711479,
+=======
+					"sid": 883465985579353,
+>>>>>>> feature-ui
 					"parameters": {
 						"variable": "DiverColor",
 						"value": "\"black\""
@@ -43,7 +59,11 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Diver",
+<<<<<<< HEAD
 					"sid": 462700598974553,
+=======
+					"sid": 767062870854461,
+>>>>>>> feature-ui
 					"parameters": {
 						"animation": "DiverColor",
 						"from": "beginning"
@@ -52,33 +72,57 @@
 				{
 					"id": "set-animation-speed",
 					"objectClass": "Diver",
+<<<<<<< HEAD
 					"sid": 291921693654073,
+=======
+					"sid": 196829907102641,
+>>>>>>> feature-ui
 					"parameters": {
 						"speed": "1.5"
 					}
 				},
 				{
 					"id": "set-instvar-value",
+<<<<<<< HEAD
 					"objectClass": "confirmButton",
 					"sid": 989043179512406,
 					"parameters": {
 						"instance-variable": "baseH",
 						"value": "confirmButton.Height"
+=======
+					"objectClass": "DoneButton",
+					"sid": 106914652303964,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "DoneButton.Height"
+>>>>>>> feature-ui
 					}
 				},
 				{
 					"id": "set-instvar-value",
+<<<<<<< HEAD
 					"objectClass": "confirmButton",
 					"sid": 897925982300495,
 					"parameters": {
 						"instance-variable": "baseW",
 						"value": "confirmButton.Width"
+=======
+					"objectClass": "DoneButton",
+					"sid": 948522260285915,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "DoneButton.Width"
+>>>>>>> feature-ui
 					}
 				},
 				{
 					"id": "set-animation-frame",
 					"objectClass": "blueColorBox",
+<<<<<<< HEAD
 					"sid": 576832300536599,
+=======
+					"sid": 175984807975200,
+>>>>>>> feature-ui
 					"parameters": {
 						"frame-number": "0"
 					}
@@ -86,13 +130,21 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 					"sid": 401589715500749,
+=======
+					"sid": 161614064417284,
+>>>>>>> feature-ui
 					"parameters": {
 						"frame-number": "0"
 					}
 				}
 			],
+<<<<<<< HEAD
 			"sid": 976319995636775,
+=======
+			"sid": 227903321201139,
+>>>>>>> feature-ui
 			"children": [
 				{
 					"eventType": "block",
@@ -100,8 +152,12 @@
 						{
 							"id": "pick-all",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 584912640447442,
 							"disabled": true,
+=======
+							"sid": 981134753385962,
+>>>>>>> feature-ui
 							"parameters": {
 								"object": "ColorBoxes"
 							}
@@ -111,13 +167,21 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 							"sid": 656769347871850,
+=======
+							"sid": 861087481881205,
+>>>>>>> feature-ui
 							"parameters": {
 								"frame-number": "0"
 							}
 						}
 					],
+<<<<<<< HEAD
 					"sid": 812083080455749
+=======
+					"sid": 338239507888099
+>>>>>>> feature-ui
 				},
 				{
 					"eventType": "block",
@@ -125,8 +189,12 @@
 						{
 							"id": "pick-by-comparison",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 704514247793800,
 							"disabled": true,
+=======
+							"sid": 900729274441884,
+>>>>>>> feature-ui
 							"parameters": {
 								"object": "ColorBoxes",
 								"expression": "ColorBoxes.colorName",
@@ -139,7 +207,11 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 							"sid": 749419698424131,
+=======
+							"sid": 572574291510317,
+>>>>>>> feature-ui
 							"parameters": {
 								"frame-number": "1"
 							}
@@ -147,14 +219,22 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 890583413048573,
+=======
+							"sid": 446954208216582,
+>>>>>>> feature-ui
 							"parameters": {
 								"variable": "SelectedColorBoxUID",
 								"value": "ColorBoxes.UID"
 							}
 						}
 					],
+<<<<<<< HEAD
 					"sid": 508785541111988
+=======
+					"sid": 629627662490656
+>>>>>>> feature-ui
 				}
 			]
 		},
@@ -164,15 +244,22 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
+<<<<<<< HEAD
 					"sid": 637510260489163,
 					"parameters": {
 						"object": "confirmButton"
+=======
+					"sid": 957902985160295,
+					"parameters": {
+						"object": "DoneButton"
+>>>>>>> feature-ui
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
+<<<<<<< HEAD
 					"objectClass": "confirmButton",
 					"sid": 714325200194600,
 					"parameters": {
@@ -182,6 +269,17 @@
 				}
 			],
 			"sid": 676321637257357
+=======
+					"objectClass": "DoneButton",
+					"sid": 517371459262485,
+					"parameters": {
+						"width": "DoneButton.baseW*0.9",
+						"height": "DoneButton.baseH*0.9"
+					}
+				}
+			],
+			"sid": 103829341137575
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -189,12 +287,17 @@
 				{
 					"id": "else",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 332589315510160
+=======
+					"sid": 994547430781184
+>>>>>>> feature-ui
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
+<<<<<<< HEAD
 					"objectClass": "confirmButton",
 					"sid": 821595418649999,
 					"parameters": {
@@ -204,6 +307,17 @@
 				}
 			],
 			"sid": 859161055021026
+=======
+					"objectClass": "DoneButton",
+					"sid": 518072666648867,
+					"parameters": {
+						"width": "DoneButton.baseW",
+						"height": "DoneButton.baseH"
+					}
+				}
+			],
+			"sid": 621691525644766
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -211,9 +325,15 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
+<<<<<<< HEAD
 					"sid": 820490377076556,
 					"parameters": {
 						"object": "confirmButton",
+=======
+					"sid": 518637456817235,
+					"parameters": {
+						"object": "DoneButton",
+>>>>>>> feature-ui
 						"type": "start"
 					}
 				}
@@ -221,6 +341,7 @@
 			"actions": [
 				{
 					"id": "set-size",
+<<<<<<< HEAD
 					"objectClass": "confirmButton",
 					"sid": 476077854827053,
 					"parameters": {
@@ -230,6 +351,17 @@
 				}
 			],
 			"sid": 594761116946561
+=======
+					"objectClass": "DoneButton",
+					"sid": 340523182528908,
+					"parameters": {
+						"width": "DoneButton.baseW*0.9",
+						"height": "DoneButton.baseH*0.9"
+					}
+				}
+			],
+			"sid": 627087976286297
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -237,9 +369,15 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
+<<<<<<< HEAD
 					"sid": 508809285366345,
 					"parameters": {
 						"object": "confirmButton",
+=======
+					"sid": 486102816669415,
+					"parameters": {
+						"object": "DoneButton",
+>>>>>>> feature-ui
 						"type": "end"
 					}
 				}
@@ -247,6 +385,7 @@
 			"actions": [
 				{
 					"id": "set-size",
+<<<<<<< HEAD
 					"objectClass": "confirmButton",
 					"sid": 146459502696997,
 					"parameters": {
@@ -256,6 +395,17 @@
 				}
 			],
 			"sid": 509452860297688
+=======
+					"objectClass": "DoneButton",
+					"sid": 755192756719407,
+					"parameters": {
+						"width": "DoneButton.baseW",
+						"height": "DoneButton.baseH"
+					}
+				}
+			],
+			"sid": 953709568253478
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -263,7 +413,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
+<<<<<<< HEAD
 					"sid": 273022688723699,
+=======
+					"sid": 195778655133399,
+>>>>>>> feature-ui
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
@@ -275,7 +429,11 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 101444888893179,
+=======
+					"sid": 796322980274675,
+>>>>>>> feature-ui
 					"parameters": {
 						"variable": "SelectedColorBoxUID",
 						"value": "ColorBoxes.UID"
@@ -284,7 +442,11 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 401760241137880,
+=======
+					"sid": 210460465453656,
+>>>>>>> feature-ui
 					"parameters": {
 						"variable": "DiverColor",
 						"value": "ColorBoxes.colorName"
@@ -293,7 +455,11 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Diver",
+<<<<<<< HEAD
 					"sid": 708958602557206,
+=======
+					"sid": 590464049255993,
+>>>>>>> feature-ui
 					"parameters": {
 						"animation": "DiverColor",
 						"from": "beginning"
@@ -302,13 +468,21 @@
 				{
 					"id": "set-animation-speed",
 					"objectClass": "Diver",
+<<<<<<< HEAD
 					"sid": 237743444178490,
+=======
+					"sid": 296431753851018,
+>>>>>>> feature-ui
 					"parameters": {
 						"speed": "1.5"
 					}
 				}
 			],
+<<<<<<< HEAD
 			"sid": 453793871273375,
+=======
+			"sid": 659699678359938,
+>>>>>>> feature-ui
 			"children": [
 				{
 					"eventType": "block",
@@ -316,7 +490,11 @@
 						{
 							"id": "pick-all",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 465323573635218,
+=======
+							"sid": 758069565261138,
+>>>>>>> feature-ui
 							"parameters": {
 								"object": "ColorBoxes"
 							}
@@ -326,13 +504,21 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 							"sid": 566612642185994,
+=======
+							"sid": 169552550453684,
+>>>>>>> feature-ui
 							"parameters": {
 								"frame-number": "0"
 							}
 						}
 					],
+<<<<<<< HEAD
 					"sid": 303825395315367
+=======
+					"sid": 122914844777828
+>>>>>>> feature-ui
 				},
 				{
 					"eventType": "block",
@@ -340,7 +526,11 @@
 						{
 							"id": "pick-by-comparison",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 310708384907845,
+=======
+							"sid": 595897456089643,
+>>>>>>> feature-ui
 							"parameters": {
 								"object": "ColorBoxes",
 								"expression": "ColorBoxes.UID",
@@ -353,13 +543,21 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 							"sid": 835248493941778,
+=======
+							"sid": 416028484391705,
+>>>>>>> feature-ui
 							"parameters": {
 								"frame-number": "1"
 							}
 						}
 					],
+<<<<<<< HEAD
 					"sid": 270421165450966
+=======
+					"sid": 207329240521437
+>>>>>>> feature-ui
 				}
 			]
 		},
@@ -369,7 +567,11 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
+<<<<<<< HEAD
 					"sid": 699783157537612,
+=======
+					"sid": 286673173610187,
+>>>>>>> feature-ui
 					"parameters": {
 						"object": "ColorBoxes",
 						"type": "end"
@@ -380,7 +582,11 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 581670762533627,
+=======
+					"sid": 413375211134510,
+>>>>>>> feature-ui
 					"parameters": {
 						"variable": "SelectedColorBoxUID",
 						"value": "ColorBoxes.UID"
@@ -389,7 +595,11 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 805339548759846,
+=======
+					"sid": 414553426049996,
+>>>>>>> feature-ui
 					"parameters": {
 						"variable": "DiverColor",
 						"value": "ColorBoxes.colorName"
@@ -398,7 +608,11 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Diver",
+<<<<<<< HEAD
 					"sid": 478159571843030,
+=======
+					"sid": 444501636536131,
+>>>>>>> feature-ui
 					"parameters": {
 						"animation": "DiverColor",
 						"from": "beginning"
@@ -407,13 +621,21 @@
 				{
 					"id": "set-animation-speed",
 					"objectClass": "Diver",
+<<<<<<< HEAD
 					"sid": 805333536477185,
+=======
+					"sid": 180032457561137,
+>>>>>>> feature-ui
 					"parameters": {
 						"speed": "1.5"
 					}
 				}
 			],
+<<<<<<< HEAD
 			"sid": 670708173359966,
+=======
+			"sid": 674258960454595,
+>>>>>>> feature-ui
 			"children": [
 				{
 					"eventType": "block",
@@ -421,7 +643,11 @@
 						{
 							"id": "pick-all",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 390127245515772,
+=======
+							"sid": 995110605092433,
+>>>>>>> feature-ui
 							"parameters": {
 								"object": "ColorBoxes"
 							}
@@ -431,13 +657,21 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 							"sid": 890276911165783,
+=======
+							"sid": 778244119294689,
+>>>>>>> feature-ui
 							"parameters": {
 								"frame-number": "0"
 							}
 						}
 					],
+<<<<<<< HEAD
 					"sid": 821355240057298
+=======
+					"sid": 202195755664316
+>>>>>>> feature-ui
 				},
 				{
 					"eventType": "block",
@@ -445,7 +679,11 @@
 						{
 							"id": "pick-by-comparison",
 							"objectClass": "System",
+<<<<<<< HEAD
 							"sid": 939657106574814,
+=======
+							"sid": 745074984328348,
+>>>>>>> feature-ui
 							"parameters": {
 								"object": "ColorBoxes",
 								"expression": "ColorBoxes.UID",
@@ -458,16 +696,53 @@
 						{
 							"id": "set-animation-frame",
 							"objectClass": "ColorBoxes",
+<<<<<<< HEAD
 							"sid": 467951298849969,
+=======
+							"sid": 524659437836004,
+>>>>>>> feature-ui
 							"parameters": {
 								"frame-number": "1"
 							}
 						}
 					],
+<<<<<<< HEAD
 					"sid": 750767230124525
 				}
 			]
 		}
 	],
 	"sid": 549945101914184
+=======
+					"sid": 995328114811183
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 911778645630320,
+					"parameters": {
+						"object": "DoneButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 888049064822385,
+					"parameters": {
+						"layout": "Tutorial"
+					}
+				}
+			],
+			"sid": 922039584602480
+		}
+	],
+	"sid": 744023821604007
+>>>>>>> feature-ui
 }

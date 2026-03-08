@@ -188,7 +188,16 @@
 		"subfolders": []
 	},
 	"sid": 504488061505794,
-	"nonworld-instances": [],
+	"nonworld-instances": [
+		{
+			"type": "JSON",
+			"properties": {},
+			"uid": 381752,
+			"sid": 978167240822440,
+			"tags": "",
+			"instanceVariables": {}
+		}
+	],
 	"effectTypes": [],
 	"width": 1280,
 	"height": 720,

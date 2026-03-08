@@ -1,0 +1,52 @@
+{
+	"name": "HelpLinkBG",
+	"plugin-id": "Sprite",
+	"sid": 979791211665446,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 699,
+						"height": 399,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8085495,
+						"collisionPoly": {
+							"points": [
+								0.02145922746781116,
+								0,
+								1,
+								0.03759398496240601,
+								0.9799713876967096,
+								0.9974937343358395,
+								0,
+								0.9624060150375939
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 526031525388156,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

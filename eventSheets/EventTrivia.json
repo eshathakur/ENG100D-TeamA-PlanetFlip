@@ -1,0 +1,567 @@
+{
+	"name": "EventTrivia",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CurrentLevel",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Tracks what level the player is currently on",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 564370543164715
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentQuestion",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Tracks what question the player is currently answering (value between 1-3)",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 993590301104339
+		},
+		{
+			"eventType": "variable",
+			"name": "quizScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Keeps track of the points the player earned/lost during the quiz, will be added to the player's final score",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 402507968236186
+		},
+		{
+			"eventType": "variable",
+			"name": "Correct",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Index of the correct option for the question",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 459273055855008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 342829796935979
+				}
+			],
+			"actions": [
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 305009447109511,
+					"parameters": {
+						"tag": "\"LoadQuiz\"",
+						"file": {
+							"path": "quiz_data.json"
+						}
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 189550651044958,
+					"parameters": {
+						"variable": "CurrentQuestion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 558938824300382,
+					"parameters": {
+						"variable": "quizScore",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 816778056400360,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 800900741456862,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 558460233662744
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 774718872870901,
+					"parameters": {
+						"tag": "\"LoadQuiz\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "parse",
+					"objectClass": "JSON",
+					"sid": 233017641765005,
+					"parameters": {
+						"data": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 615549689748895,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"callFunction": "LoadQuestion",
+					"sid": 282191997041100
+				}
+			],
+			"sid": 777875807140787
+		},
+		{
+			"functionName": "LoadQuestion",
+			"functionDescription": "Gets questions from the JSON file",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Question",
+					"sid": 539652209913058,
+					"parameters": {
+						"text": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion - 1) & \".question\")"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TriviaCounter",
+					"sid": 482388624640101,
+					"parameters": {
+						"text": "CurrentQuestion & \" of 3\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 204071154946578,
+					"parameters": {
+						"variable": "Correct",
+						"value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".correct_index\")"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "points",
+					"sid": 978825774337412,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 465709002342166,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 683679752568124,
+							"parameters": {
+								"object": "AnswerBox"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 650408769310451,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "AnswerText",
+									"sid": 182842526306113,
+									"parameters": {
+										"instance-variable": "AnswerID",
+										"comparison": 0,
+										"value": "AnswerBox.AnswerID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-font-size",
+									"objectClass": "AnswerText",
+									"sid": 372225757355248,
+									"parameters": {
+										"size-pt": "18"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "AnswerBox",
+									"sid": 795521549503530,
+									"parameters": {
+										"animation": "\"Default\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 233818286815638
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 941556942998294,
+							"parameters": {
+								"object": "AnswerText"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "AnswerText",
+							"sid": 967756466437213,
+							"parameters": {
+								"text": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion - 1) & \".answers.\" & AnswerText.AnswerID)"
+							}
+						}
+					],
+					"sid": 781078656475552
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 703287473757563,
+							"parameters": {
+								"name": "\"Shrink\"",
+								"start-index": "1",
+								"end-index": "5"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 180230939684380,
+							"parameters": {
+								"first-value": "AnswerText.Height",
+								"comparison": 4,
+								"second-value": "AnswerBox.Height"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 318465176726740,
+							"parameters": {
+								"first-value": "AnswerText.Width",
+								"comparison": 4,
+								"second-value": "AnswerBox.Width"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-size",
+							"objectClass": "AnswerText",
+							"sid": 745904759184607,
+							"parameters": {
+								"size-pt": "min(18, (AnswerBox.Width / AnswerText.TextWidth) * AnswerText.FaceSize)"
+							}
+						}
+					],
+					"sid": 407870127008861,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 942116865781284,
+							"parameters": {
+								"variable": "CurrentQuestion",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 954440162549360,
+							"parameters": {
+								"layout": "LevelEnd"
+							}
+						}
+					],
+					"sid": 350620157092953
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 766609078381679,
+					"parameters": {
+						"object": "AnswerBox",
+						"type": "start"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "AnswerText",
+					"sid": 148740539614303,
+					"parameters": {
+						"instance-variable": "AnswerID",
+						"comparison": 0,
+						"value": "AnswerBox.AnswerID"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 289068034818625,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 536541318772986,
+							"parameters": {
+								"first-value": "AnswerBox.AnswerID",
+								"comparison": 0,
+								"second-value": "Correct"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "AnswerBox",
+							"sid": 680817210695521,
+							"parameters": {
+								"animation": "\"Correct\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 498698798084343,
+							"parameters": {
+								"variable": "quizScore",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "points",
+							"sid": 631419439118259,
+							"parameters": {
+								"animation": "\"+10\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "points",
+							"sid": 249106605339880,
+							"parameters": {
+								"x": "AnswerBox.X + 260",
+								"y": "AnswerBox.Y"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "points",
+							"sid": 866551870907526,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 834235585988780,
+							"parameters": {
+								"variable": "SummaryData",
+								"value": "SummaryData & \"• \" & JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".question\") & newline & \"    • [color=#228B22]\" & AnswerText.Text & \"[/color]\" & newline & newline"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "points",
+							"sid": 298716523634474,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 879536249892994,
+							"parameters": {
+								"seconds": "0.75",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 330378690023358,
+							"parameters": {
+								"variable": "CurrentQuestion",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "LoadQuestion",
+							"sid": 414855604931180
+						}
+					],
+					"sid": 491685271925795
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 584178679558448,
+							"parameters": {
+								"first-value": "AnswerBox.AnswerID",
+								"comparison": 1,
+								"second-value": "Correct"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "AnswerBox",
+							"sid": 652892168121291,
+							"parameters": {
+								"animation": "\"Wrong\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 383336223779612,
+							"parameters": {
+								"variable": "quizScore",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "points",
+							"sid": 511035249228208,
+							"parameters": {
+								"animation": "\"-10\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "points",
+							"sid": 952676457548170,
+							"parameters": {
+								"x": "AnswerBox.X + 260",
+								"y": "AnswerBox.Y"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "points",
+							"sid": 911673493452473,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 393458496484089,
+							"parameters": {
+								"variable": "SummaryData",
+								"value": "SummaryData & \"• \" & JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".question\") & newline & \"    • [color=#FF0000]\" & AnswerText.Text & \"[/color]\" & newline & newline"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "points",
+							"sid": 477749364033798,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 781091393646332,
+							"parameters": {
+								"seconds": "0.75",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 578454134203719,
+							"parameters": {
+								"variable": "CurrentQuestion",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "LoadQuestion",
+							"sid": 921687305431307
+						}
+					],
+					"sid": 739564585653176
+				}
+			]
+		}
+	],
+	"sid": 387663910563763
+}

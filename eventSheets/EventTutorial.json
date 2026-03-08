@@ -1,0 +1,150 @@
+{
+	"name": "EventTutorial",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 731598185722975,
+					"parameters": {
+						"object": "NextButtonSprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 700316625073338,
+					"parameters": {
+						"color": "rgbEx(90, 90, 90)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 807850706788747,
+					"parameters": {
+						"seconds": "0.07",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 160655346163487,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 919201400345464,
+					"parameters": {
+						"layout": "\"LevelSelectPage\""
+					}
+				}
+			],
+			"sid": 323018626199343
+		},
+		{
+			"eventType": "variable",
+			"name": "cnt",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 747675900439132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 320249476943972,
+					"parameters": {
+						"object": "NextButtonSprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NextButtonSprite",
+					"sid": 230218502376831,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "NextButtonSprite",
+					"sid": 684819606874965,
+					"parameters": {
+						"x": "643",
+						"y": "561"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 283990438715881,
+					"parameters": {
+						"color": "rgbEx(90, 90, 90)"
+					}
+				}
+			],
+			"sid": 517608735279699
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 813301174736797,
+					"parameters": {
+						"object": "NextButtonSprite"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NextButtonSprite",
+					"sid": 180266778728503,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "NextButtonSprite",
+					"sid": 221482839332685,
+					"parameters": {
+						"x": "641",
+						"y": "556"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 245023627028231,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				}
+			],
+			"sid": 808739154230292
+		}
+	],
+	"sid": 743565415056279
+}

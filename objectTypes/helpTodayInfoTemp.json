@@ -1,7 +1,11 @@
 {
 	"name": "helpTodayInfoTemp",
 	"plugin-id": "SVGPicture",
+<<<<<<< HEAD
 	"sid": 619674724156927,
+=======
+	"sid": 771226270156260,
+>>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

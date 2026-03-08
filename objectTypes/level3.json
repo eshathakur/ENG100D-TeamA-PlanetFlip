@@ -1,7 +1,11 @@
 {
 	"name": "level3",
 	"plugin-id": "Sprite",
+<<<<<<< HEAD
 	"sid": 154568971195197,
+=======
+	"sid": 979176567804450,
+>>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +24,11 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
+<<<<<<< HEAD
 						"imageSpriteId": 9328194,
+=======
+						"imageSpriteId": 2006929,
+>>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.07567567567567568,
@@ -42,7 +50,11 @@
 						"tag": ""
 					}
 				],
+<<<<<<< HEAD
 				"sid": 874303719185100,
+=======
+				"sid": 793271256933688,
+>>>>>>> feature-ui
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

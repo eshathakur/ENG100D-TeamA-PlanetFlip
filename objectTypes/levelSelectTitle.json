@@ -1,7 +1,11 @@
 {
 	"name": "levelSelectTitle",
 	"plugin-id": "SVGPicture",
+<<<<<<< HEAD
 	"sid": 668127887238552,
+=======
+	"sid": 433344522138398,
+>>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

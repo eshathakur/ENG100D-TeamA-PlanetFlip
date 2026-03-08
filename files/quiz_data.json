@@ -1,0 +1,53 @@
+{
+  "level_1": [
+    {
+      "question": "What happens to coastal towns if coral reefs are healthy?",
+      "answers": ["A. Nothing changes", "B. Waves hit the shore just as hard", "C. Waves are weakened and cause less flooding", "D. The ocean disappears"],
+      "correct_index": 2
+    },
+    {
+      "question": "If coral reefs disappear, what could happen to homes and buildings near the coast?",
+      "answers": ["A. They are better protected", "B. They could face more flooding damage", "C. They become taller", "D. They float away"],
+      "correct_index": 1
+    },
+    {
+      "question": "If the ocean becomes more acidic, what happens to baby corals?",
+      "answers": ["A. They grow faster", "B. They have trouble building their skeletons", "C. They turn into fish", "D. They glow in the dark"],
+      "correct_index": 1
+    }
+  ],
+  "level_2": [
+    {
+      "question": "If corals can’t build strong skeletons, what happens to the reef?",
+      "answers": ["A. The reef gets stronger", "B. More sea animals move in", "C. The reef breaks down and animals lose their homes", "D. The reef moves to a different place"],
+      "correct_index": 2
+    },
+    {
+      "question": "If the Earth warms by 1.5°C, what could happen to coral reefs?",
+      "answers": ["A. Most coral reefs could disappear", "B. Coral reefs double in size", "C. Coral reefs move to colder planets", "D. Nothing happens"],
+      "correct_index": 0
+    },
+    {
+      "question": "Why are coral reefs important for many Pacific Island communities?",
+      "answers": ["A. They provide most of their protein (food)", "B. They create electricity", "C. They grow trees", "D. They make drinking water"],
+      "correct_index": 0
+    }
+  ],
+  "level_3": [
+    {
+      "question": "If coral reefs decline, how could that affect people?",
+      "answers": ["A. Less seafood and fewer jobs", "B. More coral grows", "C. Beaches turn purple", "D. Fish learn to fly"],
+      "correct_index": 0
+    },
+    {
+      "question": "This is a filler question, just pick D",
+      "answers": ["A.", "B.", "C.", "D."],
+      "correct_index": 3
+    },
+    {
+      "question": "This is a filler question, just pick C",
+      "answers": ["A.", "B.", "C.", "D."],
+      "correct_index": 2
+    }
+  ]
+}

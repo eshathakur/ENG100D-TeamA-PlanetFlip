@@ -1,0 +1,10 @@
+{
+	"name": "SummaryText",
+	"plugin-id": "Text",
+	"sid": 864495960202782,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

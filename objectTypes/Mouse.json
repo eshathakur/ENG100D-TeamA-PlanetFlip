@@ -1,12 +1,21 @@
 {
 	"name": "Mouse",
 	"plugin-id": "Mouse",
+<<<<<<< HEAD
 	"sid": 325388069008823,
 	"singleglobal-inst": {
 		"type": "Mouse",
 		"properties": {},
 		"uid": 675219,
 		"sid": 391474707251021,
+=======
+	"sid": 601945800286312,
+	"singleglobal-inst": {
+		"type": "Mouse",
+		"properties": {},
+		"uid": 675380,
+		"sid": 638944441072167,
+>>>>>>> feature-ui
 		"tags": ""
 	}
 }

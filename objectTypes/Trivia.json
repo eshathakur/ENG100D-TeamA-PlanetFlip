@@ -1,0 +1,52 @@
+{
+	"name": "Trivia",
+	"plugin-id": "Sprite",
+	"sid": 224002028175407,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 319,
+						"height": 44,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6607374,
+						"collisionPoly": {
+							"points": [
+								0.3730407523510972,
+								0.20454545454545456,
+								0.6050156739811913,
+								0.20454545454545456,
+								0.6175548589341693,
+								0.7954545454545454,
+								0.3887147335423197,
+								0.7954545454545454
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 875104037456951,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

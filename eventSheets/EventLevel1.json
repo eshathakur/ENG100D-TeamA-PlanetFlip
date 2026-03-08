@@ -2,6 +2,56 @@
 	"name": "EventLevel1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "LevelScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Keeps track of the player's point earned during the level",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 490353514715835
+		},
+		{
+			"eventType": "variable",
+			"name": "StageStartTime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Tracks when level begins",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 993874077736182
+		},
+		{
+			"eventType": "variable",
+			"name": "stageDuration",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "How many seconds the level lasts",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 334794061239392
+		},
+		{
+			"eventType": "variable",
+			"name": "maxBarWidth",
+			"type": "number",
+			"initialValue": "400",
+			"comment": "Full width of the progress bar",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 652168874374164
+		},
+		{
+			"eventType": "variable",
+			"name": "scrollSpeed",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 610604208835865
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -38,17 +88,33 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "Player_sprite",
+					"sid": 992631565064084,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-animation-speed",
 					"objectClass": "Player_sprite",
+<<<<<<< HEAD
 					"sid": 881868998522987,
 					"parameters": {
 						"speed": "3"
+=======
+					"sid": 760551367604965,
+					"parameters": {
+						"speed": "5"
+>>>>>>> feature-ui
 					}
 				},
 				{
 					"type": "script",
 					"language": "javascript",
 					"script": [
+						"/*",
 						"// time setting",
 						"globalThis.stageDuration = 62.5; // seconds that the level takes ",
 						"globalThis.stageStartTime = runtime.gameTime;",
@@ -63,13 +129,35 @@
 						"",
 						"// score",
 						"runtime.globalVars.Score = 0;",
+<<<<<<< HEAD
 						"",
 						"// global vars for fade after the level",
 						"globalThis.finished = false;",
 						"globalThis.fade = 100;   // opacity",
 						"globalThis.fadeSpeed = 120;  // opacity / second",
 						""
+=======
+						"*/"
+>>>>>>> feature-ui
 					]
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 834381654861709,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 698372838352459,
+					"parameters": {
+						"variable": "StageStartTime",
+						"value": "time"
+					}
 				}
 			],
 			"sid": 884896111873384
@@ -154,7 +242,12 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+<<<<<<< HEAD
 						"const scrollSpeed = 40",
+=======
+						"/*",
+						"const scrollSpeed = 100",
+>>>>>>> feature-ui
 						"const bg = runtime.objects.Background.getFirstInstance();",
 						"// the background keeps moving to the left until it reaches the end",
 						"if (bg && bg.x > -450) {",
@@ -189,6 +282,7 @@
 						"// updating the score text",
 						"const t = runtime.objects.ScoreText.getFirstInstance();",
 						"if (t) t.text = \"Score: \" + runtime.globalVars.Score;",
+<<<<<<< HEAD
 						"",
 						"const player = runtime.objects.Player_sprite.getFirstInstance();",
 						"if(player && player.y < 0){",
@@ -238,7 +332,26 @@
 						"\tplayer.behaviors.Physics.angularVelocity = 0;",
 						"\tplayer.behaviors.Physics.enabled = false;",
 						"}"
+=======
+						"*/"
+>>>>>>> feature-ui
 					]
+				},
+				{
+					"id": "set-width",
+					"objectClass": "Progress_bar_fill",
+					"sid": 978303881727306,
+					"parameters": {
+						"width": "clamp((time - stageStartTime) / stageDuration, 0, 1) * maxBarWidth"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 875001317633575,
+					"parameters": {
+						"text": "\"Score: \" & LevelScore"
+					}
 				}
 			],
 			"sid": 563844446089038
@@ -261,13 +374,25 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+						"/*",
 						"const player = runtime.objects.Player_sprite.getFirstInstance();",
 						"if(player){",
 						"\tconst phys = player.behaviors.Physics;",
 						"\tphys.setVelocity(phys.getVelocityX(), 250);",
 						"}",
+						"*/",
 						"// when the screen is clicked, it moves the diver down"
 					]
+				},
+				{
+					"id": "set-velocity",
+					"objectClass": "Player_sprite",
+					"sid": 183609371937880,
+					"behaviorType": "Physics",
+					"parameters": {
+						"x-component": "Self.Physics.VelocityX",
+						"y-component": "200"
+					}
 				}
 			],
 			"sid": 459841307105639
@@ -286,13 +411,25 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+						"/*",
 						"const player = runtime.objects.Player_sprite.getFirstInstance();",
 						"if(player){",
 						"\tconst phys = player.behaviors.Physics;",
 						"\tphys.setVelocity(phys.getVelocityX(), 200);",
 						"}",
+						"*/",
 						"// when the screen is tapped, it moves the diver down"
 					]
+				},
+				{
+					"id": "set-velocity",
+					"objectClass": "Player_sprite",
+					"sid": 136484950180620,
+					"behaviorType": "Physics",
+					"parameters": {
+						"x-component": "Self.Physics.VelocityX",
+						"y-component": "200"
+					}
 				}
 			],
 			"sid": 646759310340099
@@ -303,9 +440,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 792084631165325,
+					"sid": 797729198173436,
 					"parameters": {
-						"interval-seconds": "random(3.0,4.0)"
+						"interval-seconds": "random(1.0,3.0)"
 					}
 				}
 			],
@@ -313,12 +450,21 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 377087693752254,
 					"parameters": {
 						"object-to-create": "Fish",
 						"layer": "0",
 						"x": "ViewportRight(0) + 50",
 						"y": "random( 0, 500 )",
+=======
+					"sid": 533078230275242,
+					"parameters": {
+						"object-to-create": "Fish",
+						"layer": "0",
+						"x": "ViewportRight(0) + 10",
+						"y": "random( Coral.Height/2+10, ViewportBottom(0) - Coral.Height/2 - 10 )",
+>>>>>>> feature-ui
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -351,10 +497,17 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Fish",
+<<<<<<< HEAD
 					"sid": 462222601998818,
 					"behaviorType": "Bullet",
 					"parameters": {
 						"speed": "random(150,250)"
+=======
+					"sid": 125323906003103,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "random(125,150)"
+>>>>>>> feature-ui
 					}
 				}
 			],
@@ -377,6 +530,7 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+<<<<<<< HEAD
 						"// increase the animation fram and subtract the score",
 						"for (const fish of runtime.objects.Fish.getPickedInstances()) {",
 						"    if (!fish.instVars.Touched) {",
@@ -385,7 +539,22 @@
 						"        fish.instVars.Touched = true;",
 						"    }",
 						"}"
+=======
+						"/*",
+						"// subtract the score",
+						"runtime.globalVars.Score -= 5;",
+						"*/"
+>>>>>>> feature-ui
 					]
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 236491799231937,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "5"
+					}
 				}
 			],
 			"sid": 449176336362245
@@ -396,9 +565,15 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 105063324635504,
 					"parameters": {
 						"interval-seconds": "random(1.5, 4.0)"
+=======
+					"sid": 347921865482043,
+					"parameters": {
+						"interval-seconds": "random(1.5,3.0)"
+>>>>>>> feature-ui
 					}
 				}
 			],
@@ -407,9 +582,15 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+<<<<<<< HEAD
 						"const SPEED = 100;\t\t// speed of corals",
 						"const MARGIN_MIN = 100;\t// lower bound for y coordinate margin",
 						"const MARGIN_MAX = 180;\t// upper bound for y coordinate margin",
+=======
+						"/*",
+						"const SPEED = 100;\t//speed of moving obstacles",
+						"const MARGIN = 80;\t//margin for the positions",
+>>>>>>> feature-ui
 						"",
 						"const player = runtime.objects.Player_sprite.getFirstInstance();",
 						"if (!player) return;",
@@ -441,8 +622,47 @@
 						"",
 						"  const b = coral.behaviors.Bullet;",
 						"  b.speed = SPEED;",
-						"}"
+						"}",
+						"*/"
 					]
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 200102236831694,
+					"parameters": {
+						"object-to-create": "Coral",
+						"layer": "0",
+						"x": "ViewportRight(0)",
+						"y": "random(620, 720)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Coral",
+					"sid": 753850398330198,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Coral",
+					"sid": 988790432711245,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Coral",
+					"sid": 271653374401435,
+					"parameters": {
+						"frame-number": "floor(random(47))"
+					}
 				}
 			],
 			"sid": 893238584961485
@@ -469,9 +689,24 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+						"/*",
 						"// add the score",
+<<<<<<< HEAD
 						"runtime.globalVars.Score += 10;"
+=======
+						"runtime.globalVars.Score += 20;",
+						"*/"
+>>>>>>> feature-ui
 					]
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 628862379794796,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "7"
+					}
 				}
 			],
 			"sid": 221555567636839
@@ -492,12 +727,21 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
+<<<<<<< HEAD
 					"sid": 821259205253467,
 					"parameters": {
 						"object-to-create": "Trash",
 						"layer": "0",
 						"x": "ViewportRight(0) + 50",
 						"y": "random( 100, 700 )",
+=======
+					"sid": 275658981852717,
+					"parameters": {
+						"object-to-create": "Trash",
+						"layer": "0",
+						"x": "ViewportRight(0) + 10",
+						"y": "random(100, 600)",
+>>>>>>> feature-ui
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -505,7 +749,7 @@
 				{
 					"id": "set-animation-speed",
 					"objectClass": "Trash",
-					"sid": 988356816603748,
+					"sid": 995099338110668,
 					"parameters": {
 						"speed": "0"
 					}
@@ -513,9 +757,15 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Trash",
+<<<<<<< HEAD
 					"sid": 228788488667262,
 					"parameters": {
 						"frame-number": "random(Trash.AnimationFrameCount)"
+=======
+					"sid": 509718265580546,
+					"parameters": {
+						"frame-number": "floor(random(17))"
+>>>>>>> feature-ui
 					}
 				},
 				{
@@ -555,6 +805,7 @@
 					"type": "script",
 					"language": "javascript",
 					"script": [
+<<<<<<< HEAD
 						"// increase the animation fram and subtract the score",
 						"for (const coral of runtime.objects.Coral.getPickedInstances()) {",
 						"    if (!coral.instVars.Touched) {",
@@ -563,7 +814,22 @@
 						"        coral.instVars.Touched = true;",
 						"    }",
 						"}"
+=======
+						"/*",
+						"// subtract the score",
+						"runtime.globalVars.Score -= 10;",
+						"*/"
+>>>>>>> feature-ui
 					]
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 271371275866158,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "10"
+					}
 				}
 			],
 			"sid": 406338076243852
@@ -572,26 +838,66 @@
 			"eventType": "block",
 			"conditions": [
 				{
+<<<<<<< HEAD
 					"id": "key-is-down",
 					"objectClass": "Keyboard",
 					"sid": 930157761470710,
 					"parameters": {
 						"key": 80
+=======
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 386743302528920,
+					"parameters": {
+						"variable": "stageDuration",
+						"comparison": 3,
+						"value": "(time - stageStartTime)"
+>>>>>>> feature-ui
 					}
 				}
 			],
 			"actions": [
 				{
+<<<<<<< HEAD
 					"callFunction": "showPause",
 					"sid": 973961577237620
 				}
 			],
 			"sid": 737280133463388
+=======
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 733158218154371,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 897483789740156,
+					"parameters": {
+						"variable": "CurrentQuestion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 620032797639367,
+					"parameters": {
+						"layout": "Trivia"
+					}
+				}
+			],
+			"sid": 634734053187487
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
+<<<<<<< HEAD
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
 					"sid": 566237922152889,
@@ -599,21 +905,43 @@
 						"mouse-button": "left",
 						"click-type": "clicked",
 						"object-clicked": "Resume_button"
+=======
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 423843755687095,
+					"parameters": {
+						"first-value": "(time - stageStartTime)",
+						"comparison": 2,
+						"second-value": "stageDuration"
+>>>>>>> feature-ui
 					}
 				}
 			],
 			"actions": [
 				{
+<<<<<<< HEAD
 					"callFunction": "hidePause",
 					"sid": 377623665572264
 				}
 			],
 			"sid": 247296030914343
+=======
+					"id": "set-image-offset-x",
+					"objectClass": "LevelBackground",
+					"sid": 718311245221591,
+					"parameters": {
+						"offset-x": "Self.ImageOffsetX - (scrollSpeed * dt)"
+					}
+				}
+			],
+			"sid": 992206730713062
+>>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
+<<<<<<< HEAD
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
 					"sid": 251002493636867,
@@ -622,15 +950,57 @@
 						"click-type": "clicked",
 						"object-clicked": "Pause_button"
 					}
+=======
+					"id": "is-outside-layout",
+					"objectClass": "Player_sprite",
+					"sid": 125145728688725
+>>>>>>> feature-ui
 				}
 			],
 			"actions": [
 				{
+<<<<<<< HEAD
 					"callFunction": "showPause",
 					"sid": 816182268392219
 				}
 			],
 			"sid": 250958793185762
+=======
+					"id": "apply-impulse-towards-position",
+					"objectClass": "Player_sprite",
+					"sid": 118262939518436,
+					"behaviorType": "Physics",
+					"parameters": {
+						"impulse": "100",
+						"x": "156",
+						"y": "360",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 680664629683769
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 179271520852920
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Player_sprite",
+					"sid": 779951279810034,
+					"parameters": {
+						"x": "156"
+					}
+				}
+			],
+			"sid": 274043571920699
+>>>>>>> feature-ui
 		}
 	],
 	"sid": 165858121014550

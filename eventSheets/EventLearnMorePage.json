@@ -1,0 +1,194 @@
+{
+	"name": "EventLearnMorePage",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 140522238247698
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "BackToGame",
+					"sid": 936906339407496,
+					"parameters": {
+						"instance-variable": "baseH",
+						"value": "BackToGame.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "BackToGame",
+					"sid": 559527187750850,
+					"parameters": {
+						"instance-variable": "baseW",
+						"value": "BackToGame.Width"
+					}
+				}
+			],
+			"sid": 783206891770401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 519919034700216,
+					"parameters": {
+						"object": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 103480904453382,
+					"parameters": {
+						"url": "\"https://www.epa.gov/coral-reefs/what-you-can-do-help-protect-coral-reefs\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 466031744478591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 214337791444074,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-url",
+					"objectClass": "Browser",
+					"sid": 367184287695000,
+					"parameters": {
+						"url": "\"https://www.marinebio.org/creatures/ocean-quizzes/corals/\"",
+						"target": "self"
+					}
+				}
+			],
+			"sid": 140245293892565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 705318962376744,
+					"parameters": {
+						"object": "BackToGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "BackToGame",
+					"sid": 405374720781876,
+					"parameters": {
+						"width": "BackToGame.baseW*0.9",
+						"height": "BackToGame.baseH*0.9"
+					}
+				}
+			],
+			"sid": 342530314247120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 114652385230371
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "BackToGame",
+					"sid": 781866705793238,
+					"parameters": {
+						"width": "BackToGame.baseW",
+						"height": "BackToGame.baseH"
+					}
+				}
+			],
+			"sid": 136696156798548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 930271081922114,
+					"parameters": {
+						"object": "BackToGame",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "BackToGame",
+					"sid": 558602364706426,
+					"parameters": {
+						"width": "BackToGame.baseW*0.9",
+						"height": "BackToGame.baseH*0.9"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 220208832558818,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 748128861339431
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 645337376860093,
+					"parameters": {
+						"object": "BackToGame",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "BackToGame",
+					"sid": 417119224264522,
+					"parameters": {
+						"width": "BackToGame.baseW",
+						"height": "BackToGame.baseH"
+					}
+				}
+			],
+			"sid": 176100643684216
+		}
+	],
+	"sid": 537422004957174
+}

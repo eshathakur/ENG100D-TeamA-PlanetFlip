@@ -1,36 +1,19 @@
 {
 	"name": "ColorBoxes",
 	"plugin-id": "Sprite",
-<<<<<<< HEAD
-	"sid": 794876180237902,
-=======
 	"sid": 671810385154051,
->>>>>>> feature-ui
 	"instanceVariables": [
 		{
 			"name": "colorName",
 			"type": "string",
 			"desc": "",
 			"show": true,
-<<<<<<< HEAD
-			"sid": 702723252863536
-=======
 			"sid": 353274312980772
->>>>>>> feature-ui
 		}
 	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-<<<<<<< HEAD
-		"blueColorBox",
-		"blackColorBox",
-		"grayColorBox",
-		"greenColorBox",
-		"purpleColorBox",
-		"orangeColorBox",
-		"pinkColorBox",
-=======
 		"blackColorBox",
 		"blueColorBox",
 		"grayColorBox",
@@ -39,7 +22,6 @@
 		"orangeColorBox",
 		"pinkColorBox",
 		"purpleColorBox",
->>>>>>> feature-ui
 		"redColorBox"
 	]
 }

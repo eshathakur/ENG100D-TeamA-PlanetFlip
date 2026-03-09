@@ -7,44 +7,21 @@
 				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
-<<<<<<< HEAD
-					"sid": 565398020674654
-=======
 					"sid": 149412713904959
->>>>>>> feature-ui
 				}
 			],
 			"actions": [
 				{
 					"id": "set-instvar-value",
-<<<<<<< HEAD
-					"objectClass": "level1Icon",
-					"sid": 645363836394435,
-					"parameters": {
-						"instance-variable": "baseH",
-						"value": "level1Icon.Height"
-=======
 					"objectClass": "Level1Select",
 					"sid": 312598840519244,
 					"parameters": {
 						"instance-variable": "baseH",
 						"value": "Level1Select.Height"
->>>>>>> feature-ui
 					}
 				},
 				{
 					"id": "set-instvar-value",
-<<<<<<< HEAD
-					"objectClass": "level1Icon",
-					"sid": 515171092207608,
-					"parameters": {
-						"instance-variable": "baseW",
-						"value": "level1Icon.Width"
-					}
-				}
-			],
-			"sid": 999801051488119
-=======
 					"objectClass": "Level1Select",
 					"sid": 967747362731526,
 					"parameters": {
@@ -54,7 +31,6 @@
 				}
 			],
 			"sid": 982315088565223
->>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -62,19 +38,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-<<<<<<< HEAD
-					"sid": 170668719003153,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "level1Icon"
-=======
 					"sid": 711409448289461,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
 						"object-clicked": "Level1Select"
->>>>>>> feature-ui
 					}
 				}
 			],
@@ -82,21 +50,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-<<<<<<< HEAD
-					"sid": 603629281762499,
-=======
 					"sid": 799358794636443,
->>>>>>> feature-ui
 					"parameters": {
 						"layout": "Level1"
 					}
 				}
 			],
-<<<<<<< HEAD
-			"sid": 345359325712871
-=======
 			"sid": 355565660102706
->>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -104,15 +64,9 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-<<<<<<< HEAD
-					"sid": 192938271516706,
-					"parameters": {
-						"object": "level1Icon"
-=======
 					"sid": 175365325758742,
 					"parameters": {
 						"object": "Level1Select"
->>>>>>> feature-ui
 					}
 				}
 			],
@@ -120,21 +74,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-<<<<<<< HEAD
-					"sid": 377561976114641,
-=======
 					"sid": 932510501226722,
->>>>>>> feature-ui
 					"parameters": {
 						"layout": "Level1"
 					}
 				}
 			],
-<<<<<<< HEAD
-			"sid": 894811795934844
-=======
 			"sid": 324187089301394
->>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -142,32 +88,15 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-<<<<<<< HEAD
-					"sid": 764454123433804,
-					"parameters": {
-						"object": "level1Icon"
-=======
 					"sid": 111224253726906,
 					"parameters": {
 						"object": "Level1Select"
->>>>>>> feature-ui
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
-<<<<<<< HEAD
-					"objectClass": "level1Icon",
-					"sid": 594045431419628,
-					"parameters": {
-						"width": "level1Icon.baseW * 0.9",
-						"height": "level1Icon.baseH * 0.9"
-					}
-				}
-			],
-			"sid": 853765581172509
-=======
 					"objectClass": "Level1Select",
 					"sid": 475689194497130,
 					"parameters": {
@@ -177,7 +106,6 @@
 				}
 			],
 			"sid": 466628782665270
->>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -185,27 +113,12 @@
 				{
 					"id": "else",
 					"objectClass": "System",
-<<<<<<< HEAD
-					"sid": 230461672919976
-=======
 					"sid": 654080406882103
->>>>>>> feature-ui
 				}
 			],
 			"actions": [
 				{
 					"id": "set-size",
-<<<<<<< HEAD
-					"objectClass": "level1Icon",
-					"sid": 296053994117077,
-					"parameters": {
-						"width": "level1Icon.baseW",
-						"height": "level1Icon.baseH"
-					}
-				}
-			],
-			"sid": 306406434400172
-=======
 					"objectClass": "Level1Select",
 					"sid": 480305350809984,
 					"parameters": {
@@ -215,7 +128,6 @@
 				}
 			],
 			"sid": 457400615413317
->>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -223,15 +135,9 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-<<<<<<< HEAD
-					"sid": 986526287606292,
-					"parameters": {
-						"object": "level1Icon",
-=======
 					"sid": 222693940427468,
 					"parameters": {
 						"object": "Level1Select",
->>>>>>> feature-ui
 						"type": "start"
 					}
 				}
@@ -239,17 +145,6 @@
 			"actions": [
 				{
 					"id": "set-size",
-<<<<<<< HEAD
-					"objectClass": "level1Icon",
-					"sid": 644947215960029,
-					"parameters": {
-						"width": "level1Icon.baseW * 0.9",
-						"height": "level1Icon.baseH * 0.9"
-					}
-				}
-			],
-			"sid": 443449834262677
-=======
 					"objectClass": "Level1Select",
 					"sid": 467096151267100,
 					"parameters": {
@@ -259,7 +154,6 @@
 				}
 			],
 			"sid": 765749133352611
->>>>>>> feature-ui
 		},
 		{
 			"eventType": "block",
@@ -267,15 +161,9 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-<<<<<<< HEAD
-					"sid": 778375958628500,
-					"parameters": {
-						"object": "level1Icon",
-=======
 					"sid": 166397476011753,
 					"parameters": {
 						"object": "Level1Select",
->>>>>>> feature-ui
 						"type": "end"
 					}
 				}
@@ -283,20 +171,6 @@
 			"actions": [
 				{
 					"id": "set-size",
-<<<<<<< HEAD
-					"objectClass": "level1Icon",
-					"sid": 739219247517188,
-					"parameters": {
-						"width": "level1Icon.baseW",
-						"height": "level1Icon.baseH"
-					}
-				}
-			],
-			"sid": 395025550929090
-		}
-	],
-	"sid": 152295920918562
-=======
 					"objectClass": "Level1Select",
 					"sid": 391994737766999,
 					"parameters": {
@@ -309,5 +183,4 @@
 		}
 	],
 	"sid": 637507728024714
->>>>>>> feature-ui
 }

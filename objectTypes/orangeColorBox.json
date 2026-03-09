@@ -1,11 +1,7 @@
 {
 	"name": "orangeColorBox",
 	"plugin-id": "Sprite",
-<<<<<<< HEAD
-	"sid": 537120767955092,
-=======
 	"sid": 502641181386816,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -24,11 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 7234601,
-=======
 						"imageSpriteId": 626142,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.2222222222222222,
@@ -96,11 +88,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 4398417,
-=======
 						"imageSpriteId": 1487476,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.20634920634920634,
@@ -156,11 +144,7 @@
 						"tag": ""
 					}
 				],
-<<<<<<< HEAD
-				"sid": 803638763042931,
-=======
 				"sid": 274687759457945,
->>>>>>> feature-ui
 				"name": "default",
 				"isLooping": false,
 				"isPingPong": false,

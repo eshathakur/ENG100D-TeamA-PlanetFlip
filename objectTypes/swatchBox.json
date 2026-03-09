@@ -1,19 +1,11 @@
 {
 	"name": "swatchBox",
-<<<<<<< HEAD
-	"plugin-id": "SVGPicture",
-	"sid": 618299192020244,
-=======
 	"plugin-id": "Sprite",
 	"sid": 171770695305957,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-<<<<<<< HEAD
-	"effectTypes": []
-=======
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -57,5 +49,4 @@
 		],
 		"subfolders": []
 	}
->>>>>>> feature-ui
 }

@@ -1,0 +1,60 @@
+{
+	"name": "bar_fill_left_end",
+	"plugin-id": "Sprite",
+	"sid": 729626562375619,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9729017,
+						"collisionPoly": {
+							"points": [
+								0.9735702688075051,
+								0,
+								1,
+								0,
+								1,
+								0.11149961149961148,
+								1,
+								0.8885003885003885,
+								1,
+								1,
+								0.9735702688075051,
+								1,
+								0.1617355222803536,
+								0.8885003885003885,
+								0.1617355222803536,
+								0.11149961149961148
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 849669993257104,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

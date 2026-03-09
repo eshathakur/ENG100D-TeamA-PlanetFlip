@@ -1,11 +1,7 @@
 {
 	"name": "helpTodayTitle",
 	"plugin-id": "Sprite",
-<<<<<<< HEAD
-	"sid": 918348360003562,
-=======
 	"sid": 602872578127661,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,33 +12,15 @@
 			{
 				"frames": [
 					{
-<<<<<<< HEAD
-<<<<<<<< HEAD:objectTypes/helpTodayTitle.json
 						"width": 251,
 						"height": 129,
-========
-						"width": 500,
-						"height": 100,
->>>>>>>> feature-ui:objectTypes/bar_fill_left_end.json
-=======
-						"width": 251,
-						"height": 129,
->>>>>>> feature-ui
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-<<<<<<<< HEAD:objectTypes/helpTodayTitle.json
-						"imageSpriteId": 2771410,
-========
-						"imageSpriteId": 9729017,
->>>>>>>> feature-ui:objectTypes/bar_fill_left_end.json
-=======
 						"imageSpriteId": 3145333,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.09163346613545817,
@@ -68,11 +46,7 @@
 						"tag": ""
 					}
 				],
-<<<<<<< HEAD
-				"sid": 503994657096211,
-=======
 				"sid": 464926054047524,
->>>>>>> feature-ui
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

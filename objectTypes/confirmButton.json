@@ -1,11 +1,7 @@
 {
 	"name": "confirmButton",
 	"plugin-id": "SVGPicture",
-<<<<<<< HEAD
-	"sid": 346394153138687,
-=======
 	"sid": 164260478316542,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -14,22 +10,14 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-<<<<<<< HEAD
-			"sid": 627151176058340
-=======
 			"sid": 290154641663261
->>>>>>> feature-ui
 		},
 		{
 			"name": "baseH",
 			"type": "number",
 			"desc": "",
 			"show": true,
-<<<<<<< HEAD
-			"sid": 438212288968994
-=======
 			"sid": 498286212296184
->>>>>>> feature-ui
 		}
 	],
 	"behaviorTypes": [],

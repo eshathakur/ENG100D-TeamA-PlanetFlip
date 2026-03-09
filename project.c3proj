@@ -38,8 +38,6 @@
 			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
-			"id": "Keyboard",
-			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -47,8 +45,6 @@
 			"type": "plugin",
 			"id": "SVGPicture",
 			"name": "SVG Picture",
-			"id": "Mouse",
-			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -82,8 +78,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -102,8 +96,6 @@
 			"name": "Physics",
 			"author": "Scirra",
 			"bundled": false
-<<<<<<< HEAD
-=======
 		},
 		{
 			"type": "behavior",
@@ -125,40 +117,11 @@
 			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"bundled": false
->>>>>>> feature-ui
 		}
 	],
 	"uniqueId": "69qh6wgczcf",
 	"objectTypes": {
 		"items": [
-<<<<<<< HEAD
-			"helpTodayButton",
-			"reefRescuerTitle",
-			"Mouse",
-			"Touch",
-			"Background",
-			"Diver",
-			"swatchBox",
-			"confirmButton",
-			"blackColorBox",
-			"pinkColorBox",
-			"redColorBox",
-			"orangeColorBox",
-			"grayColorBox",
-			"blueColorBox",
-			"purpleColorBox",
-			"greenColorBox",
-			"startButton",
-			"title",
-			"helpTodayTitle",
-			"backToGameButton",
-			"helpTodayInfoTemp",
-			"levelSelectTitle",
-			"level1Icon",
-			"level2",
-			"level3"
-=======
->>>>>>> feature-ui
 			"Background",
 			"Player_sprite",
 			"Mouse",
@@ -166,9 +129,6 @@
 			"Coral",
 			"Fish",
 			"Trash",
-<<<<<<< HEAD
-			"Progress_bar_container",
-=======
 			"EndScreenBG",
 			"TriviaBox",
 			"BlueTang",
@@ -188,7 +148,6 @@
 			"startButton",
 			"DC_Background",
 			"Diver",
->>>>>>> feature-ui
 			"ScoreText",
 			"bar_fill_left_end",
 			"LevelBackground",
@@ -248,18 +207,13 @@
 			"QuizInfo",
 			"Sprite3",
 			"Progress_bar_fill",
-<<<<<<< HEAD
-			"Fade",
-			"Pause_BG",
+			"Progress_bar_container",
+			"Pause_button",
 			"Resume_button",
+			"Pause_fade",
 			"Restart_button",
 			"Help_button",
-			"Home_button",
-			"Pause_button",
-			"Keyboard"
-=======
-			"Progress_bar_container"
->>>>>>> feature-ui
+			"Home_button"
 		],
 		"subfolders": []
 	},
@@ -276,14 +230,6 @@
 		"items": [
 			"StartPage",
 			"Level1",
-<<<<<<< HEAD
-			"Context1",
-			"Context2",
-			"Context3",
-			"DiverCustomization",
-			"HelpTodayPage",
-			"LevelSelectPage"
-=======
 			"StoryStart",
 			"Tutorial",
 			"LevelSelectPage",
@@ -291,7 +237,6 @@
 			"LevelEnd",
 			"LearnMorePage",
 			"DiverCustomization"
->>>>>>> feature-ui
 		],
 		"subfolders": []
 	},
@@ -299,20 +244,12 @@
 		"items": [
 			"EventStartPage",
 			"EventLevel1",
-<<<<<<< HEAD
-			"EventContext1",
-			"EventContext2",
-			"Context3",
-			"EventDiverCustomization",
-			"EventHelpTodayPage",
-=======
 			"EventStoryStart",
 			"EventTutorial",
 			"EventTrivia",
 			"EventLevelEnd",
 			"EventLearnMorePage",
 			"EventDiverCustomization",
->>>>>>> feature-ui
 			"EventLevelSelectPage"
 		],
 		"subfolders": []
@@ -1207,35 +1144,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
-					"name": "confirmButton.svg",
-					"type": "image/svg+xml",
-					"sid": 878817176673070,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "swatchBox.svg",
-					"type": "image/svg+xml",
-					"sid": 365882002887144,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "title.png",
-					"type": "image/png",
-					"sid": 509169515630653,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "backToGameButton.svg",
-					"type": "image/svg+xml",
-					"sid": 217223131960261,
-=======
 					"name": "backToGameButton.svg",
 					"type": "image/svg+xml",
 					"sid": 857660203363125,
@@ -1247,7 +1155,6 @@
 					"name": "confirmButton.svg",
 					"type": "image/svg+xml",
 					"sid": 276901799857684,
->>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1255,19 +1162,7 @@
 				{
 					"name": "helpTodayInfoTemp.svg",
 					"type": "image/svg+xml",
-<<<<<<< HEAD
-					"sid": 755355936729040,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "levelSelectTitle.svg",
-					"type": "image/svg+xml",
-					"sid": 105908461471715,
-=======
 					"sid": 755494436304059,
->>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1275,11 +1170,7 @@
 				{
 					"name": "level1Icon.svg",
 					"type": "image/svg+xml",
-<<<<<<< HEAD
-					"sid": 500243919351766,
-=======
 					"sid": 890739385038711,
->>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1287,11 +1178,7 @@
 				{
 					"name": "level2Locked.svg",
 					"type": "image/svg+xml",
-<<<<<<< HEAD
-					"sid": 799710447468719,
-=======
 					"sid": 609853804299894,
->>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1299,9 +1186,6 @@
 				{
 					"name": "level3Locked.svg",
 					"type": "image/svg+xml",
-<<<<<<< HEAD
-					"sid": 501822292375692,
-=======
 					"sid": 386538811203683,
 					"file-info": {
 						"purpose": "none"
@@ -1327,7 +1211,6 @@
 					"name": "title.png",
 					"type": "image/png",
 					"sid": 198805021054199,
->>>>>>> feature-ui
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1410,7 +1293,4 @@
 	"viewportWidth": 1280,
 	"viewportHeight": 720,
 	"firstLayout": "StartPage"
-	"viewportWidth": 1600,
-	"viewportHeight": 900,
-	"firstLayout": null
 }

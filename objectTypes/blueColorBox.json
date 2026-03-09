@@ -1,11 +1,7 @@
 {
 	"name": "blueColorBox",
 	"plugin-id": "Sprite",
-<<<<<<< HEAD
-	"sid": 784721707466329,
-=======
 	"sid": 964942269330584,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -24,11 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 962888,
-=======
 						"imageSpriteId": 5472715,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.2222222222222222,
@@ -96,11 +88,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 1647749,
-=======
 						"imageSpriteId": 7303684,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.20634920634920634,
@@ -156,11 +144,7 @@
 						"tag": ""
 					}
 				],
-<<<<<<< HEAD
-				"sid": 651646512949311,
-=======
 				"sid": 511382744378657,
->>>>>>> feature-ui
 				"name": "default",
 				"isLooping": false,
 				"isPingPong": false,

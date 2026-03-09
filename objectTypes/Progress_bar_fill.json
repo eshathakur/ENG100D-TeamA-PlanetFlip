@@ -7,57 +7,6 @@
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
-<<<<<<< HEAD
-	"animations": {
-		"items": [
-			{
-				"frames": [
-					{
-						"width": 440,
-						"height": 78,
-						"originX": 0,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"fileType": "image/png",
-						"imageSpriteId": 6348105,
-						"collisionPoly": {
-							"points": [
-								0,
-								0,
-								1,
-								0,
-								1,
-								0.1712689020381328,
-								1,
-								0.8287310979618672,
-								1,
-								1,
-								0,
-								1,
-								0,
-								0.8287310979618672,
-								0,
-								0.1712689020381328
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1,
-						"tag": ""
-					}
-				],
-				"sid": 959464636518051,
-				"name": "Animation 1",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			}
-		],
-		"subfolders": []
-=======
 	"image": {
 		"width": 397,
 		"height": 66,
@@ -70,6 +19,5 @@
 		"imageSpriteId": 6277307,
 		"useCollisionPoly": true,
 		"tag": ""
->>>>>>> feature-ui
 	}
 }

@@ -1,11 +1,7 @@
 {
 	"name": "pinkColorBox",
 	"plugin-id": "Sprite",
-<<<<<<< HEAD
-	"sid": 465881274629989,
-=======
 	"sid": 669010819700085,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -24,11 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 8488406,
-=======
 						"imageSpriteId": 1265434,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.2112676056338028,
@@ -96,11 +88,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 6447521,
-=======
 						"imageSpriteId": 2962094,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.22535211267605634,
@@ -162,11 +150,7 @@
 						"tag": ""
 					}
 				],
-<<<<<<< HEAD
-				"sid": 115477161071159,
-=======
 				"sid": 586328944120960,
->>>>>>> feature-ui
 				"name": "default",
 				"isLooping": false,
 				"isPingPong": false,

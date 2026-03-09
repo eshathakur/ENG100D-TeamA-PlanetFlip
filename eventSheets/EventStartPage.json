@@ -32,7 +32,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "startButton",
-					"sid": 624283269922044,
+					"sid": 980641046253515,
 					"parameters": {
 						"instance-variable": "baseW",
 						"value": "startButton.Width"
@@ -41,11 +41,7 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "startButton",
-<<<<<<< HEAD
-					"sid": 634148785910755,
-=======
 					"sid": 666084778414399,
->>>>>>> feature-ui
 					"parameters": {
 						"instance-variable": "baseH",
 						"value": "startButton.Height"
@@ -60,7 +56,7 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-					"sid": 944315396332833,
+					"sid": 658735006555484,
 					"parameters": {
 						"object": "startButton",
 						"type": "start"
@@ -71,7 +67,7 @@
 				{
 					"id": "set-size",
 					"objectClass": "startButton",
-					"sid": 523700783598565,
+					"sid": 193928470918215,
 					"parameters": {
 						"width": "startButton.baseW * 0.9",
 						"height": "startButton.baseH * 0.9"
@@ -112,7 +108,7 @@
 				{
 					"id": "cursor-is-over-object",
 					"objectClass": "Mouse",
-					"sid": 548501995567067,
+					"sid": 321397113487607,
 					"parameters": {
 						"object": "startButton"
 					}
@@ -122,10 +118,10 @@
 				{
 					"id": "set-size",
 					"objectClass": "startButton",
-					"sid": 327610092127674,
+					"sid": 627755775728911,
 					"parameters": {
 						"width": "startButton.baseW * 0.9",
-						"height": "startButton.baseH* 0.9"
+						"height": "startButton.baseH * 0.9"
 					}
 				}
 			],
@@ -144,9 +140,9 @@
 				{
 					"id": "set-size",
 					"objectClass": "startButton",
-					"sid": 746270039805928,
+					"sid": 299285239511601,
 					"parameters": {
-						"width": "startButton.baseW",
+						"width": "startButton.baseW ",
 						"height": "startButton.baseH"
 					}
 				}
@@ -206,7 +202,7 @@
 				{
 					"id": "on-touched-object",
 					"objectClass": "Touch",
-					"sid": 824533542468053,
+					"sid": 117262316497940,
 					"parameters": {
 						"object": "startButton",
 						"type": "end"
@@ -217,9 +213,9 @@
 				{
 					"id": "set-size",
 					"objectClass": "startButton",
-					"sid": 522748046517095,
+					"sid": 216225316389704,
 					"parameters": {
-						"width": "startButton.baseW",
+						"width": "startButton.baseW ",
 						"height": "startButton.baseH"
 					}
 				}
@@ -258,7 +254,7 @@
 				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
-					"sid": 300496868048695,
+					"sid": 886019992713013,
 					"parameters": {
 						"object": "startButton"
 					}
@@ -282,7 +278,7 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 345845969425416,
+					"sid": 636775656080139,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
@@ -318,9 +314,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 585729432629157,
+					"sid": 172374894395445,
 					"parameters": {
-						"layout": "HelpTodayPage"
+						"layout": "LearnMorePage"
 					}
 				}
 			],
@@ -344,9 +340,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 128732238021309,
+					"sid": 908343274209770,
 					"parameters": {
-						"layout": "HelpTodayPage"
+						"layout": "LearnMorePage"
 					}
 				}
 			],

@@ -1,7 +1,7 @@
 {
 	"name": "Pause_button",
 	"plugin-id": "Sprite",
-	"sid": 512716388856692,
+	"sid": 135317715614251,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -15,18 +15,30 @@
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.476,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4850412,
+						"imageSpriteId": 5261193,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 171132919711754,
+				"sid": 200975021431669,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

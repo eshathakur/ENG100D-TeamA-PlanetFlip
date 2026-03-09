@@ -1,11 +1,7 @@
 {
 	"name": "level1Icon",
 	"plugin-id": "SVGPicture",
-<<<<<<< HEAD
-	"sid": 619529696018275,
-=======
 	"sid": 412940044085712,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -14,22 +10,14 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-<<<<<<< HEAD
-			"sid": 565573565616120
-=======
 			"sid": 775340721644978
->>>>>>> feature-ui
 		},
 		{
 			"name": "baseH",
 			"type": "number",
 			"desc": "",
 			"show": true,
-<<<<<<< HEAD
-			"sid": 472657920909637
-=======
 			"sid": 869851709510006
->>>>>>> feature-ui
 		}
 	],
 	"behaviorTypes": [],

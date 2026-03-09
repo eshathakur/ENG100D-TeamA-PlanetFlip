@@ -1,11 +1,7 @@
 {
 	"name": "redColorBox",
 	"plugin-id": "Sprite",
-<<<<<<< HEAD
-	"sid": 470551181282611,
-=======
 	"sid": 922474481956494,
->>>>>>> feature-ui
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -24,11 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 9310277,
-=======
 						"imageSpriteId": 6265670,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.21666666666666667,
@@ -90,11 +82,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-<<<<<<< HEAD
-						"imageSpriteId": 1681864,
-=======
 						"imageSpriteId": 13894,
->>>>>>> feature-ui
 						"collisionPoly": {
 							"points": [
 								0.21666666666666667,
@@ -148,11 +136,7 @@
 						"tag": ""
 					}
 				],
-<<<<<<< HEAD
-				"sid": 844957909101268,
-=======
 				"sid": 762191635320123,
->>>>>>> feature-ui
 				"name": "default",
 				"isLooping": false,
 				"isPingPong": false,

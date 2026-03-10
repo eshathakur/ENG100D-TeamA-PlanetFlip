@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 46602,
+	"savedWithRelease": 47600,
 	"name": "Save the Reef",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -114,7 +114,7 @@
 		{
 			"type": "behavior",
 			"id": "destroy",
-			"name": "Destroy outside layout",
+			"name": "Destroy outside",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -207,7 +207,8 @@
 			"QuizInfo",
 			"Sprite3",
 			"Progress_bar_fill",
-			"Progress_bar_container"
+			"Progress_bar_container",
+			"Pause_BG"
 		],
 		"subfolders": []
 	},
@@ -1230,6 +1231,10 @@
 		],
 		"subfolders": []
 	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "",
 		"version": "1.0.0.0",
@@ -1269,6 +1274,7 @@
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
+		"fixedFramerate": 30,
 		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",

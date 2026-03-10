@@ -212,7 +212,8 @@
 			"Resume_button",
 			"Restart_button",
 			"Help_button",
-			"Home_button"
+			"Home_button",
+			"Pause_button"
 		],
 		"subfolders": []
 	},

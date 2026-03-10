@@ -52,6 +52,16 @@
 			"sid": 610604208835865
 		},
 		{
+			"eventType": "variable",
+			"name": "Non_paused",
+			"type": "boolean",
+			"initialValue": "true",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 550231398239862
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -105,27 +115,6 @@
 					}
 				},
 				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"// time setting",
-						"globalThis.stageDuration = 19.16; // level takes 19.16 seconds",
-						"globalThis.stageStartTime = runtime.gameTime;",
-						"",
-						"// progress bar",
-						"const fill = runtime.objects.Progress_bar_fill.getFirstInstance();",
-						"if (fill) {",
-						"    globalThis.maxBarWidth = fill.width;",
-						"    fill.width = 0; // start with zero fill",
-						"}",
-						"",
-						"// score",
-						"runtime.globalVars.Score = 0;",
-						"*/"
-					]
-				},
-				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
 					"sid": 834381654861709,
@@ -156,46 +145,6 @@
 				}
 			],
 			"actions": [
-				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"const scrollSpeed = 100",
-						"const bg = runtime.objects.Background.getFirstInstance();",
-						"// the background keeps moving to the left until it reaches the end",
-						"if (bg && bg.x > -715) {",
-						"\tbg.x -= scrollSpeed * runtime.dt;",
-						"} else {",
-						"\truntime.timeScale = 0;",
-						"}",
-						"",
-						"",
-						"// filling the progress bar",
-						"const fill = runtime.objects.Progress_bar_fill.getFirstInstance();",
-						"if (!fill) return;",
-						"",
-						"// elapsed time",
-						"const elapsed = runtime.gameTime - globalThis.stageStartTime;",
-						"",
-						"// progress (0~1)",
-						"let progress = elapsed / globalThis.stageDuration;",
-						"progress = Math.max(0, Math.min(progress, 1));",
-						"",
-						"// Adjusting the width",
-						"fill.width = progress * globalThis.maxBarWidth;",
-						"",
-						"// when the stage is done",
-						"if (progress >= 1) {",
-						"    console.log(\"Stage Complete!\");",
-						"}",
-						"",
-						"// updating the score text",
-						"const t = runtime.objects.ScoreText.getFirstInstance();",
-						"if (t) t.text = \"Score: \" + runtime.globalVars.Score;",
-						"*/"
-					]
-				},
 				{
 					"id": "set-width",
 					"objectClass": "Progress_bar_fill",
@@ -230,20 +179,6 @@
 			],
 			"actions": [
 				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"const player = runtime.objects.Player_sprite.getFirstInstance();",
-						"if(player){",
-						"\tconst phys = player.behaviors.Physics;",
-						"\tphys.setVelocity(phys.getVelocityX(), 250);",
-						"}",
-						"*/",
-						"// when the screen is clicked, it moves the diver down"
-					]
-				},
-				{
 					"id": "set-velocity",
 					"objectClass": "Player_sprite",
 					"sid": 183609371937880,
@@ -266,20 +201,6 @@
 				}
 			],
 			"actions": [
-				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"const player = runtime.objects.Player_sprite.getFirstInstance();",
-						"if(player){",
-						"\tconst phys = player.behaviors.Physics;",
-						"\tphys.setVelocity(phys.getVelocityX(), 250);",
-						"}",
-						"*/",
-						"// when the screen is tapped, it moves the diver down"
-					]
-				},
 				{
 					"id": "set-velocity",
 					"objectClass": "Player_sprite",
@@ -366,16 +287,6 @@
 					"sid": 998634062536368
 				},
 				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"// subtract the score",
-						"runtime.globalVars.Score -= 5;",
-						"*/"
-					]
-				},
-				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 236491799231937,
@@ -400,55 +311,6 @@
 				}
 			],
 			"actions": [
-				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"const SPEED = 100;\t//speed of moving obstacles",
-						"const MARGIN = 80;\t//margin for the positions",
-						"",
-						"const player = runtime.objects.Player_sprite.getFirstInstance();",
-						"if (!player) return;",
-						"",
-						"const H = runtime.layout.height / 2;\t//height of the screen",
-						"const x = player.x + 500;\t\t\t \t//starting x coordinates for corals",
-						"",
-						"const TOP_Y = 0 + MARGIN;\t//y coordinate for the top coral",
-						"const BOT_Y = H - MARGIN;\t//y coordinate for the bottom coral",
-						"",
-						"const minScaleY = 1.0;\t\t//lower bound for scale",
-						"const maxScaleY = 2.5;\t\t//upper bound for scale",
-						"",
-						"const sTop = minScaleY + Math.random() * (maxScaleY - minScaleY);\t\t\t//scale for the top coral",
-						"const sBot = minScaleY + Math.random() * (maxScaleY - minScaleY);\t\t\t//scale for the bottom coral",
-						"",
-						"//creating the top coral",
-						"const top = runtime.objects.Coral.createInstance(0, x, TOP_Y);",
-						"if (top) {",
-						"  top.animationSpeed = 0;",
-						"  top.animationFrame = Math.floor(Math.random() * 4);\t//setting to random frame of the coral sprite",
-						"",
-						"  top.height = -top.height * sTop;\t//randomising the scale and flip vertically",
-						"",
-						"  const b = top.behaviors.Bullet;\t//making it a bullet makes it move by itself",
-						"  b.speed = SPEED;\t\t\t\t\t//setting the speed",
-						"}",
-						"",
-						"//creating the bottom coral",
-						"const bot = runtime.objects.Coral.createInstance(0, x, BOT_Y);",
-						"if (bot) {",
-						"  bot.animationSpeed = 0;",
-						"  bot.animationFrame = Math.floor(Math.random() * 4);",
-						"  ",
-						"  bot.height = bot.height * sBot;",
-						"",
-						"  const b = bot.behaviors.Bullet;",
-						"  b.speed = SPEED;",
-						"}",
-						"*/"
-					]
-				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -507,16 +369,6 @@
 					"id": "destroy",
 					"objectClass": "Trash",
 					"sid": 483390625821317
-				},
-				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"// add the score",
-						"runtime.globalVars.Score += 20;",
-						"*/"
-					]
 				},
 				{
 					"id": "add-to-eventvar",
@@ -601,16 +453,6 @@
 					"id": "destroy",
 					"objectClass": "Coral",
 					"sid": 522940818173687
-				},
-				{
-					"type": "script",
-					"language": "javascript",
-					"script": [
-						"/*",
-						"// subtract the score",
-						"runtime.globalVars.Score -= 10;",
-						"*/"
-					]
 				},
 				{
 					"id": "subtract-from-eventvar",
@@ -738,6 +580,495 @@
 				}
 			],
 			"sid": 274043571920699
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 920494802753726,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Pause_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 238185582052022,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 1,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 460493154316821,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 345263204067943,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 119980794550338,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 338722778733171,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 517837988692677,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 469517848978067,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 318766642318174,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 346121069479872,
+					"parameters": {
+						"time-scale": "0"
+					}
+				}
+			],
+			"sid": 657878645521205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 940243277664399,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Resume_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 250222809049049,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 920391640607687,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 235025815490411,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 159362931056926,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 205211153985233,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 913190105250628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 585984511348124,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 310565540985805,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 312948998070018,
+					"parameters": {
+						"time-scale": "1"
+					}
+				}
+			],
+			"sid": 274573722402452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 612006805211262,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Restart_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 242125761488913,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 508929374230138,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 618551678593998,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 245799479559295,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 126741732706764,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 858903320006444,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 323630047002949,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 350948191009045,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 608675387144890,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 600964808597523,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 622929017135234
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 334252994030314,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Home_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 124578940444907,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 881675914615914,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 215440830591854,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 367042297002308,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 866142952897441,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 970114488391133,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 669427245633247,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 891739099106251,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 971942855690499,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 708411720907948,
+					"parameters": {
+						"layout": "LevelSelectPage"
+					}
+				}
+			],
+			"sid": 587499087527870
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 956596409826297,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Help_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 734426948658729,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 604278521984318,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 491619502929731,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 373777876198630,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 538430873260916,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 840536578169614,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 169149855585607,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 755193418470634,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 488785885006153,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 600403718157196,
+					"parameters": {
+						"layout": "LearnMorePage"
+					}
+				}
+			],
+			"sid": 114296330512310
 		}
 	],
 	"sid": 165858121014550

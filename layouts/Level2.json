@@ -155,7 +155,9 @@
 					"uid": 842591,
 					"sid": 399304722062473,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Touched": false
+					},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
@@ -832,5 +834,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "EventLevel1"
+	"eventSheet": "EventLevel2"
 }

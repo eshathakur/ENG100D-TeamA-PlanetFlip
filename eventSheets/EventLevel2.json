@@ -3,29 +3,9 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "LevelScore2",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Keeps track of the player's point earned during the level",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 601229352301976
-		},
-		{
-			"eventType": "variable",
-			"name": "StageStartTime2",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "Tracks when level begins",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 489721847616770
-		},
-		{
-			"eventType": "variable",
 			"name": "stageDuration2",
 			"type": "number",
-			"initialValue": "60",
+			"initialValue": "80",
 			"comment": "How many seconds the level lasts",
 			"isStatic": false,
 			"isConstant": false,
@@ -33,33 +13,13 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "maxBarWidth2",
-			"type": "number",
-			"initialValue": "400",
-			"comment": "Full width of the progress bar",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 230935076664332
-		},
-		{
-			"eventType": "variable",
 			"name": "scrollSpeed2",
 			"type": "number",
-			"initialValue": "100",
+			"initialValue": "75",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 267252270574451
-		},
-		{
-			"eventType": "variable",
-			"name": "Non_paused2",
-			"type": "boolean",
-			"initialValue": "true",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 359100045604848
 		},
 		{
 			"eventType": "block",
@@ -126,7 +86,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 941395754139094,
+					"sid": 721058754612120,
 					"parameters": {
 						"variable": "StageStartTime",
 						"value": "time"
@@ -148,9 +108,9 @@
 				{
 					"id": "set-width",
 					"objectClass": "Progress_bar_fill",
-					"sid": 177933306233326,
+					"sid": 834243801504204,
 					"parameters": {
-						"width": "clamp((time - stageStartTime) / stageDuration, 0, 1) * maxBarWidth"
+						"width": "clamp((time - stageStartTime) / stageDuration2, 0, 1) * maxBarWidth"
 					}
 				},
 				{
@@ -249,20 +209,29 @@
 					}
 				},
 				{
+					"id": "set-animation",
+					"objectClass": "Fish",
+					"sid": 200710490011629,
+					"parameters": {
+						"animation": "\"Animation \" & int(random(2,5))",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "set-animation-frame",
 					"objectClass": "Fish",
-					"sid": 527917590313979,
+					"sid": 882387541045578,
 					"parameters": {
-						"frame-number": "random(4)"
+						"frame-number": "0"
 					}
 				},
 				{
 					"id": "set-speed",
 					"objectClass": "Fish",
-					"sid": 830854187089595,
+					"sid": 836619534180032,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "random(150,250)"
+						"speed": "random(100,150)"
 					}
 				}
 			],
@@ -278,14 +247,19 @@
 					"parameters": {
 						"object": "Player_sprite"
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 852098273037268,
+					"parameters": {
+						"first-value": "Fish.Touched",
+						"comparison": 0,
+						"second-value": "0"
+					}
 				}
 			],
 			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Fish",
-					"sid": 947785351221390
-				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
@@ -293,6 +267,23 @@
 					"parameters": {
 						"variable": "LevelScore",
 						"value": "5"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Fish",
+					"sid": 813672804367480,
+					"parameters": {
+						"instance-variable": "Touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Fish",
+					"sid": 375362840685644,
+					"parameters": {
+						"frame-number": "Fish.AnimationFrame + 1"
 					}
 				}
 			],
@@ -511,9 +502,9 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 234157542109798,
+					"sid": 633880732171367,
 					"parameters": {
-						"variable": "stageDuration",
+						"variable": "stageDuration2",
 						"comparison": 3,
 						"value": "(time - stageStartTime)"
 					}
@@ -554,11 +545,11 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 491788132131225,
+					"sid": 878517878878307,
 					"parameters": {
 						"first-value": "(time - stageStartTime)",
 						"comparison": 2,
-						"second-value": "stageDuration"
+						"second-value": "stageDuration2"
 					}
 				}
 			],
@@ -566,9 +557,9 @@
 				{
 					"id": "set-image-offset-x",
 					"objectClass": "LevelBackground",
-					"sid": 425432798500327,
+					"sid": 731358604305339,
 					"parameters": {
-						"offset-x": "Self.ImageOffsetX - (scrollSpeed * dt)"
+						"offset-x": "Self.ImageOffsetX - (scrollSpeed2 * dt)"
 					}
 				}
 			],
@@ -899,9 +890,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 399286498708077,
+					"sid": 673512967182893,
 					"parameters": {
-						"layout": "Level1"
+						"layout": "Level2"
 					}
 				}
 			],

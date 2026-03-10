@@ -155,7 +155,9 @@
 					"uid": 843981,
 					"sid": 996351139385059,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Touched": false
+					},
 					"behaviors": {
 						"Bullet": {
 							"properties": {

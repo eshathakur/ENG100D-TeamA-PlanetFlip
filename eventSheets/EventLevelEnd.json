@@ -348,9 +348,26 @@
 						"object": "NextLevel",
 						"type": "start"
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 184281490344827,
+					"parameters": {
+						"first-value": "TotalScore",
+						"comparison": 2,
+						"second-value": "100"
+					}
 				}
 			],
 			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"//Level not cleared"
+					]
+				},
 				{
 					"id": "set-size",
 					"objectClass": "NextLevel",
@@ -370,6 +387,86 @@
 				}
 			],
 			"sid": 164984299402336
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 924829452044990,
+					"parameters": {
+						"object": "NextLevel",
+						"type": "start"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 277801221195904,
+					"parameters": {
+						"first-value": "TotalScore",
+						"comparison": 5,
+						"second-value": "100"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 729290604235272,
+					"parameters": {
+						"first-value": "Unlocked_level",
+						"comparison": 2,
+						"second-value": "2"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 349987000260287,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"//Level 1 cleared"
+					]
+				},
+				{
+					"id": "set-size",
+					"objectClass": "NextLevel",
+					"sid": 922985625868136,
+					"parameters": {
+						"width": "NextLevel.baseW*0.9",
+						"height": "NextLevel.baseH*0.9"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 488372669060668,
+					"parameters": {
+						"layout": "LevelSelectPage"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 620492744440204,
+					"parameters": {
+						"variable": "Unlocked_level",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 745878211656596
 		},
 		{
 			"eventType": "block",

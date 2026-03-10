@@ -2,6 +2,26 @@
 	"name": "EventLevelSelectPage",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Unlocked_level",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 790518067683189
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentLevel",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "Tracks what level the player is currently on",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 342625601335119
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -53,6 +73,15 @@
 					"sid": 799358794636443,
 					"parameters": {
 						"layout": "Level1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 542714939218976,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "1"
 					}
 				}
 			],

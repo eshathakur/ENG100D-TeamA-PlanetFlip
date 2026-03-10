@@ -3,16 +3,6 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "CurrentLevel",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "Tracks what level the player is currently on",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 564370543164715
-		},
-		{
-			"eventType": "variable",
 			"name": "CurrentQuestion",
 			"type": "number",
 			"initialValue": "1",
@@ -92,7 +82,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 800900741456862,
+					"sid": 312380748214357,
 					"parameters": {
 						"variable": "CurrentLevel",
 						"value": "1"
@@ -152,7 +142,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "Question",
-					"sid": 539652209913058,
+					"sid": 497236604903959,
 					"parameters": {
 						"text": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion - 1) & \".question\")"
 					}
@@ -168,7 +158,7 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 204071154946578,
+					"sid": 958464490481281,
 					"parameters": {
 						"variable": "Correct",
 						"value": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".correct_index\")"
@@ -253,7 +243,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "AnswerText",
-							"sid": 967756466437213,
+							"sid": 138390260574350,
 							"parameters": {
 								"text": "JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion - 1) & \".answers.\" & AnswerText.AnswerID)"
 							}
@@ -424,7 +414,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 834235585988780,
+							"sid": 173206186667133,
 							"parameters": {
 								"variable": "SummaryData",
 								"value": "SummaryData & \"• \" & JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".question\") & newline & \"    • [color=#228B22]\" & AnswerText.Text & \"[/color]\" & newline & newline"
@@ -523,7 +513,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 393458496484089,
+							"sid": 615980292215124,
 							"parameters": {
 								"variable": "SummaryData",
 								"value": "SummaryData & \"• \" & JSON.Get(\"level_\" & CurrentLevel & \".\" & (CurrentQuestion-1) & \".question\") & newline & \"    • [color=#FF0000]\" & AnswerText.Text & \"[/color]\" & newline & newline"

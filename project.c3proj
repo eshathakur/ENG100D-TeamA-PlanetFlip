@@ -236,7 +236,8 @@
 			"Trivia",
 			"LevelEnd",
 			"LearnMorePage",
-			"DiverCustomization"
+			"DiverCustomization",
+			"Level2"
 		],
 		"subfolders": []
 	},
@@ -250,7 +251,8 @@
 			"EventLevelEnd",
 			"EventLearnMorePage",
 			"EventDiverCustomization",
-			"EventLevelSelectPage"
+			"EventLevelSelectPage",
+			"EventLevel2"
 		],
 		"subfolders": []
 	},

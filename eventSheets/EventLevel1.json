@@ -230,12 +230,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 533078230275242,
+					"sid": 215480402588635,
 					"parameters": {
 						"object-to-create": "Fish",
 						"layer": "0",
 						"x": "ViewportRight(0) + 10",
-						"y": "random( Coral.Height/2+10, ViewportBottom(0) - Coral.Height/2 - 10 )",
+						"y": "random(20,500)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
@@ -259,10 +259,10 @@
 				{
 					"id": "set-speed",
 					"objectClass": "Fish",
-					"sid": 125323906003103,
+					"sid": 929585188415354,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"speed": "random(125,150)"
+						"speed": "random(150,250)"
 					}
 				}
 			],

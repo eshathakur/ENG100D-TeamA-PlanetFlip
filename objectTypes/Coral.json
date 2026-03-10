@@ -11,6 +11,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 215280595888745
+		},
+		{
+			"name": "Touched",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 577362223217113
 		}
 	],
 	"behaviorTypes": [

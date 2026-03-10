@@ -210,7 +210,8 @@
 					"sid": 561066814727745,
 					"tags": "",
 					"instanceVariables": {
-						"vx": -100
+						"vx": -100,
+						"Touched": false
 					},
 					"behaviors": {
 						"Bullet": {

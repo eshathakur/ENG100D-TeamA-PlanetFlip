@@ -314,14 +314,23 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 200102236831694,
+					"sid": 617002879660152,
 					"parameters": {
 						"object-to-create": "Coral",
 						"layer": "0",
 						"x": "ViewportRight(0)",
-						"y": "random(620, 720)",
+						"y": "random(620, 680)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Coral",
+					"sid": 533485821674502,
+					"parameters": {
+						"animation": "\"Animation \" & int(random(1,37))",
+						"from": "beginning"
 					}
 				},
 				{
@@ -344,9 +353,9 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Coral",
-					"sid": 271653374401435,
+					"sid": 204238337038358,
 					"parameters": {
-						"frame-number": "floor(random(47))"
+						"frame-number": "int(random(0,2))"
 					}
 				}
 			],
@@ -432,6 +441,14 @@
 					"parameters": {
 						"speed": "100"
 					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Trash",
+					"sid": 830291740775178,
+					"parameters": {
+						"angle": "random(-45,45)"
+					}
 				}
 			],
 			"sid": 406033068386923
@@ -446,13 +463,26 @@
 					"parameters": {
 						"object": "Player_sprite"
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 334983105645527,
+					"parameters": {
+						"first-value": "Coral.Touched",
+						"comparison": 0,
+						"second-value": "0"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "set-animation-frame",
 					"objectClass": "Coral",
-					"sid": 522940818173687
+					"sid": 184899977066936,
+					"parameters": {
+						"frame-number": "Coral.AnimationFrame + 1"
+					}
 				},
 				{
 					"id": "subtract-from-eventvar",
@@ -461,6 +491,15 @@
 					"parameters": {
 						"variable": "LevelScore",
 						"value": "10"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Coral",
+					"sid": 582207427176650,
+					"parameters": {
+						"instance-variable": "Touched",
+						"value": "true"
 					}
 				}
 			],

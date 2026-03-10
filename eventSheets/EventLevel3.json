@@ -1,0 +1,1122 @@
+{
+	"name": "EventLevel3",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "stageDuration3",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "How many seconds the level lasts",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 742275380124095
+		},
+		{
+			"eventType": "variable",
+			"name": "scrollSpeed3",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 969652714708711
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 668207695522500
+				}
+			],
+			"actions": [
+				{
+					"id": "set-world-gravity",
+					"objectClass": "Player_sprite",
+					"sid": 977118877948742,
+					"behaviorType": "Physics",
+					"parameters": {
+						"gravity": "-5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player_sprite",
+					"sid": 388356803988755,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Player_sprite",
+					"sid": 641023971886640,
+					"parameters": {
+						"frame-number": "DiverColor"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player_sprite",
+					"sid": 901950084559642,
+					"parameters": {
+						"animation": "DiverColor",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Player_sprite",
+					"sid": 210158873182770,
+					"parameters": {
+						"speed": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 456481253577872,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 206075889911698,
+					"parameters": {
+						"variable": "StageStartTime",
+						"value": "time"
+					}
+				}
+			],
+			"sid": 945649825413904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 568167579276257
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "Progress_bar_fill",
+					"sid": 917624647857842,
+					"parameters": {
+						"width": "clamp((time - stageStartTime) / stageDuration3, 0, 1) * maxBarWidth"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 111661189587712,
+					"parameters": {
+						"text": "\"Score: \" & LevelScore"
+					}
+				}
+			],
+			"sid": 992874087640520
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 751637255185486,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-velocity",
+					"objectClass": "Player_sprite",
+					"sid": 301523462704166,
+					"behaviorType": "Physics",
+					"parameters": {
+						"x-component": "Self.Physics.VelocityX",
+						"y-component": "200"
+					}
+				}
+			],
+			"sid": 176815928033142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-touch-start",
+					"objectClass": "Touch",
+					"sid": 223995966828848
+				}
+			],
+			"actions": [
+				{
+					"id": "set-velocity",
+					"objectClass": "Player_sprite",
+					"sid": 153871382715272,
+					"behaviorType": "Physics",
+					"parameters": {
+						"x-component": "Self.Physics.VelocityX",
+						"y-component": "200"
+					}
+				}
+			],
+			"sid": 163648408824486
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 130749355716304,
+					"parameters": {
+						"interval-seconds": "random(1.0,3.0)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 404902331247403,
+					"parameters": {
+						"object-to-create": "Fish",
+						"layer": "0",
+						"x": "ViewportRight(0) + 10",
+						"y": "random(20,500)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Fish",
+					"sid": 390780979194099,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Fish",
+					"sid": 365206586206851,
+					"parameters": {
+						"animation": "\"Animation \" & int(random(2,5))",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Fish",
+					"sid": 331915026660123,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Fish",
+					"sid": 428256165124291,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "random(100,150)"
+					}
+				}
+			],
+			"sid": 776045470313222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fish",
+					"sid": 961944149242149,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 546192569563860,
+					"parameters": {
+						"first-value": "Fish.Touched",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 295043228643130,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Fish",
+					"sid": 816167884569198,
+					"parameters": {
+						"instance-variable": "Touched",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Fish",
+					"sid": 225899759985918,
+					"parameters": {
+						"frame-number": "Fish.AnimationFrame + 1"
+					}
+				}
+			],
+			"sid": 805713580850697
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 619857962724691,
+					"parameters": {
+						"interval-seconds": "random(1.5,3.0)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 548057819475302,
+					"parameters": {
+						"object-to-create": "Coral",
+						"layer": "0",
+						"x": "ViewportRight(0)",
+						"y": "random(620, 680)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Coral",
+					"sid": 908496169967390,
+					"parameters": {
+						"animation": "\"Animation \" & int(random(1,37))",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Coral",
+					"sid": 672440718273173,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Coral",
+					"sid": 405945249717731,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Coral",
+					"sid": 718567509424598,
+					"parameters": {
+						"frame-number": "int(random(0,2))"
+					}
+				}
+			],
+			"sid": 126906820230795
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Trash",
+					"sid": 153131221155399,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Trash",
+					"sid": 376350095517839
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 969757143497687,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "7"
+					}
+				}
+			],
+			"sid": 424157056435970
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 968267001843136,
+					"parameters": {
+						"interval-seconds": "1.3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 398820924168817,
+					"parameters": {
+						"object-to-create": "Trash",
+						"layer": "0",
+						"x": "ViewportRight(0) + 10",
+						"y": "random(100, 600)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Trash",
+					"sid": 194455332444157,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Trash",
+					"sid": 569729231938095,
+					"parameters": {
+						"speed": "0"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Trash",
+					"sid": 680876149709094,
+					"parameters": {
+						"frame-number": "int(random(0,11))"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Trash",
+					"sid": 434265451635280,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "100"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Trash",
+					"sid": 928521036365093,
+					"parameters": {
+						"angle": "random(-45,45)"
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Trash",
+					"sid": 345646916106179,
+					"parameters": {
+						"scale": "0.9"
+					}
+				}
+			],
+			"sid": 533446006716544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Coral",
+					"sid": 624425101436456,
+					"parameters": {
+						"object": "Player_sprite"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 354516943785486,
+					"parameters": {
+						"first-value": "Coral.Touched",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Coral",
+					"sid": 797471644290388,
+					"parameters": {
+						"frame-number": "Coral.AnimationFrame + 1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 301276513239045,
+					"parameters": {
+						"variable": "LevelScore",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Coral",
+					"sid": 529300048339954,
+					"parameters": {
+						"instance-variable": "Touched",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 652807437058048
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 314159222417673,
+					"parameters": {
+						"variable": "stageDuration3",
+						"comparison": 3,
+						"value": "(time - stageStartTime)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 739936185847514,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 555095333493019,
+					"parameters": {
+						"variable": "CurrentQuestion",
+						"value": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 428338352804526,
+					"parameters": {
+						"layout": "Trivia"
+					}
+				}
+			],
+			"sid": 498909821001237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 895673573879596,
+					"parameters": {
+						"first-value": "(time - stageStartTime)",
+						"comparison": 2,
+						"second-value": "stageDuration3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-x",
+					"objectClass": "LevelBackground",
+					"sid": 648644693612130,
+					"parameters": {
+						"offset-x": "Self.ImageOffsetX - (scrollSpeed3 * dt)"
+					}
+				}
+			],
+			"sid": 263764103818957
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Player_sprite",
+					"sid": 332729124498110
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-impulse-towards-position",
+					"objectClass": "Player_sprite",
+					"sid": 736866402336261,
+					"behaviorType": "Physics",
+					"parameters": {
+						"impulse": "100",
+						"x": "156",
+						"y": "360",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 431885129118883
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 146274395911833
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Player_sprite",
+					"sid": 442794558155441,
+					"parameters": {
+						"x": "156"
+					}
+				}
+			],
+			"sid": 321724710120923
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 675084001385634,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Pause_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 862056140523674,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 1,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 638728846971299,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 473584606820833,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 816885614111196,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 806602596460864,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 634589973967088,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 101702357190954,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 645636045766246,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 308946079771431,
+					"parameters": {
+						"time-scale": "0"
+					}
+				}
+			],
+			"sid": 859547162522104
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 680538319561740,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Resume_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 319651096745899,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 992359274885837,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 236642903557479,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 710465307532126,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 148220700098892,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 365333192840019,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 301842274393030,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 427601497597978,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 203456438789017,
+					"parameters": {
+						"time-scale": "1"
+					}
+				}
+			],
+			"sid": 774665790886898
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 601095737196627,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Restart_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 845566278901374,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 354877218350456,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 633045162051616,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 221420470628276,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 874514961620004,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 548026369740856,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 473318661078608,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 834008051101030,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 405413608563393,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 413922803935745,
+					"parameters": {
+						"layout": "Level3"
+					}
+				}
+			],
+			"sid": 503914904652727
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 252768580109541,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Home_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 245013561709401,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 958556345511548,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 169827988513267,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 638636610091166,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 631061588116804,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 662075586429413,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 965195557962035,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 871511037387176,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 636622730279078,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 422371269579211,
+					"parameters": {
+						"layout": "LevelSelectPage"
+					}
+				}
+			],
+			"sid": 419721386617679
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 988357171165142,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Help_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 302410156151425,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 987815261802300,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 378666176869529,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 974349358661934,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 576745321374990,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 714771468543794,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 230740237582402,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 472385180765773,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 812933146412691,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 501460977606300,
+					"parameters": {
+						"layout": "LearnMorePage"
+					}
+				}
+			],
+			"sid": 797137640294853
+		}
+	],
+	"sid": 739990552486319
+}

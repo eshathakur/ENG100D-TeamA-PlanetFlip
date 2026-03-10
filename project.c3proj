@@ -237,7 +237,8 @@
 			"LevelEnd",
 			"LearnMorePage",
 			"DiverCustomization",
-			"Level2"
+			"Level2",
+			"Level3"
 		],
 		"subfolders": []
 	},
@@ -252,7 +253,8 @@
 			"EventLearnMorePage",
 			"EventDiverCustomization",
 			"EventLevelSelectPage",
-			"EventLevel2"
+			"EventLevel2",
+			"EventLevel3"
 		],
 		"subfolders": []
 	},

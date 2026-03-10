@@ -464,8 +464,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 643,
-						"y": 78,
+						"x": 450,
+						"y": 650,
 						"width": 397,
 						"height": 67,
 						"originX": 0,
@@ -511,8 +511,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 643,
-						"y": 78,
+						"x": 450,
+						"y": 650,
 						"width": 397,
 						"height": 67,
 						"originX": 0,
@@ -621,8 +621,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 661,
-						"y": 430,
+						"x": 653,
+						"y": 389,
 						"width": 2000,
 						"height": 1000,
 						"originX": 0.5,

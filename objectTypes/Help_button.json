@@ -1,0 +1,60 @@
+{
+	"name": "Help_button",
+	"plugin-id": "Sprite",
+	"sid": 515115240283322,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 255,
+						"height": 62,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1458506,
+						"collisionPoly": {
+							"points": [
+								0.03137254901960784,
+								0,
+								0.9921568627450981,
+								0.06451612903225806,
+								1,
+								0.12903225806451613,
+								1,
+								0.8548387096774194,
+								0.9686274509803922,
+								0.9838709677419355,
+								0.00784313725490196,
+								0.9193548387096774,
+								0,
+								0.8548387096774194,
+								0,
+								0.12903225806451613
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 361487427876580,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

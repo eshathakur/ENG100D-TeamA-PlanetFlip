@@ -208,7 +208,11 @@
 			"Sprite3",
 			"Progress_bar_fill",
 			"Progress_bar_container",
-			"Pause_BG"
+			"Pause_BG",
+			"Resume_button",
+			"Restart_button",
+			"Help_button",
+			"Home_button"
 		],
 		"subfolders": []
 	},

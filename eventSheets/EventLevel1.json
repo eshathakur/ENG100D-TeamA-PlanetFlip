@@ -92,9 +92,9 @@
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Player_sprite",
-					"sid": 484982031137127,
+					"sid": 441064161690300,
 					"parameters": {
-						"frame-number": "0"
+						"frame-number": "DiverColor"
 					}
 				},
 				{

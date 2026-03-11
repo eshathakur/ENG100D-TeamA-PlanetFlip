@@ -211,7 +211,9 @@
 			"Restart_button",
 			"Help_button",
 			"Home_button",
-			"Pause_button"
+			"Pause_button",
+			"TutText",
+			"TutText2"
 		],
 		"subfolders": []
 	},

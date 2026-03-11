@@ -1,0 +1,52 @@
+{
+	"name": "TutContainer",
+	"plugin-id": "Sprite",
+	"sid": 992485609118643,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1005,
+						"height": 458,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8522743,
+						"collisionPoly": {
+							"points": [
+								0.014925373134328358,
+								0,
+								1,
+								0.03275109170305677,
+								0.9850746268656716,
+								1,
+								0,
+								0.9672489082969432
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 272701845064081,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

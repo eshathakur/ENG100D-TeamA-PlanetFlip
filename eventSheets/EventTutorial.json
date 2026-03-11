@@ -11,6 +11,16 @@
 					"parameters": {
 						"object": "NextButtonSprite"
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 305245670801542,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -51,14 +61,181 @@
 			"sid": 323018626199343
 		},
 		{
-			"eventType": "variable",
-			"name": "cnt",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 747675900439132
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 449797858141435,
+					"parameters": {
+						"object": "NextButtonSprite"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 941143352534354,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 981458411695207,
+					"parameters": {
+						"color": "rgbEx(90, 90, 90)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 416709970033479,
+					"parameters": {
+						"seconds": "0.07",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 614680763632842,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 926597200415625,
+					"parameters": {
+						"layout": "\"Level1\""
+					}
+				}
+			],
+			"sid": 621153193634438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 416021334690636,
+					"parameters": {
+						"object": "NextButtonSprite"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 962093109967435,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 286612896803117,
+					"parameters": {
+						"color": "rgbEx(90, 90, 90)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 243377863740010,
+					"parameters": {
+						"seconds": "0.07",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 644568080570480,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 959650329414692,
+					"parameters": {
+						"layout": "\"Level2\""
+					}
+				}
+			],
+			"sid": 125849480232996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 892123986810051,
+					"parameters": {
+						"object": "NextButtonSprite"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 521045920084379,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 289312342769432,
+					"parameters": {
+						"color": "rgbEx(90, 90, 90)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 878123015832092,
+					"parameters": {
+						"seconds": "0.07",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "NextButtonSprite",
+					"sid": 827204595130083,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				},
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 713603702290374,
+					"parameters": {
+						"layout": "\"Level3\""
+					}
+				}
+			],
+			"sid": 953570081260252
 		},
 		{
 			"eventType": "block",
@@ -144,6 +321,402 @@
 				}
 			],
 			"sid": 808739154230292
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 702587907679733,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "TutContainer",
+					"sid": 164248863082368,
+					"parameters": {
+						"width": "519",
+						"height": "334"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TutContainer",
+					"sid": 154607105524440,
+					"parameters": {
+						"x": "640",
+						"y": "420"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutTitleText",
+					"sid": 622889276705456,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutText3",
+					"sid": 734478846360215,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutText4",
+					"sid": 623811959468172,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutText",
+					"sid": 424218468393328,
+					"parameters": {
+						"text": "\"Pick Up Trash\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutText2",
+					"sid": 933664178490005,
+					"parameters": {
+						"text": "\"Plastic trash can break coral and block sunlight they need to survive.\""
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "TutText2",
+					"sid": 224518132074006,
+					"parameters": {
+						"width": "240"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "TutText2",
+					"sid": 692731936782513,
+					"parameters": {
+						"x": "540"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutLevelBoxBackground",
+					"sid": 840337081538337,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutLevelText",
+					"sid": 543963730282476,
+					"parameters": {
+						"text": "\"LEVEL 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutLevelText",
+					"sid": 493211063990727,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutTrash",
+					"sid": 332990673616200,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TutTrash",
+					"sid": 156283377564443,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 455579562172997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 404862145100306,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "TutContainer",
+					"sid": 456874889182803,
+					"parameters": {
+						"width": "519",
+						"height": "334"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TutContainer",
+					"sid": 973180277543577,
+					"parameters": {
+						"x": "640",
+						"y": "420"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutTitleText",
+					"sid": 729884002199175,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutText3",
+					"sid": 780172791351729,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutText4",
+					"sid": 844135910534706,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutText",
+					"sid": 247702395530037,
+					"parameters": {
+						"text": "\"Remove Harmful Algae\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutText2",
+					"sid": 728536273214821,
+					"parameters": {
+						"text": "\"Too much algae can smother coral and block sunlight.\""
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "TutText2",
+					"sid": 110466444509881,
+					"parameters": {
+						"width": "240"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "TutText2",
+					"sid": 276629351454488,
+					"parameters": {
+						"x": "540"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutLevelBoxBackground",
+					"sid": 939717688530732,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutLevelText",
+					"sid": 440870694896775,
+					"parameters": {
+						"text": "\"LEVEL 2\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutLevelText",
+					"sid": 289581007983008,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutTrash",
+					"sid": 624568250577731,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TutTrash",
+					"sid": 488023851287301,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 549133895226993
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 529873987414469,
+					"parameters": {
+						"first-value": "CurrentLevel",
+						"comparison": 0,
+						"second-value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "TutContainer",
+					"sid": 875532033813189,
+					"parameters": {
+						"width": "519",
+						"height": "334"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "TutContainer",
+					"sid": 642837037019142,
+					"parameters": {
+						"x": "640",
+						"y": "420"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutTitleText",
+					"sid": 906399092307683,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutText3",
+					"sid": 650192291637856,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutText4",
+					"sid": 108682338757629,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutText",
+					"sid": 543322006586490,
+					"parameters": {
+						"text": "\"Clean Oil Spills\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutText2",
+					"sid": 324250797204533,
+					"parameters": {
+						"text": "\"Oil coats coral and prevents them from breathing and growing.\""
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "TutText2",
+					"sid": 306964000873954,
+					"parameters": {
+						"width": "240"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "TutText2",
+					"sid": 931814100758618,
+					"parameters": {
+						"x": "540"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutLevelBoxBackground",
+					"sid": 815262189344572,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TutLevelText",
+					"sid": 151022068798596,
+					"parameters": {
+						"text": "\"LEVEL 3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutLevelText",
+					"sid": 408464906762590,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TutTrash",
+					"sid": 983591195122935,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "TutTrash",
+					"sid": 271242511523983,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 411006123831935
 		}
 	],
 	"sid": 743565415056279

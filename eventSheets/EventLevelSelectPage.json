@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "CurrentLevel",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "0",
 			"comment": "Tracks what level the player is currently on",
 			"isStatic": false,
 			"isConstant": false,
@@ -150,9 +150,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 799358794636443,
+					"sid": 371656154798098,
 					"parameters": {
-						"layout": "Level1"
+						"layout": "Tutorial"
 					}
 				},
 				{
@@ -194,9 +194,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 397148630689505,
+					"sid": 660298752832257,
 					"parameters": {
-						"layout": "Level2"
+						"layout": "Tutorial"
 					}
 				},
 				{
@@ -238,9 +238,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 669621458490171,
+					"sid": 438777666824479,
 					"parameters": {
-						"layout": "Level3"
+						"layout": "Tutorial"
 					}
 				},
 				{

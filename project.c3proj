@@ -213,7 +213,14 @@
 			"Home_button",
 			"Pause_button",
 			"TutText",
-			"TutText2"
+			"TutText2",
+			"TutText3",
+			"TutText4",
+			"TutContainer",
+			"TutTitleText",
+			"TutLevelBoxBackground",
+			"TutLevelText",
+			"TutTrash"
 		],
 		"subfolders": []
 	},

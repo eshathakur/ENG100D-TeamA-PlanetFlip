@@ -230,11 +230,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 215480402588635,
+					"sid": 452021047996782,
 					"parameters": {
 						"object-to-create": "Fish",
 						"layer": "0",
-						"x": "ViewportRight(0) + 10",
+						"x": "ViewportRight(0)",
 						"y": "random(20,500)",
 						"create-hierarchy": false,
 						"template-name": "\"\""

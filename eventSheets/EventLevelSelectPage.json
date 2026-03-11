@@ -56,6 +56,86 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 299752030414894
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 634402200061654,
+					"parameters": {
+						"first-value": "Unlocked_level",
+						"comparison": 4,
+						"second-value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Level2Select",
+					"sid": 775472833889547,
+					"parameters": {
+						"animation": "\"Unlocked\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Level2Select",
+					"sid": 190945609248375,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 338905269015300
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 270276141710037
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 978300955757402,
+					"parameters": {
+						"first-value": "Unlocked_level",
+						"comparison": 4,
+						"second-value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Level3Select",
+					"sid": 263054045285005,
+					"parameters": {
+						"animation": "\"Unlocked\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Level3Select",
+					"sid": 311850735784414,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 837913370215041
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
 					"sid": 711409448289461,
@@ -91,6 +171,94 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 471388219386132,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Level2Select"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "Level2Select",
+					"sid": 443540592278685,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 397148630689505,
+					"parameters": {
+						"layout": "Level2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 531185745138188,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 395229897537159
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 483337738555278,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Level3Select"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "Level3Select",
+					"sid": 872343109878339,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 669621458490171,
+					"parameters": {
+						"layout": "Level3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 977365836396305,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 303851360106428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-tap-object",
 					"objectClass": "Touch",
 					"sid": 175365325758742,
@@ -107,9 +275,102 @@
 					"parameters": {
 						"layout": "Level1"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 904786350958932,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 324187089301394
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 215550444505538,
+					"parameters": {
+						"object": "Level2Select"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "Level2Select",
+					"sid": 863471125171793,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 783765561060876,
+					"parameters": {
+						"layout": "Level2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 477161814403964,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 339306318776959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 294833915267471,
+					"parameters": {
+						"object": "Level3Select"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "Level3Select",
+					"sid": 365544596796447,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 403932571427458,
+					"parameters": {
+						"layout": "Level3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 796641714665505,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 961949595577927
 		},
 		{
 			"eventType": "block",
@@ -157,6 +418,118 @@
 				}
 			],
 			"sid": 457400615413317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 126589536623895,
+					"parameters": {
+						"object": "Level2Select"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "Level2Select",
+					"sid": 768695235579239,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level2Select",
+					"sid": 716784584763527,
+					"parameters": {
+						"width": "Level1Select.baseW*0.9",
+						"height": "Level1Select.baseH*0.9"
+					}
+				}
+			],
+			"sid": 769215060946023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 476150447281978
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level2Select",
+					"sid": 115334949048725,
+					"parameters": {
+						"width": "Level1Select.baseW",
+						"height": "Level1Select.baseH"
+					}
+				}
+			],
+			"sid": 244292713333636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 208948646873683,
+					"parameters": {
+						"object": "Level3Select"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "Level3Select",
+					"sid": 309536592135401,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level3Select",
+					"sid": 699836981634553,
+					"parameters": {
+						"width": "Level1Select.baseW*0.9",
+						"height": "Level1Select.baseH*0.9"
+					}
+				}
+			],
+			"sid": 772982597232563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 425635474416724
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level3Select",
+					"sid": 234311362849595,
+					"parameters": {
+						"width": "Level1Select.baseW",
+						"height": "Level1Select.baseH"
+					}
+				}
+			],
+			"sid": 872293799449640
 		},
 		{
 			"eventType": "block",

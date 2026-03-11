@@ -178,8 +178,6 @@
 			"helpTodayInfoTemp",
 			"helpTodayTitle",
 			"level1Icon",
-			"level2",
-			"level3",
 			"levelSelectTitle",
 			"orangeColorBox",
 			"pinkColorBox",
@@ -1215,6 +1213,22 @@
 					"name": "title.png",
 					"type": "image/png",
 					"sid": 198805021054199,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level3Icon.svg",
+					"type": "image/svg+xml",
+					"sid": 847182008149404,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "level2Icon.svg",
+					"type": "image/svg+xml",
+					"sid": 129341124259968,
 					"file-info": {
 						"purpose": "none"
 					}

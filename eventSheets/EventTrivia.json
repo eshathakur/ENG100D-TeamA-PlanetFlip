@@ -78,15 +78,6 @@
 						"seconds": "0.1",
 						"use-timescale": true
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 312380748214357,
-					"parameters": {
-						"variable": "CurrentLevel",
-						"value": "1"
-					}
 				}
 			],
 			"sid": 558460233662744

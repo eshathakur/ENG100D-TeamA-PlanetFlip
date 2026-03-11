@@ -55,6 +55,15 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+					"sid": 316750844356762,
+					"parameters": {
+						"variable": "SummaryData",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
 					"sid": 189550651044958,
 					"parameters": {
 						"variable": "CurrentQuestion",
@@ -280,9 +289,9 @@
 						{
 							"id": "set-font-size",
 							"objectClass": "AnswerText",
-							"sid": 745904759184607,
+							"sid": 359971679846580,
 							"parameters": {
-								"size-pt": "min(18, (AnswerBox.Width / AnswerText.TextWidth) * AnswerText.FaceSize)"
+								"size-pt": "14"
 							}
 						}
 					],

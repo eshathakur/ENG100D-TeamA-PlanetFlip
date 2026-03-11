@@ -40,14 +40,14 @@
       "correct_index": 0
     },
     {
-      "question": "This is a filler question, just pick D",
-      "answers": ["A.", "B.", "C.", "D."],
-      "correct_index": 3
+      "question": "What happens when unusually warm ocean temperatures cause 'coral bleaching'?",
+      "answers": ["A. The corals are scrubbed clean by fish", "B. Corals expel their colorful food-producing algae and can starve", "C. The reef turns into white sand", "D. The water becomes cloudy and white"],
+      "correct_index": 1
     },
     {
-      "question": "This is a filler question, just pick C",
-      "answers": ["A.", "B.", "C.", "D."],
-      "correct_index": 2
+      "question": "How does reducing global carbon emissions help protect coral reefs?",
+      "answers": ["A. It slows down ocean warming and acidification", "B. It makes the ocean water saltier", "C. It provides the coral with more sunlight", "D. It stops storms from forming"],
+      "correct_index": 0
     }
   ]
 }

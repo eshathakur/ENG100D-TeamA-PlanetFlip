@@ -107,6 +107,16 @@
 						"comparison": 5,
 						"value": "100"
 					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 283701900138345,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"comparison": 0,
+						"value": "1"
+					}
 				}
 			],
 			"actions": [
@@ -130,14 +140,13 @@
 				{
 					"id": "set-text",
 					"objectClass": "FishyHome",
-					"sid": 965806813735382,
+					"sid": 625757975301614,
 					"parameters": {
-						"text": "\"You successfully cleaned  the trash, algae, and oil without touching the coral. Because of your actions, the clownfish were able to return home. \""
+						"text": "\"You successfully cleaned the trash, algae, and oil without touching the coral. Because of your actions, the clownfish were able to return home. \""
 					}
 				}
 			],
-			"sid": 249824879225789,
-			"isOrBlock": true
+			"sid": 249824879225789
 		},
 		{
 			"eventType": "block",
@@ -150,6 +159,16 @@
 						"variable": "TotalScore",
 						"comparison": 2,
 						"value": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 326716978572146,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"comparison": 0,
+						"value": "1"
 					}
 				}
 			],
@@ -180,8 +199,237 @@
 					}
 				}
 			],
-			"sid": 987377824953136,
-			"isOrBlock": true
+			"sid": 987377824953136
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 318198815830689,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 5,
+						"value": "150"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 165676948715100,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 596766091834930,
+					"parameters": {
+						"text": "\"Pass\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 409428509719437,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 379597275050048,
+					"parameters": {
+						"text": "\"You successfully cleaned the trash, algae, and oil without touching the coral. Because of your actions, the sea turtles were able to return home. \""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Clownfish",
+					"sid": 383818773312254,
+					"parameters": {
+						"animation": "\"sea turtle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 364160601759978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 691561118147241,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 2,
+						"value": "150"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 426258443413504,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 439325177249293,
+					"parameters": {
+						"text": "\"Fail\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 932306018900050,
+					"parameters": {
+						"text": "\"Try again! You didn’t clean enough the trash, algae, and oil without touching the coral. Play again to help the sea turtles return home.\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 140593535987384,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 160775433167197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 960750493674868,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 5,
+						"value": "200"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 817733076470007,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 139398816921500,
+					"parameters": {
+						"text": "\"Pass\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 260793841513925,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 850564106226136,
+					"parameters": {
+						"text": "\"You successfully cleaned the trash, algae, and oil without touching the coral. Because of your actions, the octopuses were able to return home. \""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Clownfish",
+					"sid": 873321600925508,
+					"parameters": {
+						"animation": "\"octopus\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 509420651813626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 688802544808385,
+					"parameters": {
+						"variable": "TotalScore",
+						"comparison": 2,
+						"value": "200"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 133360160341112,
+					"parameters": {
+						"variable": "CurrentLevel",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "PassOrFail",
+					"sid": 848250686360457,
+					"parameters": {
+						"text": "\"Fail\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "FishyHome",
+					"sid": 589283677893958,
+					"parameters": {
+						"text": "\"Try again! You didn’t clean enough the trash, algae, and oil without touching the coral. Play again to help the octopuses return home.\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "KingTriton",
+					"sid": 808062423003063,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 329931052630769
 		},
 		{
 			"eventType": "block",

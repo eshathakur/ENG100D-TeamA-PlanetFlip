@@ -315,7 +315,7 @@
 					"type": "Clownfish",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "clownfish",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -334,8 +334,8 @@
 					"world": {
 						"x": 640,
 						"y": 320,
-						"width": 65,
-						"height": 43,
+						"width": 37.5,
+						"height": 21,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

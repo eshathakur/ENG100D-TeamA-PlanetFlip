@@ -190,11 +190,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 404902331247403,
+					"sid": 407584031166318,
 					"parameters": {
 						"object-to-create": "Fish",
 						"layer": "0",
-						"x": "ViewportRight(0) + 10",
+						"x": "ViewportRight(0)",
 						"y": "random(20,500)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -211,9 +211,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Fish",
-					"sid": 365206586206851,
+					"sid": 554317743496035,
 					"parameters": {
-						"animation": "\"Animation \" & int(random(2,5))",
+						"animation": "\"Animation \" & int(random(5,9))",
 						"from": "beginning"
 					}
 				},
@@ -388,9 +388,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 968267001843136,
+					"sid": 262953882626544,
 					"parameters": {
-						"interval-seconds": "1.3"
+						"interval-seconds": "1.4"
 					}
 				}
 			],

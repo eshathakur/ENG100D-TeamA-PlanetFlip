@@ -7,4 +7,4 @@ Add this later:
 - Name and summary of each context sheet and its corresponding event sheet
 - How to use Github with Construct (can be a link)
 - Guide to editing, adding, and removing trivia questions and answers
-- 
+- Possible future features (mention fish index)

@@ -390,25 +390,27 @@
 				{
 					"id": "set-text",
 					"objectClass": "TutText2",
-					"sid": 933664178490005,
+					"sid": 479741483991115,
 					"parameters": {
-						"text": "\"Plastic trash can break coral and block sunlight they need to survive.\""
+						"text": "\"Plastic trash can break coral and block sunlight they need to survive.\" & newline & \"You have 1 minute to reach 100 points!\""
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-size",
 					"objectClass": "TutText2",
-					"sid": 224518132074006,
+					"sid": 165741278518945,
 					"parameters": {
-						"width": "240"
+						"width": "235",
+						"height": "140"
 					}
 				},
 				{
-					"id": "set-x",
+					"id": "set-position",
 					"objectClass": "TutText2",
-					"sid": 692731936782513,
+					"sid": 303026313123979,
 					"parameters": {
-						"x": "540"
+						"x": "540",
+						"y": "410"
 					}
 				},
 				{
@@ -522,25 +524,27 @@
 				{
 					"id": "set-text",
 					"objectClass": "TutText2",
-					"sid": 728536273214821,
+					"sid": 987402188970517,
 					"parameters": {
-						"text": "\"Too much algae can smother coral and block sunlight.\""
+						"text": "\"Too much algae can smother coral and block sunlight.\" & newline & \"You have 1:20 minutes to reach 150 points!\""
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-size",
 					"objectClass": "TutText2",
-					"sid": 110466444509881,
+					"sid": 429920967610873,
 					"parameters": {
-						"width": "240"
+						"width": "235",
+						"height": "140"
 					}
 				},
 				{
-					"id": "set-x",
+					"id": "set-position",
 					"objectClass": "TutText2",
-					"sid": 276629351454488,
+					"sid": 885380335540156,
 					"parameters": {
-						"x": "540"
+						"x": "540",
+						"y": "410"
 					}
 				},
 				{
@@ -654,25 +658,27 @@
 				{
 					"id": "set-text",
 					"objectClass": "TutText2",
-					"sid": 324250797204533,
+					"sid": 443027524865493,
 					"parameters": {
-						"text": "\"Oil coats coral and prevents them from breathing and growing.\""
+						"text": "\"Oil coats coral and prevents them from breathing and growing.\" & newline & \"You have 1:40 minutes to reach 200 points!\""
 					}
 				},
 				{
-					"id": "set-width",
+					"id": "set-size",
 					"objectClass": "TutText2",
-					"sid": 306964000873954,
+					"sid": 313947960493885,
 					"parameters": {
-						"width": "240"
+						"width": "235",
+						"height": "140"
 					}
 				},
 				{
-					"id": "set-x",
+					"id": "set-position",
 					"objectClass": "TutText2",
-					"sid": 931814100758618,
+					"sid": 459473398406181,
 					"parameters": {
-						"x": "540"
+						"x": "540",
+						"y": "410"
 					}
 				},
 				{

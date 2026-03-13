@@ -159,6 +159,10 @@
 					"parameters": {
 						"layout": "StartPage"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "on hover/click/touch button shrinks by 10%"
 				}
 			],
 			"sid": 748128861339431

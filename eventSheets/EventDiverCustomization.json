@@ -6,7 +6,7 @@
 			"name": "SelectedColorBoxUID",
 			"type": "number",
 			"initialValue": "-1",
-			"comment": "",
+			"comment": "represents the individual color box (out of the 8) the user has selected (touched/clicked)",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 707231923743161
@@ -16,7 +16,7 @@
 			"name": "DiverColor",
 			"type": "string",
 			"initialValue": "black",
-			"comment": "",
+			"comment": "what color the diver's suit is, there are 8 different animations representing the different colors, each with 2 frames to represent the diver's motion",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 639355189731859
@@ -77,19 +77,15 @@
 				},
 				{
 					"id": "set-animation-frame",
-					"objectClass": "blueColorBox",
-					"sid": 175984807975200,
-					"parameters": {
-						"frame-number": "0"
-					}
-				},
-				{
-					"id": "set-animation-frame",
 					"objectClass": "ColorBoxes",
 					"sid": 161614064417284,
 					"parameters": {
 						"frame-number": "0"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "on start diver suit should be black, the black color box should be selected, and the Done button should be its default size (it shrinks by 10% on click/hover)"
 				}
 			],
 			"sid": 227903321201139,
@@ -114,6 +110,10 @@
 							"parameters": {
 								"frame-number": "0"
 							}
+						},
+						{
+							"type": "comment",
+							"text": "animation frame 0 represents the non-selected visual"
 						}
 					],
 					"sid": 338239507888099
@@ -150,6 +150,10 @@
 								"variable": "SelectedColorBoxUID",
 								"value": "ColorBoxes.UID"
 							}
+						},
+						{
+							"type": "comment",
+							"text": "sets the black color box to be selected on start"
 						}
 					],
 					"sid": 629627662490656
@@ -199,6 +203,10 @@
 						"width": "DoneButton.baseW",
 						"height": "DoneButton.baseH"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "shrink button size by 10% on hover only"
 				}
 			],
 			"sid": 621691525644766
@@ -304,6 +312,10 @@
 					"parameters": {
 						"speed": "1.5"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "the ColorBoxes family is made up of the 8 individual color boxes, this event sets the global variable SelectedColorBoxUID to the color box chosen and the diver suit to the respective color"
 				}
 			],
 			"sid": 659699678359938,
@@ -355,6 +367,10 @@
 							"parameters": {
 								"frame-number": "1"
 							}
+						},
+						{
+							"type": "comment",
+							"text": "this sets the chosen color to the correct visual (white outline around it)"
 						}
 					],
 					"sid": 207329240521437

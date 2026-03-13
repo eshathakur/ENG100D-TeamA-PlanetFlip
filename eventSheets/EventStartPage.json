@@ -46,6 +46,10 @@
 						"instance-variable": "baseH",
 						"value": "startButton.Height"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "on start set Buttons to default size, only on touch/click/hover shrink button by 10%"
 				}
 			],
 			"sid": 739518844522516

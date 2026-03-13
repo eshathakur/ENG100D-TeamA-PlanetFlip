@@ -33,3 +33,51 @@ There is a pause button at the top right of the screen. If it is pressed, it pau
 **StoryStart & EventStoryStart:** Initiates the game's opening story. It uses a typewriter effect to display a welcome message from King Triton about saving the Great Barrier Reef. A timer runs for 4 seconds, after which a next button appears, allowing the player to go to the diver customization screen.
 
 **Trivia & EventTrivia:** Manages the quiz mechanics by fetching a quiz_data.json file via AJAX. It loads questions and multiple choice answers, and dynamically shrinks the text font from 18pt to 14pt if the answer string is wider or taller than the answer box. When an answer is tapped, it awards +10 points for correct answers and subtracts -10 points for incorrect ones, logs the result in a summary string using color-coded text, and loads the next question.
+
+# Global Variables
+**TotalScore (Number, initial 0):** Calculates the final score by adding the gameplay level score to the quiz score.
+
+**SummaryData (String, initial ""):** Tracks the current level's trivia questions and the player's specific answers so they can be displayed on the end-screen.
+
+**Unlocked_level (Number, initial 1):** Keeps track of the highest level the player has permanently unlocked.
+
+**CurrentLevel (Number, initial 0):** Tracks the specific level the player is currently playing so the game loads the correct trivia and thresholds.
+
+**CurrentQuestion (Number, initial 1):** Tracks which of the 3 trivia questions the player is currently answering.
+
+**quizScore (Number, initial 0):** Keeps track of the points the player earned or lost exclusively during the quiz.
+
+**Correct (Number, initial 0):** Stores the index (0-3) of the correct answer for the current trivia question.
+
+**SelectedColorBoxUID (Number, initial -1):**
+
+**DiverColor (String, initial “black”):** Stores the player’s chosen color for their diving suit
+
+**LevelScore (Number, initial 0):** Keeps track of the player's point earned during the level
+
+**StageStartTime (Number, initial 0):** Tracks the time when level begins
+
+**StageDuration, 2, 3 (Number, initial 60, 80, 100):** Stores how many seconds the level lasts
+
+**maxBarWidth (Number, initial 400):** Stores the width of the progress bar
+
+**scrollSpeed, 2, 3 (Number, initial 100, 75, 60):** Stores the scrolling speed of background.
+
+**Non_paused(Boolean, initial true):** Set to true while the game is played(not paused).
+
+# Objects with Instance Variables
+**BackToGame, HelpToday, NextLevel, and Level1Select Buttons:**
+* baseW (Base Width) and baseH (Base Height)
+  * On the start of the layout, these variables store the original dimensions of the buttons. This allows the game to multiply those base values by 0.9 to shrink the buttons on hover or touch, and then restore them back to 100% afterwards.
+
+**Fish and Coral:**
+* Touched
+  * A boolean that checks if the diver has touched the instance. Start with false and set to true once it collides with the diver. This variable is used for increasing its animation frame only once during the level.
+ 
+**AnswerBox and AnswerText:**
+* AnswerID
+  * This variable links the visual box sprite (AnswerBox) to its corresponding text object (AnswerText). It is also used to check against the Correct global variable to determine if the player tapped the right option.
+
+**ColorBoxes:**
+* colorName
+  * Gives each box its own unique color name to be used in diver customization, determining the color of the diver.

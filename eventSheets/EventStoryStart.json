@@ -30,6 +30,10 @@
 						"type": "once",
 						"tag": "\"appear\""
 					}
+				},
+				{
+					"type": "comment",
+					"text": ""
 				}
 			],
 			"sid": 471609101273142
@@ -59,6 +63,10 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make the next button appear only after a certain amount of time has passed"
 				}
 			],
 			"sid": 348580316182839

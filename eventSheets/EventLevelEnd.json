@@ -91,6 +91,10 @@
 						"instance-variable": "baseW",
 						"value": "NextLevel.Width"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Initialize buttons and show levels results (the final score, whether the player passed or failed, and the quiz questions and the player's answers to them"
 				}
 			],
 			"sid": 137721687007350
@@ -144,6 +148,10 @@
 					"parameters": {
 						"text": "\"You successfully cleaned the trash, algae, and oil without touching the coral. Because of your actions, the clownfish were able to return home. \""
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Pass screen for level 1"
 				}
 			],
 			"sid": 249824879225789
@@ -197,6 +205,10 @@
 						"animation": "\"Animation 3\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Fail screen for level 1"
 				}
 			],
 			"sid": 987377824953136
@@ -259,6 +271,10 @@
 						"animation": "\"sea turtle\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Pass screen for level 2"
 				}
 			],
 			"sid": 364160601759978
@@ -312,6 +328,10 @@
 						"animation": "\"Animation 3\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Fail screen for level 2"
 				}
 			],
 			"sid": 160775433167197
@@ -374,6 +394,10 @@
 						"animation": "\"octopus\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Pass screen for level 3"
 				}
 			],
 			"sid": 509420651813626
@@ -427,6 +451,10 @@
 						"animation": "\"Animation 3\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Fail screen for level 3"
 				}
 			],
 			"sid": 329931052630769
@@ -474,6 +502,10 @@
 						"width": "HelpToday.baseW",
 						"height": "HelpToday.baseH"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Behavior for hovering over the Help Today button"
 				}
 			],
 			"sid": 972697902756997
@@ -508,6 +540,10 @@
 					"parameters": {
 						"layout": "LearnMorePage"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Behavior for clicking on Help Today button, go to the learn more layout, button slightly shrinks"
 				}
 			],
 			"sid": 948118026638203
@@ -534,6 +570,10 @@
 						"width": "HelpToday.baseW",
 						"height": "HelpToday.baseH"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Behavior for releasing touch/click on Help Today button , resizes to original size"
 				}
 			],
 			"sid": 462508578080013
@@ -581,6 +621,10 @@
 						"width": "NextLevel.baseW",
 						"height": "NextLevel.baseH"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Behavior for hovering over the Next Level button"
 				}
 			],
 			"sid": 867722228160722
@@ -661,6 +705,10 @@
 						"variable": "Unlocked_level",
 						"value": "2"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Clicking the next level button when the score threshold is met unlocks level 2"
 				}
 			],
 			"sid": 564762155111646
@@ -741,6 +789,10 @@
 						"variable": "Unlocked_level",
 						"value": "3"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Clicking the next level button when the score threshold is met unlocks level 3"
 				}
 			],
 			"sid": 836599872477361
@@ -782,6 +834,10 @@
 					"parameters": {
 						"layout": "LevelSelectPage"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Clicking the next level button when the score threshold is not met takes you back to the level select page without unlocking any new levels"
 				}
 			],
 			"sid": 164984299402336
@@ -808,6 +864,10 @@
 						"width": "NextLevel.baseW",
 						"height": "NextLevel.baseH"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Button reverts to original size after clicking/touching"
 				}
 			],
 			"sid": 413153816803616

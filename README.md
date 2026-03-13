@@ -8,3 +8,5 @@ Add this later:
 - How to use Github with Construct (can be a link)
 - Guide to editing, adding, and removing trivia questions and answers
 - 
+
+Tutorial for using Github with Construct: [GitHub and Construct](https://www.construct.net/en/tutorials/collaborate-construct-2390)

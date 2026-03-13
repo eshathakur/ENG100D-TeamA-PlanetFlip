@@ -32,6 +32,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Set up the level"
+				},
+				{
 					"id": "set-world-gravity",
 					"objectClass": "Player_sprite",
 					"sid": 977118877948742,
@@ -106,6 +110,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Updates the score and the progress bar during the game"
+				},
+				{
 					"id": "set-width",
 					"objectClass": "Progress_bar_fill",
 					"sid": 917624647857842,
@@ -139,6 +147,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Diver goes down"
+				},
+				{
 					"id": "set-velocity",
 					"objectClass": "Player_sprite",
 					"sid": 301523462704166,
@@ -161,6 +173,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Diver goes down"
+				},
 				{
 					"id": "set-velocity",
 					"objectClass": "Player_sprite",
@@ -187,6 +203,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Every 1~3 seconds, random fish is created"
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -261,6 +281,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Fish changes its image and subtracts the score by 5 when diver hits it"
+				},
+				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 295043228643130,
@@ -302,6 +326,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Coral is created every 1.5~3 seconds with a random coral image"
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -366,6 +394,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Trash is destroyed and adds the score by 7 when diver hits it"
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Trash",
 					"sid": 376350095517839
@@ -395,6 +427,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Random trash is created every 1.4 seconds"
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -485,6 +521,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Coral visual degrades and subtracts the score by 10 when diver hits it"
+				},
+				{
 					"id": "set-animation-frame",
 					"objectClass": "Coral",
 					"sid": 797471644290388,
@@ -529,6 +569,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Proceed to trivia quiz when the time is up"
+				},
+				{
 					"id": "set-time-scale",
 					"objectClass": "System",
 					"sid": 739936185847514,
@@ -572,6 +616,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Background keeps moving to the left until the level ends "
+				},
+				{
 					"id": "set-image-offset-x",
 					"objectClass": "LevelBackground",
 					"sid": 648644693612130,
@@ -592,6 +640,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Moves the diver sprite inwards when it goes outside the screen"
+				},
 				{
 					"id": "apply-impulse-towards-position",
 					"objectClass": "Player_sprite",
@@ -617,6 +669,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Locating a diver to the left"
+				},
 				{
 					"id": "set-x",
 					"objectClass": "Player_sprite",
@@ -653,6 +709,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Pauses the game with showing a pause menu"
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
@@ -747,6 +807,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Resume the game with hiding the pause menu"
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
 					"sid": 992359274885837,
@@ -839,6 +903,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Restart the game"
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
@@ -941,6 +1009,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Go back to the level select page"
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
 					"sid": 958556345511548,
@@ -1041,6 +1113,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Shows the help out page"
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",

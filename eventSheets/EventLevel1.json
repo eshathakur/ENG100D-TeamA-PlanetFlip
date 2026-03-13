@@ -46,7 +46,7 @@
 			"name": "scrollSpeed",
 			"type": "number",
 			"initialValue": "100",
-			"comment": "",
+			"comment": "Scrolling speed of background",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 610604208835865
@@ -56,7 +56,7 @@
 			"name": "Non_paused",
 			"type": "boolean",
 			"initialValue": "true",
-			"comment": "",
+			"comment": "Set to true while the game is played(not paused)",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 550231398239862
@@ -71,6 +71,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Set up the level"
+				},
 				{
 					"id": "set-world-gravity",
 					"objectClass": "Player_sprite",
@@ -146,6 +150,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Updates the score and the progress bar during the game"
+				},
+				{
 					"id": "set-width",
 					"objectClass": "Progress_bar_fill",
 					"sid": 978303881727306,
@@ -179,6 +187,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Diver goes down"
+				},
+				{
 					"id": "set-velocity",
 					"objectClass": "Player_sprite",
 					"sid": 183609371937880,
@@ -201,6 +213,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Diver goes down"
+				},
 				{
 					"id": "set-velocity",
 					"objectClass": "Player_sprite",
@@ -227,6 +243,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Every 1~3 seconds, random fish is created"
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -282,6 +302,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Fish is destroyed and subtracts the score by 5 when diver hits it"
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Fish",
 					"sid": 998634062536368
@@ -311,6 +335,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Fish is destroyed and subtracts the score by 5 when diver hits it"
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -375,6 +403,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Trash is destroyed and adds the score by 7 when diver hits it"
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Trash",
 					"sid": 483390625821317
@@ -404,6 +436,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Random trash is created every second"
+				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
@@ -477,6 +513,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Coral visual degrades and subtracts the score by 10 when diver hits it"
+				},
+				{
 					"id": "set-animation-frame",
 					"objectClass": "Coral",
 					"sid": 184899977066936,
@@ -521,6 +561,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Proceed to trivia quiz when the time is up"
+				},
+				{
 					"id": "set-time-scale",
 					"objectClass": "System",
 					"sid": 733158218154371,
@@ -564,6 +608,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Background keeps moving to the left until the level ends "
+				},
+				{
 					"id": "set-image-offset-x",
 					"objectClass": "LevelBackground",
 					"sid": 718311245221591,
@@ -584,6 +632,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Moves the diver sprite inwards when it goes outside the screen"
+				},
 				{
 					"id": "apply-impulse-towards-position",
 					"objectClass": "Player_sprite",
@@ -609,6 +661,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Locating a diver to the left"
+				},
 				{
 					"id": "set-x",
 					"objectClass": "Player_sprite",
@@ -645,6 +701,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Pauses the game with showing a pause menu"
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
@@ -739,6 +799,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Resume the game with hiding the pause menu"
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
 					"sid": 920391640607687,
@@ -831,6 +895,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Restart the game"
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
@@ -933,6 +1001,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Go back to the level select page"
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",
 					"sid": 881675914615914,
@@ -1033,6 +1105,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Shows the help out page"
+				},
 				{
 					"id": "set-visible",
 					"objectClass": "Pause_BG",

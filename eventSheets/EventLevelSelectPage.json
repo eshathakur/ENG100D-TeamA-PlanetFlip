@@ -6,7 +6,7 @@
 			"name": "Unlocked_level",
 			"type": "number",
 			"initialValue": "1",
-			"comment": "",
+			"comment": "Tracks to what level the player has unlocked",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 790518067683189
@@ -31,6 +31,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Setting the height and width for button"
+				},
 				{
 					"id": "set-instvar-value",
 					"objectClass": "Level1Select",
@@ -73,6 +77,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "If the player has unlocked level2, its button becomes available"
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "Level2Select",
 					"sid": 775472833889547,
@@ -113,6 +121,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "If the player has unlocked level3, its button becomes available"
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "Level3Select",
 					"sid": 263054045285005,
@@ -147,6 +159,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Go to level 1 when clicked"
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
@@ -192,6 +208,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Go to level 2 when clicked"
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 397148630689505,
@@ -236,6 +256,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Go to level 3 when clicked"
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 669621458490171,
@@ -268,6 +292,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Go to level 1 when tapped"
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
@@ -311,6 +339,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Go to level 2 when tapped"
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 783765561060876,
@@ -353,6 +385,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "Go to level 3 when tapped"
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 403932571427458,
@@ -371,6 +407,10 @@
 				}
 			],
 			"sid": 961949595577927
+		},
+		{
+			"eventType": "comment",
+			"text": "A shrinking animation when the mouse hovers over the buttons"
 		},
 		{
 			"eventType": "block",
@@ -582,6 +622,110 @@
 				}
 			],
 			"sid": 446498981945075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 987582409868013,
+					"parameters": {
+						"object": "Level2Select",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level2Select",
+					"sid": 293095422591117,
+					"parameters": {
+						"width": "Level2Select.baseW*0.9",
+						"height": "Level2Select.baseH*0.9"
+					}
+				}
+			],
+			"sid": 689381900975582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 637994680180687,
+					"parameters": {
+						"object": "Level2Select",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level2Select",
+					"sid": 312557289677047,
+					"parameters": {
+						"width": "Level2Select.baseW",
+						"height": "Level2Select.baseH"
+					}
+				}
+			],
+			"sid": 158919069546971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 314012904895480,
+					"parameters": {
+						"object": "Level3Select",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level3Select",
+					"sid": 341831551311293,
+					"parameters": {
+						"width": "Level3Select.baseW*0.9",
+						"height": "Level3Select.baseH*0.9"
+					}
+				}
+			],
+			"sid": 606342953869092
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 417263649891038,
+					"parameters": {
+						"object": "Level3Select",
+						"type": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Level3Select",
+					"sid": 401306910325197,
+					"parameters": {
+						"width": "Level3Select.baseW",
+						"height": "Level3Select.baseH"
+					}
+				}
+			],
+			"sid": 369727198828582
 		}
 	],
 	"sid": 637507728024714

@@ -2,6 +2,14 @@
 	"name": "EventTutorial",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "Uses global variable \"CurrentLevel\" from EventLevelSelectPage"
+		},
+		{
+			"eventType": "comment",
+			"text": "Before a level has been played and next on the tutorial is tapped"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -24,6 +32,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Short button animation before going to level select page"
+				},
 				{
 					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
@@ -61,6 +73,10 @@
 			"sid": 323018626199343
 		},
 		{
+			"eventType": "comment",
+			"text": "When the first level is going to be played and next on the tutorial is tapped"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -83,6 +99,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Short button animation before going to level 1"
+				},
 				{
 					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
@@ -120,6 +140,10 @@
 			"sid": 621153193634438
 		},
 		{
+			"eventType": "comment",
+			"text": "When the second level is going to be played and next on the tutorial is tapped"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -142,6 +166,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Short button animation before going to level 2"
+				},
 				{
 					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
@@ -179,6 +207,10 @@
 			"sid": 125849480232996
 		},
 		{
+			"eventType": "comment",
+			"text": "When the third level is going to be played and next on the tutorial is tapped"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -201,6 +233,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Short button animation before going to level 3"
+				},
 				{
 					"id": "set-default-color",
 					"objectClass": "NextButtonSprite",
@@ -236,6 +272,10 @@
 				}
 			],
 			"sid": 953570081260252
+		},
+		{
+			"eventType": "comment",
+			"text": "When cursor hovers over the next button, make the button smaller and darker, normal otherwise"
 		},
 		{
 			"eventType": "block",
@@ -323,6 +363,10 @@
 			"sid": 808739154230292
 		},
 		{
+			"eventType": "comment",
+			"text": "When the first level is going to be played, change layout of the tutorial"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -337,6 +381,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Change size and position of container"
+				},
 				{
 					"id": "set-size",
 					"objectClass": "TutContainer",
@@ -354,6 +402,10 @@
 						"x": "640",
 						"y": "420"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make unnecessary text boxes invisible"
 				},
 				{
 					"id": "set-visible",
@@ -380,6 +432,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "Set text to appropriate description"
+				},
+				{
 					"id": "set-text",
 					"objectClass": "TutText",
 					"sid": 424218468393328,
@@ -394,6 +450,10 @@
 					"parameters": {
 						"text": "\"Plastic trash can break coral and block sunlight they need to survive.\" & newline & \"You have 1 minute to reach 100 points!\""
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Change size and position of description text"
 				},
 				{
 					"id": "set-size",
@@ -412,6 +472,10 @@
 						"x": "540",
 						"y": "410"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make level container visible and set to the appropriate level"
 				},
 				{
 					"id": "set-visible",
@@ -438,6 +502,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "Make trash sprite visible and set to the appropriate visual"
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "TutTrash",
 					"sid": 332990673616200,
@@ -457,6 +525,10 @@
 			"sid": 455579562172997
 		},
 		{
+			"eventType": "comment",
+			"text": "When the second level is going to be played, change layout of the tutorial"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -471,6 +543,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Change size and position of container"
+				},
 				{
 					"id": "set-size",
 					"objectClass": "TutContainer",
@@ -488,6 +564,10 @@
 						"x": "640",
 						"y": "420"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make unnecessary text boxes invisible"
 				},
 				{
 					"id": "set-visible",
@@ -514,6 +594,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "Set text to appropriate description"
+				},
+				{
 					"id": "set-text",
 					"objectClass": "TutText",
 					"sid": 247702395530037,
@@ -528,6 +612,10 @@
 					"parameters": {
 						"text": "\"Too much algae can smother coral and block sunlight.\" & newline & \"You have 1:20 minutes to reach 150 points!\""
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Change size and position of description text"
 				},
 				{
 					"id": "set-size",
@@ -546,6 +634,10 @@
 						"x": "540",
 						"y": "410"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make level container visible and set to the appropriate level"
 				},
 				{
 					"id": "set-visible",
@@ -572,6 +664,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "Make trash sprite visible and set to the appropriate visual"
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "TutTrash",
 					"sid": 624568250577731,
@@ -591,6 +687,10 @@
 			"sid": 549133895226993
 		},
 		{
+			"eventType": "comment",
+			"text": "When the third level is going to be played, change layout of the tutorial"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -605,6 +705,10 @@
 				}
 			],
 			"actions": [
+				{
+					"type": "comment",
+					"text": "Change size and position of container"
+				},
 				{
 					"id": "set-size",
 					"objectClass": "TutContainer",
@@ -622,6 +726,10 @@
 						"x": "640",
 						"y": "420"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make unnecessary text boxes invisible"
 				},
 				{
 					"id": "set-visible",
@@ -648,6 +756,10 @@
 					}
 				},
 				{
+					"type": "comment",
+					"text": "Set text to appropriate description"
+				},
+				{
 					"id": "set-text",
 					"objectClass": "TutText",
 					"sid": 543322006586490,
@@ -662,6 +774,10 @@
 					"parameters": {
 						"text": "\"Oil coats coral and prevents them from breathing and growing.\" & newline & \"You have 1:40 minutes to reach 200 points!\""
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Change size and position of description text"
 				},
 				{
 					"id": "set-size",
@@ -680,6 +796,10 @@
 						"x": "540",
 						"y": "410"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make level container visible and set to the appropriate level"
 				},
 				{
 					"id": "set-visible",
@@ -704,6 +824,10 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "Make trash sprite visible and set to the appropriate visual"
 				},
 				{
 					"id": "set-visible",

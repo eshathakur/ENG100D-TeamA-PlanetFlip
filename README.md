@@ -10,6 +10,29 @@
 
 # Guide to Editing, Adding, & Removing Trivia Questions & Answers
 
+**How to Add a New Question:**
+Note: The logic is currently hardcoded to ask exactly 3 questions per level (it checks if CurrentQuestion equals 4 to end the level). To add a 4th question, you would also need to update that number in EventTrivia so the game knows to ask it
+1. Go to the level where you want to add the question (e.g., "level_1").
+2. Scroll to the very last closing curly bracket } of that level's questions.
+3. Add a comma , directly after that last bracket.
+4. Paste a fresh question block right below it. Should look like this:
+
+~~~
+    }, 
+    {
+      "question": "Your new question here?",
+      "answers": \["A. Option one", "B. Option two", "C. Option three", "D. Option four"\],
+      "correct_index": 0
+    }
+  ],
+~~~
+
+**How to Remove a Question:**
+1. Locate the block of code for the question you want to delete.
+2. Delete everything from its opening curly bracket { to its closing curly bracket }.
+3. Check the commas: In JSON files, items in a list are separated by commas, but the last item in a list must not have a comma after it. If you deleted the last question in a level, make sure the new "last" question doesn't have a lingering comma at the end
+
+
 # Context & Event Sheets
 **StartPage & EventStartPage:** The title screen of the game. It has two buttons: Help Today which takes the user to a page with more information on how to help coral reefs, and Start which takes the player to the start of the game story. 
 

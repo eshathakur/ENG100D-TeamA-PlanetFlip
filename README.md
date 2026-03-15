@@ -115,3 +115,20 @@ There is a pause button at the top right of the screen. If it is pressed, it pau
 **ColorBoxes:**
 * colorName
   * Gives each box its own unique color name to be used in diver customization, determining the color of the diver.
+
+# Possible Future Features
+**Fish Index:**
+* We have the designs on our Figma for this: [Figma](https://www.figma.com/design/ww14HqBcso0oVjvqOgkg77/ENG-100D?node-id=509-70&t=xUEWmldVYaD6SP91-1)
+* After each level is completed there is a Post Level Summary page that shows the score to the user and it has two button options: Help Today or Next Level. We did not have time with the scope given but we would've added an i/information icon button in the top right corner of that page that would open/minimize a pop up page which would be a Fish Index.
+* The Fish Index would showcase the different fish the user saw in each level, they could tap on each fish icon which would have its fish species listed underneath, and a little pop up page would come up that would share more relevant information about the fish, and it would have an x button in the top right corner to minimize that pop up.
+* There are also right and left scroll arrows on the sides of the fish index so the user can see all the different types, in our prototype only 5 fish were seen on each page.
+
+**Sound Effects/Background music:**
+* We did not have time with the allotted scope but we would’ve liked to add sound effects throughout the game, such as: sound effects for each button pressed, background music during each level/entire game, sound effects for each trash/algae/oil spill collected, and sound effects for each fish/healthy coral hit
+
+**Game finish summary page:**
+* We currently do not have this but it would be great to have an overall game finished summary page when all levels have been passed
+
+**Visual point indicator during each level:**
+* We also did not have time for this in the scope, we would have liked to add visual icons such as +10 in green font, or -10 in red font when collecting trash/algae/oil spill or hitting fish/healthy coral.
+

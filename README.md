@@ -9,6 +9,17 @@
 4. Use the QR code or link to open on the device you’re testing
 
 # Guide to Editing, Adding, & Removing Trivia Questions & Answers
+Every question is grouped inside a "Level" category ("level_1", "level_2", "level_3"). Inside these levels, each individual question is formatted as a block enclosed in curly brackets { } containing three pieces of information:
+1. "question": The text the player will read.
+2. "answers": A list of four possible choices inside square brackets [ ].
+3. "correct_index": The number that tells the game which answer is right. Note: We start counting at 0 so, 0 = A, 1 = B, 2 = C, and 3 = D.
+
+**To edit an existing question:**
+1. Open quiz_data.json.
+2. Locate the level and the specific question block you want to change.
+3. To change the question text: Edit the text inside the quotation marks next to "question".
+4. To change the answers: Edit the text inside the quotation marks for any of the four options in the "answers" list.
+5. To change which answer is correct: Change the number next to "correct_index" to 0, 1, 2, or 3. Example: If you want to change the correct answer for the first question in Level 1 from "C" to "A", you would change "correct_index": 2 to "correct_index": 0.
 
 **How to Add a New Question:**
 Note: The logic is currently hardcoded to ask exactly 3 questions per level (it checks if CurrentQuestion equals 4 to end the level). To add a 4th question, you would also need to update that number in EventTrivia so the game knows to ask it

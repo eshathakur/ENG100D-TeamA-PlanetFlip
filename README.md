@@ -1,4 +1,6 @@
-# ENG100D-TeamA-PlanetFlip
+# Reef Rescuer Game
+Reef Rescuer is an educational game suited for ages 11-14 focused on coral reefs and the impacts different pollutants (plastic trash, oil spills, and algae) have on ocean life. It is coded on the platform Construct 3. This project was developed for [PlanetFlip](https://planetflip.org/), a non profit organization that works with UC San Diego to combat climate change.
+
 # Tutorial for using Github with Construct: 
 [GitHub and Construct](https://www.construct.net/en/tutorials/collaborate-construct-2390)
 
@@ -83,7 +85,7 @@ There is a pause button at the top right of the screen. If it is pressed, it pau
 
 **Correct (Number, initial 0):** Stores the index (0-3) of the correct answer for the current trivia question.
 
-**SelectedColorBoxUID (Number, initial -1):**
+**SelectedColorBoxUID (Number, initial -1):** Represents the individual color box (out of the 8) the user has selected (touched/clicked)
 
 **DiverColor (String, initial “black”):** Stores the player’s chosen color for their diving suit
 
@@ -98,23 +100,6 @@ There is a pause button at the top right of the screen. If it is pressed, it pau
 **scrollSpeed, 2, 3 (Number, initial 100, 75, 60):** Stores the scrolling speed of background.
 
 **Non_paused(Boolean, initial true):** Set to true while the game is played(not paused).
-
-# Objects with Instance Variables
-**BackToGame, HelpToday, NextLevel, and Level1Select Buttons:**
-* baseW (Base Width) and baseH (Base Height)
-  * On the start of the layout, these variables store the original dimensions of the buttons. This allows the game to multiply those base values by 0.9 to shrink the buttons on hover or touch, and then restore them back to 100% afterwards.
-
-**Fish and Coral:**
-* Touched
-  * A boolean that checks if the diver has touched the instance. Start with false and set to true once it collides with the diver. This variable is used for increasing its animation frame only once during the level.
- 
-**AnswerBox and AnswerText:**
-* AnswerID
-  * This variable links the visual box sprite (AnswerBox) to its corresponding text object (AnswerText). It is also used to check against the Correct global variable to determine if the player tapped the right option.
-
-**ColorBoxes:**
-* colorName
-  * Gives each box its own unique color name to be used in diver customization, determining the color of the diver.
 
 # Possible Future Features
 **Fish Index:**
@@ -131,4 +116,3 @@ There is a pause button at the top right of the screen. If it is pressed, it pau
 
 **Visual point indicator during each level:**
 * We also did not have time for this in the scope, we would have liked to add visual icons such as +10 in green font, or -10 in red font when collecting trash/algae/oil spill or hitting fish/healthy coral.
-

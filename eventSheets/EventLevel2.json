@@ -1116,6 +1116,485 @@
 				}
 			],
 			"sid": 672692207214010
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 822378542827700,
+					"parameters": {
+						"object": "Pause_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 370046101422033,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 1,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 827409265902628,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 695223629114987,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 656945690526734,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 779529329818303,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 603231791984260,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 611954937551269,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 957809343081534,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 421693173322656,
+					"parameters": {
+						"time-scale": "0"
+					}
+				}
+			],
+			"sid": 322358660319679
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 663901001103139,
+					"parameters": {
+						"object": "Resume_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 403527155242879,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 466106246615661,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 989181796015938,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 436871263276509,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 268483860737871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 101341976940263,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 976242401878304,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 629567547373296,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 594606869815366,
+					"parameters": {
+						"time-scale": "1"
+					}
+				}
+			],
+			"sid": 580801891325044
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 718775882434938,
+					"parameters": {
+						"object": "Restart_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 964317378199877,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 916080538976263,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 950855941757013,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 800961716897901,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 736697274158162,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 836660720833071,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 288374824667187,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 526855372775250,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 589138415519701,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 132326637039115,
+					"parameters": {
+						"layout": "Level2"
+					}
+				}
+			],
+			"sid": 655437383816393
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 862401012895724,
+					"parameters": {
+						"object": "Home_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 910322596704859,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 439558519797672,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 302020570657700,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 778205570970275,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 239279236512183,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 291542519073813,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 133909174787226,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 940744194205614,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 507506447520823,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 993156019569533,
+					"parameters": {
+						"layout": "LevelSelectPage"
+					}
+				}
+			],
+			"sid": 556719443410124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 964332116460917,
+					"parameters": {
+						"object": "Help_button"
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 228854174504342,
+					"parameters": {
+						"first-value": "Non_paused",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_BG",
+					"sid": 458009414451271,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Resume_button",
+					"sid": 585665371981971,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart_button",
+					"sid": 435169775857488,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Help_button",
+					"sid": 285863765919817,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Home_button",
+					"sid": 139504334973683,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pause_button",
+					"sid": 192097909604963,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 869985901277077,
+					"parameters": {
+						"variable": "Non_paused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 393130166573293,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 777851721707701,
+					"parameters": {
+						"layout": "LearnMorePage"
+					}
+				}
+			],
+			"sid": 236838126516676
 		}
 	],
 	"sid": 520906876402708

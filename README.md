@@ -1,5 +1,5 @@
 # Reef Rescuer Game
-Reef Rescuer is an educational game suited for ages 11-14 focused on coral reefs and the impacts different pollutants (plastic trash, oil spills, and algae) have on ocean life. It is coded on the platform Construct 3. This project was developed for [PlanetFlip](https://planetflip.org/), a non profit organization that works with UC San Diego to combat climate change.
+[Reef Rescuer](https://www.construct.net/en/free-online-games/reef-rescuer-84950/play) is an educational game suited for ages 11-14 focused on coral reefs and the impacts different pollutants (plastic trash, oil spills, and algae) have on ocean life. It is coded on the platform Construct 3. This project was developed for [PlanetFlip](https://planetflip.org/), a non profit organization that works with UC San Diego to combat climate change.
 
 # Tutorial for using Github with Construct: 
 [GitHub and Construct](https://www.construct.net/en/tutorials/collaborate-construct-2390)
